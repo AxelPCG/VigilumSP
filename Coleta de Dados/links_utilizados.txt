@@ -1,0 +1,14 @@
+https://www.meteomatics.com/en/weather-api/
+
+https://www.cgesp.org/v3/estacoes-meteorologicas.jsp
+
+https://arquivos.saisp.br/nextcloud/index.php/s/qikdinFyAM33MJK?path=%2FBOLETIM_PLUVIOMETRICO
+
+https://www.arsep.sp.gov.br/Paginas/energia/energia-eletrica.aspx
+
+https://dadosenergeticos.energia.sp.gov.br/PortalCEV2/Municipios/Eletricidade/m_eletricidade.asp?ano=
+https://app.powerbi.com/viewr=eyJrIjoiNci4OGYyY1QYM2ZC0QYjllLWJYMEtYZdkNTc1MTc1NiM2IiwidCI6IjowZDZmOWI4LWIYVY1TctNDZhM05MmQ0LWMvNGUSY2AxNzBlMslMsMlo%3D
+
+https://www.cgesp.org/v3/estacoes-meteorologicas.jsp
+
+https://portal.inmet.gov.br/dadoshistoricos
