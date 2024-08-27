@@ -1,16 +1,20 @@
-https://www.meteomatics.com/en/weather-api/
+https://www.meteomatics.com/en/weather-api/ 
+(possui limitação quanto a dados históricos e tempo de uso na conta free)
 
 https://www.cgesp.org/v3/estacoes-meteorologicas.jsp
+(Precisa extrair dados a partir do .html já que não possui fontes de API ou baixáveis)
 
 https://arquivos.saisp.br/nextcloud/index.php/s/qikdinFyAM33MJK?path=%2FBOLETIM_PLUVIOMETRICO
+(dados históricos mensais/anuais em boletins .xlsx que precisariam ser tratados)
 
 https://www.arsep.sp.gov.br/Paginas/energia/energia-eletrica.aspx
+(site fora do ar)
 
 https://dadosenergeticos.energia.sp.gov.br/PortalCEV2/Municipios/Eletricidade/m_eletricidade.asp?ano=
 https://app.powerbi.com/viewr=eyJrIjoiNci4OGYyY1QYM2ZC0QYjllLWJYMEtYZdkNTc1MTc1NiM2IiwidCI6IjowZDZmOWI4LWIYVY1TctNDZhM05MmQ0LWMvNGUSY2AxNzBlMslMsMlo%3D
-
-https://www.cgesp.org/v3/estacoes-meteorologicas.jsp
+(dados referentes a energia elétrica mas que precisam ser extraídos de .html)
 
 https://portal.inmet.gov.br/dadoshistoricos
 
-https://www.ibge.gov.br/geociencias/organizacao-do-territorio/malhas-territoriais/26565-malhas-de-setores-censitarios-divisoes-intramunicipais.html?edicao=39501&t=acesso-ao-produto
+https://www.ibge.gov.br/geociencias/organizacao-do-territorio/malhas-territoriais/
+(malhas de polígonos das regiões de SP)
