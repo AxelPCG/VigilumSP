@@ -1,0 +1,171 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B30389FF-7572-2F75-BED4-7E78D4936B9D" name="TBL_Previsao">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-17 01:57:52 UTC</createdTime>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="5E5336F0-9476-962A-4C6E-6C5E341A6890">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-17 01:58:36 UTC</createdTime>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Regiao_Id" id="1799B01D-BDA8-B14B-7946-68ABBF672534">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-17 01:59:06 UTC</createdTime>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT032</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="201A4232-EF8B-AAB7-54CB-AA31A345AA11" referredColumn="8DC2ED87-AA5E-1232-7035-3A0F63CE0DC4"/>
+</associations>
+</Column>
+<Column name="Temperatura_Id" id="67846964-15EC-2001-5FF2-DAD9859C5E8B">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-17 02:10:11 UTC</createdTime>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT032</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1E744DBD-B0E7-3ABC-B6A6-3B3A0CC93FD0" referredColumn="1CD7C7F8-50D5-5711-D574-A9F78AE63793"/>
+</associations>
+</Column>
+<Column name="Umidade_Id" id="CF48C32B-9911-1FF4-2468-CA9774DF42B1">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-17 02:19:05 UTC</createdTime>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT032</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1F963D89-C1B5-C8C5-30CB-602D458FD65E" referredColumn="62361A4A-F1C6-9A56-73A7-FD7BE5B84897"/>
+</associations>
+</Column>
+<Column name="Ventania_Id" id="8EE316CA-FB75-D5B1-4D37-40F70FC63FDA">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-17 02:22:40 UTC</createdTime>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT032</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F0AB671D-CB41-48DA-9AF9-F655090081C9" referredColumn="339CF757-34EA-D7DB-A726-BA6D7E6DADEE"/>
+</associations>
+</Column>
+<Column name="Precipitacao_Id" id="D3076425-C9BE-79DB-5F9E-E70B1759F46A">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-17 02:25:15 UTC</createdTime>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT032</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EF3090EB-D0CA-96E9-78DE-004979476A3E" referredColumn="33CADEA1-0801-A3BC-56DF-AEBB2534D9B6"/>
+</associations>
+</Column>
+<Column name="Nuvem_Id" id="01704FCF-24F5-0421-9AEA-560A3867E6BE">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-17 02:29:43 UTC</createdTime>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT032</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5AB38E0B-FC91-3CB4-2D6A-840761136243" referredColumn="13498760-809A-C014-348F-ED21129EE2C4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="583E8B01-E288-A9C2-61FF-4F495F297E81" name="TBL_Previsao_PK">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-17 01:58:36 UTC</createdTime>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5E5336F0-9476-962A-4C6E-6C5E341A6890"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="45AD4C1F-00DA-1453-F13A-4711C63C5DF6" name="TBL_Previsao_TBL_Temperatura_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-17 02:12:13 UTC</createdTime>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="67846964-15EC-2001-5FF2-DAD9859C5E8B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3E297268-7E19-FAD6-58F1-B37E2A3E2CEB" name="TBL_Previsao_TBL_Regiao_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-17 02:15:15 UTC</createdTime>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1799B01D-BDA8-B14B-7946-68ABBF672534"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BC09A2BB-7535-A686-206B-E49D71ABA60C" name="TBL_Previsao_TBL_Humidade_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-17 02:19:22 UTC</createdTime>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CF48C32B-9911-1FF4-2468-CA9774DF42B1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4046CB9B-2412-AE33-FDC4-FC0C4296FBFB" name="TBL_Previsao_TBL_Ventania_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-17 02:22:48 UTC</createdTime>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8EE316CA-FB75-D5B1-4D37-40F70FC63FDA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C26007FF-C484-CD0A-C600-7565D92BE930" name="TBL_Previsao_TBL_Precipitacao_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-17 02:25:15 UTC</createdTime>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D3076425-C9BE-79DB-5F9E-E70B1759F46A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="94C87D65-845B-3036-CAE1-FCDBF9007F74" name="TBL_Previsao_TBL_Nuvem_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-17 02:29:51 UTC</createdTime>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="01704FCF-24F5-0421-9AEA-560A3867E6BE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

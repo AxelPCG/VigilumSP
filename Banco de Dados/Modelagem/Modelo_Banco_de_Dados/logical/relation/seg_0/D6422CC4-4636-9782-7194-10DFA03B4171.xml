@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="TBL_Previsao_TBL_Temperatura_FK" directorySegmentName="seg_0" id="D6422CC4-4636-9782-7194-10DFA03B4171">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-26 23:54:55 UTC</createdTime>
+<generatorID>1E744DBD-B0E7-3ABC-B6A6-3B3A0CC93FD0</generatorID>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<engineerTo>
+<item key="FFE5CBCF-1FEF-EE2E-3590-7CEBAC5789DE" value="true"/>
+</engineerTo>
+<sourcePk>4C0A1C27-AB9F-D3A1-D5F9-F9DC5E70B4BE</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>AE54D6F6-BA16-4776-F432-8CE8B608A651</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E2FA10B9-39AD-5D1E-C0BF-95445746958A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

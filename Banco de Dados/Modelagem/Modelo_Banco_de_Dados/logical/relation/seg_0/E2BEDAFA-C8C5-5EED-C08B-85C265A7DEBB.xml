@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="TBL_Regiao_TBL_Macro_Regiao_FK" directorySegmentName="seg_0" id="E2BEDAFA-C8C5-5EED-C08B-85C265A7DEBB">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-26 23:54:55 UTC</createdTime>
+<generatorID>1E91BBDA-E613-1E2B-7B94-A2FA750E46D3</generatorID>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<engineerTo>
+<item key="FFE5CBCF-1FEF-EE2E-3590-7CEBAC5789DE" value="true"/>
+</engineerTo>
+<sourcePk>D66942AB-1EDC-C1C8-FB62-71F6CEA70AD4</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>7D42CDD2-27BF-82E2-B0B4-76CE6E84AED9</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F6DB05F8-887C-F775-BEF9-F40E44A07FC2</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

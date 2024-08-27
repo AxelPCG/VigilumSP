@@ -1,0 +1,166 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9DE35DE7-7105-D932-7DA9-082CC48726DF" name="TBL Precipitacao">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-26 23:54:55 UTC</createdTime>
+<generatorID>A9E8EC1B-4170-EEF1-9C76-5B1BF3136E5C</generatorID>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<engineerTo>
+<item key="FFE5CBCF-1FEF-EE2E-3590-7CEBAC5789DE" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id" id="0F0828C1-2C72-D40D-BA20-7F2910F6DFC0">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-26 23:54:55 UTC</createdTime>
+<generatorID>33CADEA1-0801-A3BC-56DF-AEBB2534D9B6</generatorID>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<engineerTo>
+<item key="FFE5CBCF-1FEF-EE2E-3590-7CEBAC5789DE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT032</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Data" id="7AEB32B9-54C4-23AB-1222-856C3E665908">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-26 23:54:55 UTC</createdTime>
+<generatorID>8A5D6A4B-A33A-93B0-5310-15B460C41058</generatorID>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<engineerTo>
+<item key="FFE5CBCF-1FEF-EE2E-3590-7CEBAC5789DE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Dia 1" id="7A902F5A-E3B9-CC6A-365F-3B133C35F74D">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-26 23:54:55 UTC</createdTime>
+<generatorID>0795DA25-3B53-C33A-A8A0-8989D7E277A8</generatorID>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<engineerTo>
+<item key="FFE5CBCF-1FEF-EE2E-3590-7CEBAC5789DE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,3,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Dia 2" id="F5766541-B15F-AAC2-1FBA-919946C09E68">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-26 23:54:55 UTC</createdTime>
+<generatorID>CD52088C-6F4B-2965-48F4-6DD6D8A95098</generatorID>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<engineerTo>
+<item key="FFE5CBCF-1FEF-EE2E-3590-7CEBAC5789DE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,3,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Dia 3" id="E1E43E42-ADD1-75C4-2A90-978AAC2AE539">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-26 23:54:55 UTC</createdTime>
+<generatorID>1E3FE107-591A-5FBE-B47B-A87AE597034A</generatorID>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<engineerTo>
+<item key="FFE5CBCF-1FEF-EE2E-3590-7CEBAC5789DE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,3,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Dia 4" id="72E035EE-E63D-D024-4090-033E426F97BC">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-26 23:54:55 UTC</createdTime>
+<generatorID>BA8907D2-6FEF-938A-96E0-1CBDEB3443D4</generatorID>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<engineerTo>
+<item key="FFE5CBCF-1FEF-EE2E-3590-7CEBAC5789DE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,3,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Dia 5" id="1062F281-C6BE-EE85-EB0E-809B1F32C5E3">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-26 23:54:55 UTC</createdTime>
+<generatorID>2FC1B80A-C7EC-CFE8-E31F-596E006A07F2</generatorID>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<engineerTo>
+<item key="FFE5CBCF-1FEF-EE2E-3590-7CEBAC5789DE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,3,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Dia 6" id="B693A4EB-7948-3B34-971F-23773BC6A2C7">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-26 23:54:55 UTC</createdTime>
+<generatorID>E3C7A96C-0E57-68C6-8310-BED16AE542ED</generatorID>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<engineerTo>
+<item key="FFE5CBCF-1FEF-EE2E-3590-7CEBAC5789DE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,3,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Dia 7" id="FB5C7A55-D21A-1BAC-A01C-53DC89ACE2D6">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-26 23:54:55 UTC</createdTime>
+<generatorID>7D0BE30E-8725-D280-F568-20E2DDCC60D2</generatorID>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<engineerTo>
+<item key="FFE5CBCF-1FEF-EE2E-3590-7CEBAC5789DE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,3,2</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7037830F-EB04-687F-7DA0-01A82877C248" name="TBL Precipitacao PK">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-26 23:54:55 UTC</createdTime>
+<generatorID>2928703F-7174-A0C0-37A8-FF3FCD6DEEF9</generatorID>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<engineerTo>
+<item key="FFE5CBCF-1FEF-EE2E-3590-7CEBAC5789DE" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0F0828C1-2C72-D40D-BA20-7F2910F6DFC0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

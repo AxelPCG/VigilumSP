@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F6DB05F8-887C-F775-BEF9-F40E44A07FC2" name="TBL Regiao">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-26 23:54:55 UTC</createdTime>
+<generatorID>3179C151-B043-59BB-FD28-A8630782F99E</generatorID>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<engineerTo>
+<item key="FFE5CBCF-1FEF-EE2E-3590-7CEBAC5789DE" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id" id="0D4B4C2E-DEDD-8749-3976-DC80C5D3CAFA">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-26 23:54:55 UTC</createdTime>
+<generatorID>8DC2ED87-AA5E-1232-7035-3A0F63CE0DC4</generatorID>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<engineerTo>
+<item key="FFE5CBCF-1FEF-EE2E-3590-7CEBAC5789DE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT032</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nome" id="73C1A653-EC66-27BA-17A7-BFCD5515E929">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-26 23:54:55 UTC</createdTime>
+<generatorID>88585886-3720-7A21-EE89-A1C7F3F9B917</generatorID>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<engineerTo>
+<item key="FFE5CBCF-1FEF-EE2E-3590-7CEBAC5789DE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Macro id" id="A04E5787-630A-7D60-9517-70FD4A3F8000">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-26 23:54:55 UTC</createdTime>
+<generatorID>E2BEDAFA-C8C5-5EED-C08B-85C265A7DEBB</generatorID>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<engineerTo>
+<item key="FFE5CBCF-1FEF-EE2E-3590-7CEBAC5789DE" value="true"/>
+</engineerTo>
+<referedAttribute>A9F294EE-4788-047D-B7F4-B2411BA2B3E9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT032</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3CAB836E-4AD3-6B04-5FDD-7F562066CDF3" name="TBL Regioes PK">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-26 23:54:55 UTC</createdTime>
+<generatorID>C95EE98B-3AD0-B58C-981B-FC4480EE4310</generatorID>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<engineerTo>
+<item key="FFE5CBCF-1FEF-EE2E-3590-7CEBAC5789DE" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0D4B4C2E-DEDD-8749-3976-DC80C5D3CAFA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

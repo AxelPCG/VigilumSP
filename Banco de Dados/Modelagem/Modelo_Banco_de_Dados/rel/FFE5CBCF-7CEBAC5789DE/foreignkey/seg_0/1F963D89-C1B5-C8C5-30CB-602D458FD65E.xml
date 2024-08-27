@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1F963D89-C1B5-C8C5-30CB-602D458FD65E" containerWithKeyObject="B30389FF-7572-2F75-BED4-7E78D4936B9D" localFKIndex="BC09A2BB-7535-A686-206B-E49D71ABA60C" name="TBL_Previsao_TBL_Humidade_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-17 02:19:22 UTC</createdTime>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<referredTableLongName>TBL_Humidade</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>426A91D4-4FD4-B50B-F096-49113AB65018</referredTableID>
+<keyObject>217498C7-8EF8-EBD0-AC0F-5B2695737CF2</keyObject>
+<referredKeyID>217498C7-8EF8-EBD0-AC0F-5B2695737CF2</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

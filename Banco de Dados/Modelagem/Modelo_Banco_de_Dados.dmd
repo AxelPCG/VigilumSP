@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Modelo_Banco_de_Dados" id="8A8F9D17-638B-D409-D512-B9E9EA072FA4" version="3.5">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-17 00:02:58 UTC</createdTime>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>8A8F9D17-638B-D409-D512-B9E9EA072FA4</designId>
+</OSDM_Design>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="EF3090EB-D0CA-96E9-78DE-004979476A3E" containerWithKeyObject="B30389FF-7572-2F75-BED4-7E78D4936B9D" localFKIndex="C26007FF-C484-CD0A-C600-7565D92BE930" name="TBL_Previsao_TBL_Precipitacao_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-17 02:25:15 UTC</createdTime>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<referredTableLongName>TBL_Precipitacao</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A9E8EC1B-4170-EEF1-9C76-5B1BF3136E5C</referredTableID>
+<keyObject>2928703F-7174-A0C0-37A8-FF3FCD6DEEF9</keyObject>
+<referredKeyID>2928703F-7174-A0C0-37A8-FF3FCD6DEEF9</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1E744DBD-B0E7-3ABC-B6A6-3B3A0CC93FD0" containerWithKeyObject="B30389FF-7572-2F75-BED4-7E78D4936B9D" localFKIndex="45AD4C1F-00DA-1453-F13A-4711C63C5DF6" name="TBL_Previsao_TBL_Temperatura_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-17 02:12:13 UTC</createdTime>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<referredTableLongName>TBL_Temperatura</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>59DFCE78-7574-FE60-614A-A65A86BBFD47</referredTableID>
+<keyObject>923CB3FE-464F-8FFE-491F-5287360EE617</keyObject>
+<referredKeyID>923CB3FE-464F-8FFE-491F-5287360EE617</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

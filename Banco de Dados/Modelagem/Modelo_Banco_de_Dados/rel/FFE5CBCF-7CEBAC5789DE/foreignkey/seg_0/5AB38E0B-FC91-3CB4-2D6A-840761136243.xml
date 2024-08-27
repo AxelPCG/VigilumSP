@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5AB38E0B-FC91-3CB4-2D6A-840761136243" containerWithKeyObject="B30389FF-7572-2F75-BED4-7E78D4936B9D" localFKIndex="94C87D65-845B-3036-CAE1-FCDBF9007F74" name="TBL_Previsao_TBL_Nuvem_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-17 02:29:51 UTC</createdTime>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<referredTableLongName>TBL_Nuvem</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>35DB5FA9-9CE9-81F5-140A-BADD0C488995</referredTableID>
+<keyObject>CD02D5C0-63E3-6AC3-E47F-E746E6371294</keyObject>
+<referredKeyID>CD02D5C0-63E3-6AC3-E47F-E746E6371294</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

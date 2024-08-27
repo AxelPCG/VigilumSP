@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F0AB671D-CB41-48DA-9AF9-F655090081C9" containerWithKeyObject="B30389FF-7572-2F75-BED4-7E78D4936B9D" localFKIndex="4046CB9B-2412-AE33-FDC4-FC0C4296FBFB" name="TBL_Previsao_TBL_Ventania_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-17 02:22:48 UTC</createdTime>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<referredTableLongName>TBL_Ventania</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>57B2450E-7A54-A7D6-A216-F7E6F6687F88</referredTableID>
+<keyObject>379467A5-2652-C20A-212F-565BB4EE2A57</keyObject>
+<referredKeyID>379467A5-2652-C20A-212F-565BB4EE2A57</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

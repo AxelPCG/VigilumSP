@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F24A07A2-2132-31E7-8A2E-12935181D3CA" name="TBL_Macro_Regiao">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-17 01:52:09 UTC</createdTime>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="850F78D6-58B8-D49A-F60A-71FC706F7FED">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-17 01:56:48 UTC</createdTime>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT032</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nome" id="F2F64C62-87A3-697B-B1C9-252142194D85">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-17 01:56:57 UTC</createdTime>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8CAA8965-F4AE-7BCF-39D9-3A43B403375B" name="TBL_Macro_Regiao_PK">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-17 01:56:48 UTC</createdTime>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="850F78D6-58B8-D49A-F60A-71FC706F7FED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

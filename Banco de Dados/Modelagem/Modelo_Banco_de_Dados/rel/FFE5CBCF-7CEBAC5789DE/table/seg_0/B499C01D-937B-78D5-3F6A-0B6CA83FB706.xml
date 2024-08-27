@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B499C01D-937B-78D5-3F6A-0B6CA83FB706" name="TBL_Avisos">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-17 02:02:17 UTC</createdTime>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<ordsAlias>table_11</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="BA36E8D3-060D-5BDC-D34D-17FAAD36CA75">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-17 02:30:13 UTC</createdTime>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT032</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Data" id="815683F2-0B79-02FC-0C5C-5F9B71012CB1">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-17 02:30:33 UTC</createdTime>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tipo" id="8A1C331C-4322-17DD-8669-3D7FDE315707">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-17 02:32:07 UTC</createdTime>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nivel" id="1285EAF1-0046-1724-4573-F9A6472DD7CC">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-17 02:32:30 UTC</createdTime>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Descricao" id="3C937C93-CEF9-EBBD-5FE8-1574CACC74C2">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-17 02:33:06 UTC</createdTime>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Regiao_Id" id="C7C0C256-3B9F-4ABB-9C09-1AEE9C14BB27">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-17 02:33:21 UTC</createdTime>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT032</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="87650738-CAB8-6B77-4359-9FB1299514F0" referredColumn="8DC2ED87-AA5E-1232-7035-3A0F63CE0DC4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="677CA609-895D-94AC-3938-B51FDB82EBF0" name="TBL_Avisos_PK">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-17 02:30:15 UTC</createdTime>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BA36E8D3-060D-5BDC-D34D-17FAAD36CA75"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2BA7B845-9347-817D-740D-FA46A7B4758B" name="TBL_Avisos_TBL_Regiao_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-17 02:33:27 UTC</createdTime>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C7C0C256-3B9F-4ABB-9C09-1AEE9C14BB27"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="TBL_Previsao_TBL_Ventania_FK" directorySegmentName="seg_0" id="3E2A8C14-A327-D8D1-C6EB-132D4335D252">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-26 23:54:55 UTC</createdTime>
+<generatorID>F0AB671D-CB41-48DA-9AF9-F655090081C9</generatorID>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<engineerTo>
+<item key="FFE5CBCF-1FEF-EE2E-3590-7CEBAC5789DE" value="true"/>
+</engineerTo>
+<sourcePk>5A1FD6AA-DE19-ED10-08E5-002C81F871E2</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E6C85728-9746-46B3-7B54-EC4C209E5780</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E2FA10B9-39AD-5D1E-C0BF-95445746958A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
