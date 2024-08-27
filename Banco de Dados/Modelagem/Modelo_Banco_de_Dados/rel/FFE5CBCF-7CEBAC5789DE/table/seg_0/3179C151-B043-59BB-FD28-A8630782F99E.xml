@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3179C151-B043-59BB-FD28-A8630782F99E" name="TBL_Regiao">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3179C151-B043-59BB-FD28-A8630782F99E" name="TBL_SubPrefeitura">
 <createdBy>lucas</createdBy>
 <createdTime>2024-08-17 00:42:19 UTC</createdTime>
 <ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
@@ -44,7 +44,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="C95EE98B-3AD0-B58C-981B-FC4480EE4310" name="TBL_Regioes_PK">
+<ind_PK_UK id="C95EE98B-3AD0-B58C-981B-FC4480EE4310" name="TBL_SubPrefeitura_PK">
 <createdBy>lucas</createdBy>
 <createdTime>2024-08-17 01:50:43 UTC</createdTime>
 <ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>

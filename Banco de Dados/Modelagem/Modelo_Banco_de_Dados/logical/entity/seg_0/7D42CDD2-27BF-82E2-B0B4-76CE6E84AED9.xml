@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7D42CDD2-27BF-82E2-B0B4-76CE6E84AED9" name="TBL Macro Regiao">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7D42CDD2-27BF-82E2-B0B4-76CE6E84AED9" name="TBL Regiao">
 <createdBy>lucas</createdBy>
 <createdTime>2024-08-26 23:54:55 UTC</createdTime>
 <generatorID>F24A07A2-2132-31E7-8A2E-12935181D3CA</generatorID>
@@ -45,7 +45,7 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="D66942AB-1EDC-C1C8-FB62-71F6CEA70AD4" name="TBL Macro Regiao PK">
+<identifier id="D66942AB-1EDC-C1C8-FB62-71F6CEA70AD4" name="TBL_Regiao_PK">
 <createdBy>lucas</createdBy>
 <createdTime>2024-08-26 23:54:55 UTC</createdTime>
 <generatorID>8CAA8965-F4AE-7BCF-39D9-3A43B403375B</generatorID>

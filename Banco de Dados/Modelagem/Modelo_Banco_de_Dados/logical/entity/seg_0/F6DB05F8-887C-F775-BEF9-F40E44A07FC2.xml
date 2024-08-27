@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F6DB05F8-887C-F775-BEF9-F40E44A07FC2" name="TBL Regiao">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F6DB05F8-887C-F775-BEF9-F40E44A07FC2" name="TBL SubPrefeitura">
 <createdBy>lucas</createdBy>
 <createdTime>2024-08-26 23:54:55 UTC</createdTime>
 <generatorID>3179C151-B043-59BB-FD28-A8630782F99E</generatorID>
@@ -59,7 +59,7 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="3CAB836E-4AD3-6B04-5FDD-7F562066CDF3" name="TBL Regioes PK">
+<identifier id="3CAB836E-4AD3-6B04-5FDD-7F562066CDF3" name="TBL_SubPrefeitura_PK">
 <createdBy>lucas</createdBy>
 <createdTime>2024-08-26 23:54:55 UTC</createdTime>
 <generatorID>C95EE98B-3AD0-B58C-981B-FC4480EE4310</generatorID>

@@ -1,0 +1,144 @@
+CREATE TABLE tbl_avisos (
+    id        ROWID NOT NULL,
+    data      DATE NOT NULL,
+    tipo      VARCHAR2(50) NOT NULL,
+    nivel     INTEGER NOT NULL,
+    descricao VARCHAR2(255) NOT NULL,
+    regiao_id ROWID NOT NULL
+);
+
+ALTER TABLE tbl_avisos ADD CONSTRAINT tbl_avisos_pk PRIMARY KEY ( id );
+
+CREATE TABLE tbl_macro_regiao (
+    id   ROWID NOT NULL,
+    nome VARCHAR2(50) NOT NULL
+);
+
+ALTER TABLE tbl_macro_regiao ADD CONSTRAINT tbl_macro_regiao_pk PRIMARY KEY ( id );
+
+CREATE TABLE tbl_nuvem (
+    id    ROWID NOT NULL,
+    data  DATE NOT NULL,
+    dia_1 VARCHAR2(50) NOT NULL,
+    dia_2 VARCHAR2(50) NOT NULL,
+    dia_3 VARCHAR2(50) NOT NULL,
+    dia_4 VARCHAR2(50) NOT NULL,
+    dia_5 VARCHAR2(50) NOT NULL,
+    dia_6 VARCHAR2(50) NOT NULL,
+    dia_7 VARCHAR2(50) NOT NULL
+);
+
+ALTER TABLE tbl_nuvem ADD CONSTRAINT tbl_nuvem_pk PRIMARY KEY ( id );
+
+CREATE TABLE tbl_precipitacao (
+    id    ROWID NOT NULL,
+    data  DATE NOT NULL,
+    dia_1 FLOAT(3) NOT NULL,
+    dia_2 FLOAT(3) NOT NULL,
+    dia_3 FLOAT(3) NOT NULL,
+    dia_4 FLOAT(3) NOT NULL,
+    dia_5 FLOAT(3) NOT NULL,
+    dia_6 FLOAT(3) NOT NULL,
+    dia_7 FLOAT(3) NOT NULL
+);
+
+ALTER TABLE tbl_precipitacao ADD CONSTRAINT tbl_precipitacao_pk PRIMARY KEY ( id );
+
+CREATE TABLE tbl_previsao (
+    id              unknown 
+--  ERROR: Datatype UNKNOWN is not allowed 
+     NOT NULL,
+    regiao_id       ROWID NOT NULL,
+    temperatura_id  ROWID NOT NULL,
+    umidade_id      ROWID NOT NULL,
+    ventania_id     ROWID NOT NULL,
+    precipitacao_id ROWID NOT NULL,
+    nuvem_id        ROWID NOT NULL
+);
+
+ALTER TABLE tbl_previsao ADD CONSTRAINT tbl_previsao_pk PRIMARY KEY ( id );
+
+CREATE TABLE tbl_regiao (
+    id       ROWID NOT NULL,
+    nome     VARCHAR2(50) NOT NULL,
+    macro_id ROWID NOT NULL
+);
+
+ALTER TABLE tbl_regiao ADD CONSTRAINT tbl_regioes_pk PRIMARY KEY ( id );
+
+CREATE TABLE tbl_temperatura (
+    id    ROWID NOT NULL,
+    data  DATE NOT NULL,
+    dia_1 FLOAT(3) NOT NULL,
+    dia_2 FLOAT(3) NOT NULL,
+    dia_3 FLOAT(3) NOT NULL,
+    dia_4 FLOAT(3) NOT NULL,
+    dia_5 FLOAT(3) NOT NULL,
+    dia_6 FLOAT(3) NOT NULL,
+    dia_7 FLOAT(3) NOT NULL
+);
+
+ALTER TABLE tbl_temperatura ADD CONSTRAINT tbl_temperatura_pk PRIMARY KEY ( id );
+
+CREATE TABLE tbl_umidade (
+    id    ROWID NOT NULL,
+    data  DATE NOT NULL,
+    dia_1 FLOAT(3) NOT NULL,
+    dia_2 FLOAT(3) NOT NULL,
+    dia_3 FLOAT(3) NOT NULL,
+    dia_4 FLOAT(3) NOT NULL,
+    dia_5 FLOAT(3) NOT NULL,
+    dia_6 FLOAT(3) NOT NULL,
+    dia_7 FLOAT(3) NOT NULL
+);
+
+ALTER TABLE tbl_umidade ADD CONSTRAINT tbl_umidade_pk PRIMARY KEY ( id );
+
+CREATE TABLE tbl_ventania (
+    id    ROWID NOT NULL,
+    data  DATE NOT NULL,
+    dia_1 FLOAT(3) NOT NULL,
+    dia_2 FLOAT(3) NOT NULL,
+    dia_3 FLOAT(3) NOT NULL,
+    dia_4 FLOAT(3) NOT NULL,
+    dia_5 FLOAT(3) NOT NULL,
+    dia_6 FLOAT(3) NOT NULL,
+    dia_7 FLOAT(3) NOT NULL
+);
+
+ALTER TABLE tbl_ventania ADD CONSTRAINT tbl_ventania_pk PRIMARY KEY ( id );
+
+ALTER TABLE tbl_avisos
+    ADD CONSTRAINT tbl_avisos_tbl_regiao_fk FOREIGN KEY ( regiao_id )
+        REFERENCES tbl_regiao ( id );
+
+ALTER TABLE tbl_previsao
+    ADD CONSTRAINT tbl_previsao_tbl_humidade_fk FOREIGN KEY ( umidade_id )
+        REFERENCES tbl_umidade ( id );
+
+ALTER TABLE tbl_previsao
+    ADD CONSTRAINT tbl_previsao_tbl_nuvem_fk FOREIGN KEY ( nuvem_id )
+        REFERENCES tbl_nuvem ( id );
+
+--  ERROR: FK name length exceeds maximum allowed length(30) 
+ALTER TABLE tbl_previsao
+    ADD CONSTRAINT tbl_previsao_tbl_precipitacao_fk FOREIGN KEY ( precipitacao_id )
+        REFERENCES tbl_precipitacao ( id );
+
+ALTER TABLE tbl_previsao
+    ADD CONSTRAINT tbl_previsao_tbl_regiao_fk FOREIGN KEY ( regiao_id )
+        REFERENCES tbl_regiao ( id );
+
+--  ERROR: FK name length exceeds maximum allowed length(30) 
+ALTER TABLE tbl_previsao
+    ADD CONSTRAINT tbl_previsao_tbl_temperatura_fk FOREIGN KEY ( temperatura_id )
+        REFERENCES tbl_temperatura ( id );
+
+ALTER TABLE tbl_previsao
+    ADD CONSTRAINT tbl_previsao_tbl_ventania_fk FOREIGN KEY ( ventania_id )
+        REFERENCES tbl_ventania ( id );
+
+ALTER TABLE tbl_regiao
+    ADD CONSTRAINT tbl_regiao_tbl_macro_regiao_fk FOREIGN KEY ( macro_id )
+        REFERENCES tbl_macro_regiao ( id );
+

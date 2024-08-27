@@ -67,7 +67,7 @@
 <lineWidth>1</lineWidth>
 <points>
 <point x="962" y="247"/>
-<point x="726" y="355"/>
+<point x="726" y="370"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="7CE80D86-6E2E-F6FA-AB1F-874AEEDF1874" otype="Relation" vid_source="095A40CE-3FC2-AC77-F842-6F48862C7EDC" vid_target="A3848B06-588A-2D6F-5937-0B2BC4E48000">
@@ -103,7 +103,7 @@
 <lineWidth>1</lineWidth>
 <points>
 <point x="961" y="548"/>
-<point x="726" y="435"/>
+<point x="726" y="420"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="E2BEDAFA-C8C5-5EED-C08B-85C265A7DEBB" otype="Relation" vid_source="51E00DB9-F083-CDF7-9564-16FE15B47A56" vid_target="B91EF9AF-04FF-0DA4-DA83-7C5DE78E958C">
