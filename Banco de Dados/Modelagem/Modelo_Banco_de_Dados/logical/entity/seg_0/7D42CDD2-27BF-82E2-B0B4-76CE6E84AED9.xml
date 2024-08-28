@@ -43,6 +43,20 @@
 <dataTypeSize>50</dataTypeSize>
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="Cidade Id" id="6C012A55-272E-58D1-408A-AFDCA6186A05">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-28 01:13:14 UTC</createdTime>
+<generatorID>41A91B94-B202-2188-27F1-58C14C62BD84</generatorID>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<engineerTo>
+<item key="FFE5CBCF-1FEF-EE2E-3590-7CEBAC5789DE" value="true"/>
+</engineerTo>
+<referedAttribute>9869AB79-29D3-DE99-D91F-8B3DAE4B10D0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT032</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="D66942AB-1EDC-C1C8-FB62-71F6CEA70AD4" name="TBL_Regiao_PK">

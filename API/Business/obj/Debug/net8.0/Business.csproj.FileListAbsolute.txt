@@ -1,0 +1,16 @@
+C:\Users\lucas\Documents\GitHub\VigilumSP\API\Business\bin\Debug\net8.0\Business.deps.json
+C:\Users\lucas\Documents\GitHub\VigilumSP\API\Business\bin\Debug\net8.0\Business.dll
+C:\Users\lucas\Documents\GitHub\VigilumSP\API\Business\bin\Debug\net8.0\Business.pdb
+C:\Users\lucas\Documents\GitHub\VigilumSP\API\Business\obj\Debug\net8.0\Business.csproj.AssemblyReference.cache
+C:\Users\lucas\Documents\GitHub\VigilumSP\API\Business\obj\Debug\net8.0\Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lucas\Documents\GitHub\VigilumSP\API\Business\obj\Debug\net8.0\Business.AssemblyInfoInputs.cache
+C:\Users\lucas\Documents\GitHub\VigilumSP\API\Business\obj\Debug\net8.0\Business.AssemblyInfo.cs
+C:\Users\lucas\Documents\GitHub\VigilumSP\API\Business\obj\Debug\net8.0\Business.csproj.CoreCompileInputs.cache
+C:\Users\lucas\Documents\GitHub\VigilumSP\API\Business\obj\Debug\net8.0\Business.sourcelink.json
+C:\Users\lucas\Documents\GitHub\VigilumSP\API\Business\obj\Debug\net8.0\Business.dll
+C:\Users\lucas\Documents\GitHub\VigilumSP\API\Business\obj\Debug\net8.0\refint\Business.dll
+C:\Users\lucas\Documents\GitHub\VigilumSP\API\Business\obj\Debug\net8.0\Business.pdb
+C:\Users\lucas\Documents\GitHub\VigilumSP\API\Business\obj\Debug\net8.0\ref\Business.dll
+C:\Users\lucas\Documents\GitHub\VigilumSP\API\Business\bin\Debug\net8.0\DAL.dll
+C:\Users\lucas\Documents\GitHub\VigilumSP\API\Business\bin\Debug\net8.0\DAL.pdb
+C:\Users\lucas\Documents\GitHub\VigilumSP\API\Business\obj\Debug\net8.0\Business.csproj.Up2Date

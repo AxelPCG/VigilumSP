@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A974DF49-1717-0FEA-AEDF-44093866EE8F" name="TBL_Cidade">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-27 22:29:06 UTC</createdTime>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="4DBBAE35-4D28-CDB9-5AB9-BBFD7639DE32">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-27 22:29:39 UTC</createdTime>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT032</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nome" id="40372FAD-04B5-BD78-B041-655B842A79E9">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-27 22:30:09 UTC</createdTime>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="147C00FE-BD82-5B19-209E-80FDE76867E7" name="TBL_Cidade_PK">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-27 22:29:39 UTC</createdTime>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4DBBAE35-4D28-CDB9-5AB9-BBFD7639DE32"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,28 @@
+[
+  {
+    "ContainingType": "API.Controllers.CidadeController",
+    "Method": "GetAll",
+    "RelativePath": "api/Cidade",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.CidadeController",
+    "Method": "Cadastrar",
+    "RelativePath": "api/Cidade",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cidade",
+        "Type": "DAL.Models.Cidade",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

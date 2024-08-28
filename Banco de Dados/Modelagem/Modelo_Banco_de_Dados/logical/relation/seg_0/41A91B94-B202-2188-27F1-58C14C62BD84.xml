@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="TBL_Regiao_TBL_Cidade_FK" directorySegmentName="seg_0" id="41A91B94-B202-2188-27F1-58C14C62BD84">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-28 01:13:14 UTC</createdTime>
+<generatorID>6681969D-259C-1B32-2275-5154BE8A4C59</generatorID>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<engineerTo>
+<item key="FFE5CBCF-1FEF-EE2E-3590-7CEBAC5789DE" value="true"/>
+</engineerTo>
+<sourcePk>E277BB95-A2C1-3E25-7A42-995D1B697A35</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>FCEE5C04-66FF-CB01-3B12-95A72D727EDF</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>7D42CDD2-27BF-82E2-B0B4-76CE6E84AED9</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
