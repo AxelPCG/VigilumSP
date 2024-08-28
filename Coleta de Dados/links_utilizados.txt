@@ -15,6 +15,7 @@ https://app.powerbi.com/viewr=eyJrIjoiNci4OGYyY1QYM2ZC0QYjllLWJYMEtYZdkNTc1MTc1N
 (dados referentes a energia elétrica mas que precisam ser extraídos de .html)
 
 https://portal.inmet.gov.br/dadoshistoricos
+(Grande quantidade de dados meteorológicos para download dos estados do brasil por cidade de captura, precisam ser tratados)
 
 https://www.ibge.gov.br/geociencias/organizacao-do-territorio/malhas-territoriais/
 (malhas de polígonos das regiões de SP)
