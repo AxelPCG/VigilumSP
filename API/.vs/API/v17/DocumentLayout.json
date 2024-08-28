@@ -3,12 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\lucas\\Documents\\GitHub\\VigilumSP\\API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{925EFA0D-A4D5-450F-9647-CB1675665D54}|DAL\\DAL.csproj|c:\\users\\lucas\\documents\\github\\vigilumsp\\api\\dal\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{925EFA0D-A4D5-450F-9647-CB1675665D54}|DAL\\DAL.csproj|solutionrelative:dal\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2C569E2A-1640-4C81-8683-74D5108CD685}|API\\API.csproj|c:\\users\\lucas\\documents\\github\\vigilumsp\\api\\api\\controllers\\cidadecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C569E2A-1640-4C81-8683-74D5108CD685}|API\\API.csproj|solutionrelative:api\\controllers\\cidadecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{106B2961-8826-4F12-B5AC-64C2516B5F25}|Business\\Business.csproj|c:\\users\\lucas\\documents\\github\\vigilumsp\\api\\business\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{106B2961-8826-4F12-B5AC-64C2516B5F25}|Business\\Business.csproj|solutionrelative:business\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{106B2961-8826-4F12-B5AC-64C2516B5F25}|Business\\Business.csproj|c:\\users\\lucas\\documents\\github\\vigilumsp\\api\\business\\services\\interfaces\\icidadeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{106B2961-8826-4F12-B5AC-64C2516B5F25}|Business\\Business.csproj|solutionrelative:business\\services\\interfaces\\icidadeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{106B2961-8826-4F12-B5AC-64C2516B5F25}|Business\\Business.csproj|c:\\users\\lucas\\documents\\github\\vigilumsp\\api\\business\\services\\cidadeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{106B2961-8826-4F12-B5AC-64C2516B5F25}|Business\\Business.csproj|solutionrelative:business\\services\\cidadeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{925EFA0D-A4D5-450F-9647-CB1675665D54}|DAL\\DAL.csproj|c:\\users\\lucas\\documents\\github\\vigilumsp\\api\\dal\\repository\\base\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{925EFA0D-A4D5-450F-9647-CB1675665D54}|DAL\\DAL.csproj|solutionrelative:dal\\repository\\base\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{925EFA0D-A4D5-450F-9647-CB1675665D54}|DAL\\DAL.csproj|c:\\users\\lucas\\documents\\github\\vigilumsp\\api\\dal\\repository\\base\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{925EFA0D-A4D5-450F-9647-CB1675665D54}|DAL\\DAL.csproj|solutionrelative:dal\\repository\\base\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{925EFA0D-A4D5-450F-9647-CB1675665D54}|DAL\\DAL.csproj|c:\\users\\lucas\\documents\\github\\vigilumsp\\api\\dal\\repository\\cidaderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{925EFA0D-A4D5-450F-9647-CB1675665D54}|DAL\\DAL.csproj|solutionrelative:dal\\repository\\cidaderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C569E2A-1640-4C81-8683-74D5108CD685}|API\\API.csproj|c:\\users\\lucas\\documents\\github\\vigilumsp\\api\\api\\configuration\\dependencyinjectionconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C569E2A-1640-4C81-8683-74D5108CD685}|API\\API.csproj|solutionrelative:api\\configuration\\dependencyinjectionconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C569E2A-1640-4C81-8683-74D5108CD685}|API\\API.csproj|c:\\users\\lucas\\documents\\github\\vigilumsp\\api\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C569E2A-1640-4C81-8683-74D5108CD685}|API\\API.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +42,110 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\lucas\\Documents\\GitHub\\VigilumSP\\API\\DAL\\Class1.cs",
-              "RelativeDocumentMoniker": "DAL\\Class1.cs",
-              "ToolTip": "C:\\Users\\lucas\\Documents\\GitHub\\VigilumSP\\API\\DAL\\Class1.cs",
-              "RelativeToolTip": "DAL\\Class1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "DocumentIndex": 3,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\Documents\\GitHub\\VigilumSP\\API\\DAL\\Repository\\Base\\IRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\Repository\\Base\\IRepository.cs",
+              "ToolTip": "C:\\Users\\lucas\\Documents\\GitHub\\VigilumSP\\API\\DAL\\Repository\\Base\\IRepository.cs",
+              "RelativeToolTip": "DAL\\Repository\\Base\\IRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T22:23:43.124Z",
+              "WhenOpened": "2024-08-28T01:01:11.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\Documents\\GitHub\\VigilumSP\\API\\DAL\\Repository\\Base\\Repository.cs",
+              "RelativeDocumentMoniker": "DAL\\Repository\\Base\\Repository.cs",
+              "ToolTip": "C:\\Users\\lucas\\Documents\\GitHub\\VigilumSP\\API\\DAL\\Repository\\Base\\Repository.cs",
+              "RelativeToolTip": "DAL\\Repository\\Base\\Repository.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAUwBUAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T00:58:21.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CidadeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\Documents\\GitHub\\VigilumSP\\API\\DAL\\Repository\\CidadeRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\Repository\\CidadeRepository.cs",
+              "ToolTip": "C:\\Users\\lucas\\Documents\\GitHub\\VigilumSP\\API\\DAL\\Repository\\CidadeRepository.cs",
+              "RelativeToolTip": "DAL\\Repository\\CidadeRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T00:58:19.56Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CidadeController.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\Documents\\GitHub\\VigilumSP\\API\\API\\Controllers\\CidadeController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\CidadeController.cs",
+              "ToolTip": "C:\\Users\\lucas\\Documents\\GitHub\\VigilumSP\\API\\API\\Controllers\\CidadeController.cs",
+              "RelativeToolTip": "API\\Controllers\\CidadeController.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAkwCMAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T00:56:45.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DependencyInjectionConfig.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\Documents\\GitHub\\VigilumSP\\API\\API\\Configuration\\DependencyInjectionConfig.cs",
+              "RelativeDocumentMoniker": "API\\Configuration\\DependencyInjectionConfig.cs",
+              "ToolTip": "C:\\Users\\lucas\\Documents\\GitHub\\VigilumSP\\API\\API\\Configuration\\DependencyInjectionConfig.cs",
+              "RelativeToolTip": "API\\Configuration\\DependencyInjectionConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T00:50:01.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\Documents\\GitHub\\VigilumSP\\API\\API\\Program.cs",
+              "RelativeDocumentMoniker": "API\\Program.cs",
+              "ToolTip": "C:\\Users\\lucas\\Documents\\GitHub\\VigilumSP\\API\\API\\Program.cs",
+              "RelativeToolTip": "API\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T00:48:39.841Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\lucas\\Documents\\GitHub\\VigilumSP\\API\\Business\\Class1.cs",
-              "RelativeDocumentMoniker": "Business\\Class1.cs",
-              "ToolTip": "C:\\Users\\lucas\\Documents\\GitHub\\VigilumSP\\API\\Business\\Class1.cs",
-              "RelativeToolTip": "Business\\Class1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "ICidadeService.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\Documents\\GitHub\\VigilumSP\\API\\Business\\Services\\Interfaces\\ICidadeService.cs",
+              "RelativeDocumentMoniker": "Business\\Services\\Interfaces\\ICidadeService.cs",
+              "ToolTip": "C:\\Users\\lucas\\Documents\\GitHub\\VigilumSP\\API\\Business\\Services\\Interfaces\\ICidadeService.cs",
+              "RelativeToolTip": "Business\\Services\\Interfaces\\ICidadeService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAcAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T01:16:37.66Z",
+              "WhenOpened": "2024-08-28T00:27:14.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CidadeService.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\Documents\\GitHub\\VigilumSP\\API\\Business\\Services\\CidadeService.cs",
+              "RelativeDocumentMoniker": "Business\\Services\\CidadeService.cs",
+              "ToolTip": "C:\\Users\\lucas\\Documents\\GitHub\\VigilumSP\\API\\Business\\Services\\CidadeService.cs",
+              "RelativeToolTip": "Business\\Services\\CidadeService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T00:27:05.314Z",
               "EditorCaption": ""
             }
           ]
