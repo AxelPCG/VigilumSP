@@ -29,6 +29,19 @@
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="Cidade_Id" id="6BBA9F89-B06F-7F3A-721A-F360EA3DBF39">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-27 22:30:47 UTC</createdTime>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT032</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6681969D-259C-1B32-2275-5154BE8A4C59" referredColumn="4DBBAE35-4D28-CDB9-5AB9-BBFD7639DE32"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="8CAA8965-F4AE-7BCF-39D9-3A43B403375B" name="TBL_Regiao_PK">
@@ -40,6 +53,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="850F78D6-58B8-D49A-F60A-71FC706F7FED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EA11B253-6E77-1678-BD5A-6D03D24B489E" name="TBL_Regiao_TBL_Cidade_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2024-08-27 22:31:19 UTC</createdTime>
+<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6BBA9F89-B06F-7F3A-721A-F360EA3DBF39"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

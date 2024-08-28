@@ -1,8 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7D42CDD2-27BF-82E2-B0B4-76CE6E84AED9" name="TBL Regiao">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FCEE5C04-66FF-CB01-3B12-95A72D727EDF" name="TBL Cidade">
 <createdBy>lucas</createdBy>
-<createdTime>2024-08-26 23:54:55 UTC</createdTime>
-<generatorID>F24A07A2-2132-31E7-8A2E-12935181D3CA</generatorID>
+<createdTime>2024-08-28 01:13:13 UTC</createdTime>
+<generatorID>A974DF49-1717-0FEA-AEDF-44093866EE8F</generatorID>
 <ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
 <engineerTo>
 <item key="FFE5CBCF-1FEF-EE2E-3590-7CEBAC5789DE" value="true"/>
@@ -16,10 +16,10 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="Id" id="A9F294EE-4788-047D-B7F4-B2411BA2B3E9">
+<Attribute name="Id" id="9869AB79-29D3-DE99-D91F-8B3DAE4B10D0">
 <createdBy>lucas</createdBy>
-<createdTime>2024-08-26 23:54:55 UTC</createdTime>
-<generatorID>850F78D6-58B8-D49A-F60A-71FC706F7FED</generatorID>
+<createdTime>2024-08-28 01:13:13 UTC</createdTime>
+<generatorID>4DBBAE35-4D28-CDB9-5AB9-BBFD7639DE32</generatorID>
 <ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
 <engineerTo>
 <item key="FFE5CBCF-1FEF-EE2E-3590-7CEBAC5789DE" value="true"/>
@@ -29,10 +29,10 @@
 <logicalDatatype>LOGDT032</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Nome" id="A2A2189C-CF94-B572-A1AD-FA3B18810AF6">
+<Attribute name="Nome" id="5D5F0001-222D-F551-FCE1-68D39ADF18B3">
 <createdBy>lucas</createdBy>
-<createdTime>2024-08-26 23:54:55 UTC</createdTime>
-<generatorID>F2F64C62-87A3-697B-B1C9-252142194D85</generatorID>
+<createdTime>2024-08-28 01:13:14 UTC</createdTime>
+<generatorID>40372FAD-04B5-BD78-B041-655B842A79E9</generatorID>
 <ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
 <engineerTo>
 <item key="FFE5CBCF-1FEF-EE2E-3590-7CEBAC5789DE" value="true"/>
@@ -40,36 +40,22 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Cidade Id" id="6C012A55-272E-58D1-408A-AFDCA6186A05">
-<createdBy>lucas</createdBy>
-<createdTime>2024-08-28 01:13:14 UTC</createdTime>
-<generatorID>41A91B94-B202-2188-27F1-58C14C62BD84</generatorID>
-<ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
-<engineerTo>
-<item key="FFE5CBCF-1FEF-EE2E-3590-7CEBAC5789DE" value="true"/>
-</engineerTo>
-<referedAttribute>9869AB79-29D3-DE99-D91F-8B3DAE4B10D0</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT032</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="D66942AB-1EDC-C1C8-FB62-71F6CEA70AD4" name="TBL_Regiao_PK">
+<identifier id="E277BB95-A2C1-3E25-7A42-995D1B697A35" name="TBL Cidade PK">
 <createdBy>lucas</createdBy>
-<createdTime>2024-08-26 23:54:55 UTC</createdTime>
-<generatorID>8CAA8965-F4AE-7BCF-39D9-3A43B403375B</generatorID>
+<createdTime>2024-08-28 01:13:14 UTC</createdTime>
+<generatorID>147C00FE-BD82-5B19-209E-80FDE76867E7</generatorID>
 <ownerDesignName>Modelo_Banco_de_Dados</ownerDesignName>
 <engineerTo>
 <item key="FFE5CBCF-1FEF-EE2E-3590-7CEBAC5789DE" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>A9F294EE-4788-047D-B7F4-B2411BA2B3E9</attributeRef>
+<attributeRef>9869AB79-29D3-DE99-D91F-8B3DAE4B10D0</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
