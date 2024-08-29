@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="TBL_Nuvem" directorySegmentName="seg_0" id="DA91A079-886E-A346-A542-BD382E0503B1">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="Dia_2" id="14CB14DB-C110-0607-A9E8-D104ACBDBF9C">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Data" id="32CC101D-0A4B-0504-4892-47367B30C78E">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Dia_1" id="7F24D1FC-270D-D5D8-3E94-26C75FD9CFA9">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Id" id="B372FA29-B600-0F84-59F7-E00907D7A528">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="Dia_6" id="C870C3CF-EC41-9FFC-8F48-D9EDD3A888DA">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Dia_3" id="D4DAABB9-0235-CFE6-53D2-4AABDF66ED23">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Dia_4" id="E424EB48-F9EF-AB13-08A8-D5AC3157D12D">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Dia_7" id="FD5560A6-3FF9-678F-3EFA-229E5B33A931">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Dia_5" id="FFB1EE86-E007-27BE-88A5-AD1EAA233EB8">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="TBL_Nuvem_PK" id="DB53AB24-CF54-E926-2E47-1511168A62E8">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

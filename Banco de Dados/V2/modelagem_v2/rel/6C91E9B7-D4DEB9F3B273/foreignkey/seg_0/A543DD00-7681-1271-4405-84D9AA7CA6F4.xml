@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A543DD00-7681-1271-4405-84D9AA7CA6F4" containerWithKeyObject="BF44A393-69BB-496B-A6C6-4900AED49933" localFKIndex="1F1F47CA-CC7F-D701-2422-460967D4E1A0" name="TBL_Previsao_TBL_Precipitacao_FK">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>EFECD0A3-CB83-4DFD-7668-21A186FFAA77</importedID>
+<referredTableLongName>TBL_Precipitacao</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1C256EE7-6D34-C009-4ADC-8F00EE1E4CB5</referredTableID>
+<keyObject>462EA6E1-3281-ECE7-EF25-C38CAD8FDA97</keyObject>
+<referredKeyID>462EA6E1-3281-ECE7-EF25-C38CAD8FDA97</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>Id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

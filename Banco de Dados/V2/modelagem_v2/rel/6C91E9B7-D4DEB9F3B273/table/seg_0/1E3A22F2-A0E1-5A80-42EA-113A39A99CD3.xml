@@ -1,0 +1,155 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1E3A22F2-A0E1-5A80-42EA-113A39A99CD3" name="TBL_Ventania">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>5F156C1D-FC5C-6F2E-8D6C-2664593E634B</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="55F0025F-1EE7-64F1-8E45-FF41DF0D0AD6">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o Id da Ventania registrada e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>7A9E92AD-0D08-7E69-05B0-6BED4708714C</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>940E4F42-255B-0CCD-F534-0B90BBA4E2BC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="Data" id="4CE71DF5-7652-264F-E371-C9FBC1DC6706">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o Id da Ventania registrada e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>6B85A270-CB17-C3EB-B5F4-FEDC92B46585</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>759570EC-45D8-12AC-29DE-626CC42BF02F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dia_1" id="5CC2B7A3-B407-0E7E-90F0-46D355FAF49A">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a previsão da Ventania um dia após a data registrada.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>1B7AC37B-F839-A8BF-E398-40FCCD558531</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<domain>4E03A8EA-B917-41CB-4FB3-63AEB7B8B796</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dia_2" id="064F1113-7206-B333-49AA-709F32D507D7">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a previsão da Ventania dois dias após a data registrada.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>C1F5926A-62E6-82B3-5041-72727B08D61A</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<domain>4E03A8EA-B917-41CB-4FB3-63AEB7B8B796</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dia_3" id="769CE5CF-C902-1836-FBEC-E47625E4A1EC">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a previsão da Ventania três dias após a data registrada.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>1A236151-16E7-DF0A-23FC-60513A37D3AF</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<domain>4E03A8EA-B917-41CB-4FB3-63AEB7B8B796</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dia_4" id="E1A37078-3323-BF49-C2E3-9E6B6BFCEB08">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a previsão da Ventania quatro dias após a data registrada.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>03FF5640-E4E3-D799-8105-2B372A6C767F</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<domain>4E03A8EA-B917-41CB-4FB3-63AEB7B8B796</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dia_5" id="8447B1E9-B5A7-D1E7-69D3-B3CBFD53BDD0">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a previsão da Ventania cinco dias após a data registrada.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>B700C843-4BDB-75E8-F047-74B284587770</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<domain>4E03A8EA-B917-41CB-4FB3-63AEB7B8B796</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dia_6" id="6E6A34ED-5A3A-C137-D988-E0C97E074902">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a previsão da Ventania seis dias após a data registrada.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>2EEFD479-A517-DA48-8727-5C5D70EA4C97</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<domain>4E03A8EA-B917-41CB-4FB3-63AEB7B8B796</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dia_7" id="12B1FDA4-CF52-26E5-8DD5-6A4276BE314B">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a previsão da Ventania sete dias após a data registrada.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>1144ECCF-467C-9606-C118-719C4CCBD2EF</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<domain>4E03A8EA-B917-41CB-4FB3-63AEB7B8B796</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7B7B8092-3538-E026-1526-B0388ECFDC95" name="TBL_Ventania_PK">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>04DC043E-8347-12BA-26B1-9220B2D99760</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="55F0025F-1EE7-64F1-8E45-FF41DF0D0AD6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

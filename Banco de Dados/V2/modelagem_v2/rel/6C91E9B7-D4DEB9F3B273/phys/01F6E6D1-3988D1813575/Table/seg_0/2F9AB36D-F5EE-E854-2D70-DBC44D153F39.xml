@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="TBL_Temperatura" directorySegmentName="seg_0" id="2F9AB36D-F5EE-E854-2D70-DBC44D153F39">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="Dia_6" id="03E641DF-19D0-6C80-9944-E54B2FBBCECF">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Dia_5" id="1A5995D0-818C-5978-265B-904C8EE13A95">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Dia_4" id="37FCC4C4-AC5B-3044-B6C3-055B2DA3EA0B">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Dia_3" id="3C756091-E513-2303-52FD-AF8FF6DCF81D">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Dia_1" id="6135AF04-8E82-DFBB-A714-BB4628F77E2F">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Dia_7" id="8A5F62FA-980B-A4C7-9D1A-0FC1E4A331D2">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Dia_2" id="BE232BEE-BB20-3C34-48F4-B10C33E131C9">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Id" id="DCE88D88-0952-97DD-0AE0-FCB946456A06">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="Data" id="E3616D72-E020-8270-4ABC-92842438C432">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="TBL_Temperatura_PK" id="6558E8EF-4B5A-86E8-89CC-781ED5F5F939">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

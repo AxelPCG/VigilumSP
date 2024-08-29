@@ -1,0 +1,155 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="97A6C91C-E786-81DA-5207-67CCC994B419" name="TBL_Umidade">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>A2A14EDE-179F-E473-B5A4-32BE0BA50DAD</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="95B9D8D2-8915-46B4-B62A-83A6C1A4C334">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o Id da Umidade registrada e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>E951B751-BFD9-168D-EACA-B5AB75125E38</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>940E4F42-255B-0CCD-F534-0B90BBA4E2BC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="Data" id="1760C508-5735-1A41-D7EE-4DBF3D98346E">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o Id da Umidade registrada e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>6025C3F0-4732-6225-B17B-B6EC514D542C</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>759570EC-45D8-12AC-29DE-626CC42BF02F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dia_1" id="6DFDCC47-C544-59F2-A52F-AC9AB1CB92C8">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a previsão da Umidade um dia após a data registrada.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>26B53C33-4934-06E5-14F5-567ECB5DDC66</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<domain>4E03A8EA-B917-41CB-4FB3-63AEB7B8B796</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dia_2" id="8C77191C-A295-564D-7541-62971C46D974">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a previsão da Umidade dois dias após a data registrada.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>27D6120E-E763-1F8F-3451-38DD2050AF73</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<domain>4E03A8EA-B917-41CB-4FB3-63AEB7B8B796</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dia_3" id="2D66373A-E2AB-324B-5384-3B8BD425AE28">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a previsão da Umidade três dias após a data registrada.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>7D525A07-917F-A374-DCF3-9879F29040A9</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<domain>4E03A8EA-B917-41CB-4FB3-63AEB7B8B796</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dia_4" id="668CAD65-AE48-0649-125B-59247D4B3FA5">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a previsão da Umidade quatro dias após a data registrada.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>9092D963-6300-6D1E-6143-C9A7063C2FDB</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<domain>4E03A8EA-B917-41CB-4FB3-63AEB7B8B796</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dia_5" id="10377D66-82A6-F7BD-9DEC-93228BC5FA3C">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a previsão da Umidade cinco dias após a data registrada.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>F7FFCD49-2072-C3EA-2054-D8F8BF9055DB</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<domain>4E03A8EA-B917-41CB-4FB3-63AEB7B8B796</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dia_6" id="77C9233E-B3FE-E09C-2594-7EBB4280BD4D">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a previsão da Umidade seis dias após a data registrada.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>FB2C912E-2873-7DEE-C9CC-C5A4394D00E3</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<domain>4E03A8EA-B917-41CB-4FB3-63AEB7B8B796</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dia_7" id="5A0F9FFB-676B-9220-E3A8-D305B2AB7010">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a previsão da Umidade sete dias após a data registrada.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>D3E51BCA-6F14-05D5-0170-90626A657D0A</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<domain>4E03A8EA-B917-41CB-4FB3-63AEB7B8B796</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6BEAA667-B68B-8193-55A3-AF123B400A20" name="TBL_Umidade_PK">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>1D98BDB6-0294-23EF-20B9-A33446A87F28</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="95B9D8D2-8915-46B4-B62A-83A6C1A4C334"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

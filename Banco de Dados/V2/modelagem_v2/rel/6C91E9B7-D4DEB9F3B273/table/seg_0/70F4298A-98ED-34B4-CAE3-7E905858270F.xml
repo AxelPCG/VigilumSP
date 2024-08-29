@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="70F4298A-98ED-34B4-CAE3-7E905858270F" name="TBL_Cidade">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>F2ED94AD-0EC5-FA94-CF89-13146EA01A60</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="ADEDC7DF-69F8-C808-B84E-C47616A2012F">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o Id da cidade e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>5647E1A6-60C8-6672-B890-403EEA434ECE</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>940E4F42-255B-0CCD-F534-0B90BBA4E2BC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="Nome" id="2622BB01-6CA4-E772-8087-98A293ABCD06">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o Nome da cidade e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>A009C3C1-A158-40FB-C58F-3B1D205C77FF</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>947B2000-3EF1-6897-5D6C-514038BE035D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SG_Estado" id="29DA654C-492B-6147-B848-442431F435B3">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a sigla do estado da cidade e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>8176363A-5870-3D24-27DB-A72A6E9CA634</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>DA7A480C-1A99-6D21-EFFF-6B8E6693512B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A81D986B-E0F9-E3D9-2721-1F6391FEFCD6" name="TBL_Cidade_PK">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>4DF29155-BC10-0691-07E4-9B358F3D8C7A</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ADEDC7DF-69F8-C808-B84E-C47616A2012F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

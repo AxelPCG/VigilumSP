@@ -1,0 +1,218 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BF44A393-69BB-496B-A6C6-4900AED49933" name="TBL_Previsao">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>A5431480-A448-C9B6-A577-BFDE3D56943F</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="90687E9E-B8E9-AE68-2807-FB3EA709FD7D">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o Id da Previsao registrada e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>084CF30C-659F-D282-EA8F-F105B8591C26</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>940E4F42-255B-0CCD-F534-0B90BBA4E2BC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="Regiao_Id" id="1884E442-462D-5719-88C1-A4E7592E8646">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o Id da Regiao registrada e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>6E5A1288-D852-B4FA-DBD2-C4E63F91451A</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>940E4F42-255B-0CCD-F534-0B90BBA4E2BC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9754709F-5DF8-BBA5-E547-7055DBDBF157" referredColumn="7A1B794C-D62D-26BE-2508-80D41A891F63"/>
+</associations>
+</Column>
+<Column name="Data" id="7EEB491F-BD5B-534D-83BC-3A4E42AA5CAA">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a data atual e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>23883374-52EA-B7A3-684E-B1323BCD3C6E</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>759570EC-45D8-12AC-29DE-626CC42BF02F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Temperatura_Id" id="BDAC77D9-FA56-809D-9A76-1AE6C09BC025">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a previsão da temperatura relativa data atual.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>A8458EA2-B441-ADDA-1F88-925C28484AEC</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>940E4F42-255B-0CCD-F534-0B90BBA4E2BC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="153EF487-F8C3-E199-03AE-AD6C1493CE4C" referredColumn="DCE88D88-0952-97DD-0AE0-FCB946456A06"/>
+</associations>
+</Column>
+<Column name="Umidade_Id" id="4819E899-2E29-1E3B-2C62-F51908B25165">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a previsão da Umidade relativa data atual.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>E92D4826-B8D7-C45D-B459-BF101E68827D</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>940E4F42-255B-0CCD-F534-0B90BBA4E2BC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C8F141A9-3C3C-468C-4481-C4029D74D48C" referredColumn="95B9D8D2-8915-46B4-B62A-83A6C1A4C334"/>
+</associations>
+</Column>
+<Column name="Ventania_Id" id="8E261FAB-21B1-2C7B-4C3F-90CDD8C491C9">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a previsão da Ventania relativa data atual.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>428FD37F-2A91-7F95-1856-01B96B6748C9</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>940E4F42-255B-0CCD-F534-0B90BBA4E2BC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D180CBEE-B74A-66E6-3393-0129F7FD2661" referredColumn="55F0025F-1EE7-64F1-8E45-FF41DF0D0AD6"/>
+</associations>
+</Column>
+<Column name="Precipitacao_Id" id="7B2B56DF-6685-7BDA-175D-AE1ADAF75A51">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a previsão da Precipitacao relativa data atual.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>B1412469-0773-797A-18E5-3E5CAB49CD4E</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>940E4F42-255B-0CCD-F534-0B90BBA4E2BC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A543DD00-7681-1271-4405-84D9AA7CA6F4" referredColumn="22EBF97A-C694-7C4C-7C4D-EF0AC51827AD"/>
+</associations>
+</Column>
+<Column name="Nuvem_Id" id="2C18A061-18F1-A28A-345D-C527A39FB133">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a previsão de Nuvem relativa data atual.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>9E52EBAE-0E09-EEBB-A000-6D2242C3E5FE</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>940E4F42-255B-0CCD-F534-0B90BBA4E2BC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E1D0DF50-ABE7-9D4D-F00B-D9A1C57883E5" referredColumn="B372FA29-B600-0F84-59F7-E00907D7A528"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="14129D50-60D7-6266-BD44-F114F52F98FE" name="TBL_Previsao_PK">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>F96692DA-F456-7A48-E443-258BC4C9F29E</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="90687E9E-B8E9-AE68-2807-FB3EA709FD7D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="95108C3C-1E6B-71AD-1F9B-A1838ED09430" name="TBL_Previsao_TBL_Nuvem_FK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2C18A061-18F1-A28A-345D-C527A39FB133"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1F1F47CA-CC7F-D701-2422-460967D4E1A0" name="TBL_Previsao_TBL_Precipitacao_FK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7B2B56DF-6685-7BDA-175D-AE1ADAF75A51"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7FD54DD1-7FBC-006F-2F41-70DBBFBE3D3D" name="TBL_Previsao_TBL_Regiao_FK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1884E442-462D-5719-88C1-A4E7592E8646"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="17434E09-82A4-6F76-7DD4-F41B7F46B14B" name="TBL_Previsao_TBL_Temperatura_FK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BDAC77D9-FA56-809D-9A76-1AE6C09BC025"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DDA92713-D115-CAFA-1076-B08E1A194258" name="TBL_Previsao_TBL_Umidade_FK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4819E899-2E29-1E3B-2C62-F51908B25165"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FB260944-0D68-E7C4-1CF7-46DC2DD4D182" name="TBL_Previsao_TBL_Ventania_FK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E261FAB-21B1-2C7B-4C3F-90CDD8C491C9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

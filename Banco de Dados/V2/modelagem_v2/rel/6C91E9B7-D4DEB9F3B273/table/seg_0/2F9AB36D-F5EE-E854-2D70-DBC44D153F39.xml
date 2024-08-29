@@ -1,0 +1,155 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2F9AB36D-F5EE-E854-2D70-DBC44D153F39" name="TBL_Temperatura">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>13CC4AF1-7191-CDEC-F7C9-5EE3ECB42373</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="DCE88D88-0952-97DD-0AE0-FCB946456A06">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o Id da temperatura registrada e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>CAF8263B-C629-FD3D-532E-FDEA6EFF7A4C</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>940E4F42-255B-0CCD-F534-0B90BBA4E2BC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="Data" id="E3616D72-E020-8270-4ABC-92842438C432">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o Id da temperatura registrada e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>C19F19E8-DED5-2E32-0369-6B7C48DFFF87</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>759570EC-45D8-12AC-29DE-626CC42BF02F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dia_1" id="6135AF04-8E82-DFBB-A714-BB4628F77E2F">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a previsão da temperatura um dia após a data registrada.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>5F1DD1D3-876C-E408-776E-427CAC581028</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<domain>4E03A8EA-B917-41CB-4FB3-63AEB7B8B796</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dia_2" id="BE232BEE-BB20-3C34-48F4-B10C33E131C9">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a previsão da temperatura dois dias após a data registrada.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>4C17454D-1098-BCEA-7BF6-F96663B2F6D3</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<domain>4E03A8EA-B917-41CB-4FB3-63AEB7B8B796</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dia_3" id="3C756091-E513-2303-52FD-AF8FF6DCF81D">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a previsão da temperatura três dias após a data registrada.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>84B7E139-C450-201F-3838-A71784D91F93</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<domain>4E03A8EA-B917-41CB-4FB3-63AEB7B8B796</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dia_4" id="37FCC4C4-AC5B-3044-B6C3-055B2DA3EA0B">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a previsão da temperatura quatro dias após a data registrada.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>A37C5B1D-1A7C-39CD-BB4B-F99F29C431FC</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<domain>4E03A8EA-B917-41CB-4FB3-63AEB7B8B796</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dia_5" id="1A5995D0-818C-5978-265B-904C8EE13A95">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a previsão da temperatura cinco dias após a data registrada.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>F03489C2-C7AB-CFD0-00BF-7DA80A9DC9BD</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<domain>4E03A8EA-B917-41CB-4FB3-63AEB7B8B796</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dia_6" id="03E641DF-19D0-6C80-9944-E54B2FBBCECF">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a previsão da temperatura seis dias após a data registrada.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>54FDD45A-54BA-7E3D-F983-C69A54EAC30E</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<domain>4E03A8EA-B917-41CB-4FB3-63AEB7B8B796</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dia_7" id="8A5F62FA-980B-A4C7-9D1A-0FC1E4A331D2">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a previsão da temperatura sete dias após a data registrada.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>31D8015C-D60A-EE81-18E8-43AD438D02D2</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<domain>4E03A8EA-B917-41CB-4FB3-63AEB7B8B796</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6558E8EF-4B5A-86E8-89CC-781ED5F5F939" name="TBL_Temperatura_PK">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>2951A994-3942-4601-2844-CBCB8AD0B4CA</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DCE88D88-0952-97DD-0AE0-FCB946456A06"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

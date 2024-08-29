@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C8F141A9-3C3C-468C-4481-C4029D74D48C" containerWithKeyObject="BF44A393-69BB-496B-A6C6-4900AED49933" localFKIndex="DDA92713-D115-CAFA-1076-B08E1A194258" name="TBL_Previsao_TBL_Umidade_FK">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>B1289328-1F4E-5FBC-9FF5-A68B8A05567E</importedID>
+<referredTableLongName>TBL_Umidade</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>97A6C91C-E786-81DA-5207-67CCC994B419</referredTableID>
+<keyObject>6BEAA667-B68B-8193-55A3-AF123B400A20</keyObject>
+<referredKeyID>6BEAA667-B68B-8193-55A3-AF123B400A20</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>Id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

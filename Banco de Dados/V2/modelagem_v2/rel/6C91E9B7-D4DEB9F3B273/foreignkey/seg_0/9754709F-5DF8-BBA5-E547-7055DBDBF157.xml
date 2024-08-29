@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9754709F-5DF8-BBA5-E547-7055DBDBF157" containerWithKeyObject="BF44A393-69BB-496B-A6C6-4900AED49933" localFKIndex="7FD54DD1-7FBC-006F-2F41-70DBBFBE3D3D" name="TBL_Previsao_TBL_Regiao_FK">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>547BE3FF-CF51-BA7F-D399-E03B688AACA0</importedID>
+<referredTableLongName>TBL_Regiao</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C69FE9A5-C41B-EC43-1ACC-1B2B2E29F47B</referredTableID>
+<keyObject>D0AD05C1-3CD9-64B7-E56A-CF165A9C7A02</keyObject>
+<referredKeyID>D0AD05C1-3CD9-64B7-E56A-CF165A9C7A02</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="59C2CF2D-0DB7-6264-661A-5D4B187BB56E" containerWithKeyObject="5B2A9688-1BC3-53B3-0F93-5714B6D2FEC3" localFKIndex="24995D2F-2E11-788E-79C2-628BDDA43FE5" name="TBL_Historico_Meteorologico_TBL_Regiao_FK">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-29 21:48:47 UTC</createdTime>
+<ownerDesignName>modelagem_v2</ownerDesignName>
+<importedID>516E5329-7037-1B4A-6196-86A62099D9FD</importedID>
+<referredTableLongName>TBL_Regiao</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C69FE9A5-C41B-EC43-1ACC-1B2B2E29F47B</referredTableID>
+<keyObject>D0AD05C1-3CD9-64B7-E56A-CF165A9C7A02</keyObject>
+<referredKeyID>D0AD05C1-3CD9-64B7-E56A-CF165A9C7A02</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
