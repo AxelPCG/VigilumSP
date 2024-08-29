@@ -1,35 +1,44 @@
-# byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
+# See http://help.github.com/ignore-files/ for more about ignoring files.
 
-# tests and coverage
-*.pytest_cache
-.coverage
+# compiled output
+/dist
+/tmp
 
-# database & logs
-*.db
-*.sqlite3
-*.log
+# dependencies
+/node_modules
+./node_modules
+node_modules
 
-# venv
-env
-venv
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
 
-# other
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage/*
+/libpeerconnection.log
+npm-debug.log
+testem.log
+/typings
+/.angular
+
+# e2e
+/e2e/*.js
+/e2e/*.map
+
+#System Files
 .DS_Store
-
-# sphinx docs 
-_build
-_static
-_templates
-
-# javascript
+Thumbs.db
 package-lock.json
-.vscode/symbols.json
-
-apps/static/assets/node_modules
-apps/static/assets/yarn.lock
-apps/static/assets/.temp
-
-migrations
-.env__
