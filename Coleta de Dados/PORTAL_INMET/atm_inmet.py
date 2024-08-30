@@ -10,10 +10,9 @@ import datetime as dt
 # ### Diretórios
 
 # %%
-BASE_DIR = os.getcwd()
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DIR_ARQUIVOS = os.path.join(BASE_DIR, "DADOS_METEREOLOGICOS_ESTADO_SP")
 DIR_TRATADOS = os.path.join(BASE_DIR, "DADOS_TRATADOS")
-DIR_TESTES = os.path.join(DIR_ARQUIVOS, '2024')
 
 # %% [markdown]
 # ### Filtro de dados
