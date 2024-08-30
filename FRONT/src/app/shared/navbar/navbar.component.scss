@@ -1,0 +1,36 @@
+.navbar-corrigida{
+    border:none
+}
+
+.navbar-guia{
+    background-color: white;
+    margin-top: 12px;
+    border-radius: 30px;
+    border: 2px solid rgb(137, 0, 0);
+
+    li {
+        margin: 0px 8px 0px 8px;
+
+        a {
+            color: rgb(137, 0, 0);
+            font-weight: 600;
+        }
+
+        button{
+            min-height: 0px;
+            min-width: 0px;
+        }
+    }
+}
+
+.btn-cor-vigilum{
+    background-color: rgb(137, 0, 0);
+    margin: 10px 3px;
+}
+
+.btn-cor-white{
+    background-color: white;
+    margin: 10px 10px 3px 3px;
+    color: rgb(137, 0, 0);
+    border-color: rgb(137, 0, 0);;
+}
