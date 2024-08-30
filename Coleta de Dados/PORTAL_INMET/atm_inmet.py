@@ -18,6 +18,30 @@ DIR_TRATADOS = os.path.join(BASE_DIR, "DADOS_TRATADOS")
 # ### Filtro de dados
 
 # %%
+# Mapeamento das colunas antigas para as novas
+COLUMN_MAPPING = {
+    'DATA (YYYY-MM-DD)': 'Data',
+    'HORA (UTC)': 'Hora UTC',
+    'PRECIPITAÇÃO TOTAL, HORÁRIO (mm)': 'PRECIPITAÇÃO TOTAL, HORÁRIO (mm)',
+    'PRESSAO ATMOSFERICA AO NIVEL DA ESTACAO, HORARIA (mB)': 'PRESSAO ATMOSFERICA AO NIVEL DA ESTACAO, HORARIA (mB)',
+    'PRESSÃO ATMOSFERICA MAX.NA HORA ANT. (AUT) (mB)': 'PRESSÃO ATMOSFERICA MAX.NA HORA ANT. (AUT) (mB)',
+    'PRESSÃO ATMOSFERICA MIN. NA HORA ANT. (AUT) (mB)': 'PRESSÃO ATMOSFERICA MIN. NA HORA ANT. (AUT) (mB)',
+    'RADIACAO GLOBAL (KJ/m²)': 'RADIACAO GLOBAL (Kj/m²)',
+    'TEMPERATURA DO AR - BULBO SECO, HORARIA (°C)': 'TEMPERATURA DO AR - BULBO SECO, HORARIA (°C)',
+    'TEMPERATURA DO PONTO DE ORVALHO (°C)': 'TEMPERATURA DO PONTO DE ORVALHO (°C)',
+    'TEMPERATURA MÁXIMA NA HORA ANT. (AUT) (°C)': 'TEMPERATURA MÁXIMA NA HORA ANT. (AUT) (°C)',
+    'TEMPERATURA MÍNIMA NA HORA ANT. (AUT) (°C)': 'TEMPERATURA MÍNIMA NA HORA ANT. (AUT) (°C)',
+    'TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C)': 'TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C)',
+    'TEMPERATURA ORVALHO MIN. NA HORA ANT. (AUT) (°C)': 'TEMPERATURA ORVALHO MIN. NA HORA ANT. (AUT) (°C)',
+    'UMIDADE REL. MAX. NA HORA ANT. (AUT) (%)': 'UMIDADE REL. MAX. NA HORA ANT. (AUT) (%)',
+    'UMIDADE REL. MIN. NA HORA ANT. (AUT) (%)': 'UMIDADE REL. MIN. NA HORA ANT. (AUT) (%)',
+    'UMIDADE RELATIVA DO AR, HORARIA (%)': 'UMIDADE RELATIVA DO AR, HORARIA (%)',
+    'VENTO, DIREÇÃO HORARIA (gr) (° (gr))': 'VENTO, DIREÇÃO HORARIA (gr) (° (gr))',
+    'VENTO, RAJADA MAXIMA (m/s)': 'VENTO, RAJADA MAXIMA (m/s)',
+    'VENTO, VELOCIDADE HORARIA (m/s)': 'VENTO, VELOCIDADE HORARIA (m/s)'
+}
+
+# %%
 # Função para criar diretório se não existir
 def ensure_directory(directory):
     """
@@ -46,18 +70,14 @@ def load_and_split(file_path):
     with open(file_path, 'r', encoding='latin1') as file:
         lines = file.readlines()
 
-    # Separar o cabeçalho extra (primeiras 8 linhas)
     header_lines = lines[:8]
     data_lines = lines[8:]
 
-    # Criar DataFrame para o cabeçalho
     df_header = pd.DataFrame([line.strip().split(';') for line in header_lines])
-
-    # A primeira linha dos dados (após o cabeçalho) deve conter os nomes das colunas
     column_names = data_lines[0].strip().split(';')
     df_data = pd.DataFrame([line.strip().split(';') for line in data_lines[1:]], columns=column_names)
     
-    # Remover colunas vazias
+        # Remover colunas vazias
     df_data = df_data.dropna(axis=1, how='all')
     try:
         df_data = df_data.drop(columns='')
@@ -65,6 +85,28 @@ def load_and_split(file_path):
         pass
 
     return df_header, df_data
+
+# %%
+def format_columns(df):
+    """
+    Renomeia as colunas de acordo com o mapeamento e faz as formatações necessárias.
+    """
+    df = df.rename(columns=COLUMN_MAPPING)
+    
+    # Verificar se a coluna 'Hora UTC' existe após o mapeamento
+    if 'Hora UTC' in df.columns:
+        # Remover qualquer sufixo de ":00" ou " UTC"
+        df['Hora UTC'] = df['Hora UTC'].str.replace(' UTC', '').str.replace(':00', '')
+        
+        try:
+            # Tentar converter usando o formato de horas e minutos
+            df['Hora UTC'] = pd.to_datetime(df['Hora UTC'], format='%H%M').dt.time
+        except ValueError:
+            # Se falhar, tentar a conversão sem formato específico
+            df['Hora UTC'] = pd.to_datetime(df['Hora UTC'], errors='coerce').dt.time
+    
+    return df
+
 
 # %%
 def format_numeric_columns(df):
@@ -80,21 +122,6 @@ def format_numeric_columns(df):
     cols_to_convert = df.columns.difference(['Data', 'Hora UTC'])
     df[cols_to_convert] = df[cols_to_convert].replace(',', '.', regex=True)
     df[cols_to_convert] = df[cols_to_convert].apply(pd.to_numeric, errors='coerce')
-    return df
-
-# %%
-def format_time_column(df):
-    """
-    Formata a coluna 'Hora UTC' para um objeto de hora válido.
-    
-    Args:
-    df (DataFrame): DataFrame contendo os dados a serem formatados.
-    
-    Returns:
-    DataFrame: DataFrame com a coluna 'Hora UTC' formatada.
-    """
-    df['Hora UTC'] = df['Hora UTC'].str.replace(' UTC', '')
-    df['Hora UTC'] = pd.to_datetime(df['Hora UTC'], format='%H%M').dt.time
     return df
 
 # %%
@@ -121,44 +148,27 @@ def process_file(file_path, output_path):
     output_path (str): Caminho para salvar o arquivo Excel formatado.
     """
     df_header, df_data = load_and_split(file_path)
+    df_data = format_columns(df_data)  # Renomear e formatar as colunas
     df_data = format_numeric_columns(df_data)
-    df_data = format_time_column(df_data)
     save_to_excel(df_header, df_data, output_path)
-    print("Arquivo Excel criado com sucesso!")
-
-# %%
-# Verificar e criar diretório para arquivos tratados
-ensure_directory(DIR_TRATADOS)
-
-# %%
-# Exemplo de uso:
-file_name = 'INMET_SE_SP_A701_SAO PAULO - MIRANTE_01-01-2024_A_31-07-2024.CSV'
-file_path = os.path.join(DIR_TESTES, file_name)
-output_file_name = 'INMET_SE_SP_A701_SAO PAULO - MIRANTE_01-01-2024_A_31-07-2024.xlsx'
-output_path = os.path.join(DIR_TRATADOS, output_file_name)
-
-process_file(file_path, output_path)
+    print(f"Arquivo Excel criado com sucesso em: {output_path}")
 
 # %%
 # Função principal para processar todos os arquivos .csv
 def process_all_files():
-    # Verificar e criar diretório principal para arquivos tratados
     ensure_directory(DIR_TRATADOS)
 
-    # Percorrer todos os diretórios de anos
     for year_dir in os.listdir(DIR_ARQUIVOS):
         year_path = os.path.join(DIR_ARQUIVOS, year_dir)
         
         if os.path.isdir(year_path):
-            # Criar o diretório correspondente em DADOS_TRATADOS
             year_tratado_dir = os.path.join(DIR_TRATADOS, year_dir)
             ensure_directory(year_tratado_dir)
 
-            # Processar todos os arquivos .csv dentro do diretório do ano
             for file_name in os.listdir(year_path):
-                if file_name.endswith('.csv'):
+                if file_name.endswith('.CSV'):
                     file_path = os.path.join(year_path, file_name)
-                    output_file_name = file_name.replace('.csv', '.xlsx')
+                    output_file_name = file_name.replace('.CSV', '.xlsx')
                     output_path = os.path.join(year_tratado_dir, output_file_name)
                     
                     process_file(file_path, output_path)
@@ -166,5 +176,3 @@ def process_all_files():
 # %%
 # Executar a automação
 process_all_files()
-
-
