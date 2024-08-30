@@ -1,4 +1,4 @@
-## ARQUIVOS DE DADOS METEREOLOGICOS DO ESTADO DE SP (PORTAL INMET)
+## ARQUIVOS DE DADOS METEOROLÓGICOS DO ESTADO DE SP (PORTAL INMET)
 
 - Os arquivos são .csvs de cidades de SP que fazem a coleta de dados metereologicos. O arquivo possui mais de 100mb, então está disponível para download no link abaixo:
 
