@@ -20,10 +20,13 @@ import { HomeNovoComponent } from 'app/home/home.component';
 import { SobreComponent } from 'app/sobre/sobre.component';
 import { AlertaComponent } from 'app/alerta/alerta.component';
 import { ReportarComponent } from 'app/reportar/reportar.component';
+import { NgxMaskModule } from 'ngx-mask';
 
 
 @NgModule({
   imports: [
+    NgxMaskModule.forRoot(),
+    ReactiveFormsModule,
     CommonModule,
     RouterModule.forChild(AdminLayoutRoutes),
     FormsModule,

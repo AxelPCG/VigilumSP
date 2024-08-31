@@ -1,7 +1,6 @@
 <div class="main-content backgroun-vigilium">
   <div class="container-fluid">
     <div class="conteudo">
-
       <div class="row">
         <div class="col-md-12">
           <h6 class="titulo">Registre sua ocorrência</h6>
@@ -14,33 +13,59 @@
             <div class="header text-center titulo-form">Fale Conosco</div>
             <div class="header">Por favor, preencha os campos abaixo:</div>
             <div class="content">
-              <form action="">
+              <form [formGroup]="form" (submit)="salvar()">
                 <div class="row">
                   <div class="col-md-6 form-group">
                     <label for="primeiroNome">Primeiro Nome</label>
-                    <input type="text" id="primeiroNome" class="form-control">
+                    <input
+                      type="text"
+                      id="primeiroNome"
+                      class="form-control"
+                      formControlName="primeiroNome"
+                    />
                   </div>
                   <div class="col-md-6 form-group">
                     <label for="sobrenome">Sobrenome</label>
-                    <input type="text" class="form-control">
+                    <input
+                      type="text"
+                      id="sobrenome"
+                      class="form-control"
+                      formControlName="sobrenome"
+                    />
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-md-6 form-group">
                     <label for="email">Email</label>
-                    <input type="text" id="primeiroNome" class="form-control">
+                    <input
+                      type="text"
+                      id="email"
+                      class="form-control"
+                      formControlName="email"
+                    />
                   </div>
                   <div class="col-md-6 form-group">
                     <label for="telefone">Telefone</label>
-                    <input type="text" class="form-control">
+                    <input
+                      mask="(00) 0000-0000"
+                      type="text"
+                      id="telefone"
+                      class="form-control"
+                      formControlName="telefone"
+                    />
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-md-12 form-group">
                     <label for="assunto">Assunto</label>
-                    <select class="form-control">
-                      <option disabled selected>Selecione...</option>
-                      <option>Previsão</option>
+                    <select
+                      class="form-control"
+                      id="assunto"
+                      formControlName="assunto"
+                    >
+                      <option value=null disabled selected>Selecione...</option>
+                      <option value="Previsao">Previsão</option>
+                      <option value="Alerta">Alerta</option>
                     </select>
                   </div>
                 </div>
@@ -52,66 +77,145 @@
                 </div>
 
                 <div class="row">
-                  <div class="col-md-6" style="padding-left: 0px;">
-
-                    <div class="col-md-6" style="padding-left: 6px;">
-                      <div class="col-md-1"><input id="podePublico" type="radio" class="radio"></div>
-                      <div class="col-md-6"><label for="podePublico">Poder Público</label></div>
+                  <div class="col-md-6" style="padding-left: 0px">
+                    <div class="col-md-6" style="padding-left: 6px">
+                      <div class="col-md-1">
+                        <input
+                          id="podePublico"
+                          type="radio"
+                          class="radio"
+                          formControlName="descricao"
+                          value="PoderPublico"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <label for="podePublico">Poder Público</label>
+                      </div>
                     </div>
 
                     <div class="col-md-6">
-                      <div class="col-md-1"><input id="estudante" type="radio" class="radio"></div>
-                      <div class="col-md-6"><label for="estudante">Estudante</label></div>
+                      <div class="col-md-1">
+                        <input
+                          id="estudante"
+                          type="radio"
+                          class="radio"
+                          formControlName="descricao"
+                          value="Estudante"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <label for="estudante">Estudante</label>
+                      </div>
                     </div>
 
                     <div class="col-md-6">
-                      <div class="col-md-1"><input id="empresaPrivada" type="radio" class="radio"></div>
-                      <div class="col-md-6"><label for="empresaPrivada">Empresa Privada</label></div>
+                      <div class="col-md-1">
+                        <input
+                          id="empresaPrivada"
+                          type="radio"
+                          class="radio"
+                          formControlName="descricao"
+                          value="EmpresaPrivada"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <label for="empresaPrivada">Empresa Privada</label>
+                      </div>
                     </div>
 
                     <div class="col-md-6">
-                      <div class="col-md-1"><input id="jornalista" type="radio" class="radio"></div>
-                      <div class="col-md-6"><label for="jornalista">Jornalista</label></div>
+                      <div class="col-md-1">
+                        <input
+                          id="jornalista"
+                          type="radio"
+                          class="radio"
+                          formControlName="descricao"
+                          value="Jornalista"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <label for="jornalista">Jornalista</label>
+                      </div>
                     </div>
 
                     <div class="col-md-6">
-                      <div class="col-md-1"><input id="pesquisador" type="radio" class="radio"></div>
-                      <div class="col-md-6"><label for="pesquisador">Pesquisador</label></div>
+                      <div class="col-md-1">
+                        <input
+                          id="pesquisador"
+                          type="radio"
+                          class="radio"
+                          formControlName="descricao"
+                          value="Pesquisador"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <label for="pesquisador">Pesquisador</label>
+                      </div>
                     </div>
 
                     <div class="col-md-6">
-                      <div class="col-md-1"><input id="outros" type="radio" class="radio"></div>
-                      <div class="col-md-6"><label for="outros">Outros</label></div>
+                      <div class="col-md-1">
+                        <input
+                          id="outros"
+                          type="radio"
+                          class="radio"
+                          formControlName="descricao"
+                          value="Outros"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <label for="outros">Outros</label>
+                      </div>
                     </div>
-                    
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-md-12 form-group">
                     <label for="assunto">Mensagem</label>
-                    <textarea class="form-control" name="" id=""></textarea>
+                    <textarea
+                      class="form-control"
+                      name=""
+                      id=""
+                      formControlName="mensagem"
+                    ></textarea>
                   </div>
                 </div>
 
                 <div class="row">
-                  <div class="col-md-4 form-group">
-                    <div class="col-md-1"><input type="checkbox" id="concordo" class="form-control"></div>
-                    <div class="col-md-11"><label for="concordo" style="padding-top: 20px;">Concordo com os termos e condições</label></div>
+                  <div class="col-md-4 form-group" style="padding-left: 4px">
+                    <div class="col-md-1">
+                      <input
+                        type="checkbox"
+                        id="concordo"
+                        class="form-control"
+                        formControlName="concordo"
+                      />
+                    </div>
+                    <div class="col-md-11">
+                      <label for="concordo" style="padding-top: 20px"
+                        >Concordo com os termos e condições</label
+                      >
+                    </div>
                   </div>
                 </div>
-                
+
                 <div class="row">
                   <div class="col-md-2">
-                    <button type="submit" class="btn btn-fill btn-round btn-sm" style="width: 100%;">Enviar Mensagem</button>
+                    <button
+                      [disabled]="form.invalid || form.get('concordo').value == false"
+                      type="submit"
+                      class="btn btn-fill btn-round btn-sm"
+                      style="width: 100%"
+                    >
+                      Enviar Mensagem
+                    </button>
                   </div>
                 </div>
-
               </form>
             </div>
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </div>
