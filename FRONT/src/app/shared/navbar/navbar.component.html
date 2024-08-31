@@ -4,7 +4,12 @@
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right navbar-guia">
                 <li>
-                    <a href="#">
+                    <a [routerLink]="'home'" [ngClass]="{'pagina-atual':  verificarPaginaAtual('home')}">
+                        Home
+                    </a>                
+                </li>
+                <li>
+                    <a [routerLink]="'sobre'" [ngClass]="{'pagina-atual':  verificarPaginaAtual('sobre')}">
                         Sobre nós
                     </a>                
                 </li>
@@ -14,19 +19,16 @@
                         <b class="caret"></b>
                     </a>      
                     <ul class="dropdown-menu">
-                        <li><a href="#">Notification 1</a></li>
-                        <li><a href="#">Notification 2</a></li>
-                        <li><a href="#">Notification 3</a></li>
-                        <li><a href="#">Notification 4</a></li>
-                        <li><a href="#">Another notification</a></li>
+                        <li><a [routerLink]="'previsao'" [ngClass]="{'pagina-atual':  verificarPaginaAtual('previsao')}">Previsão</a></li>
+                        <li><a [routerLink]="'alertas'" [ngClass]="{'pagina-atual':  verificarPaginaAtual('alertas')}">Alertas</a></li>
                     </ul>          
                 </li>
                 <li>
-                    <button class="btn btn-fill pull-right btn-round btn-home btn-cor-vigilum">Entre em contato</button>               
+                    <button  [routerLink]="'reportar'" class="btn pull-right btn-round btn-home btn-cor-vigilum">Reportar Ocorrências</button>               
                 </li>
-                <li>
+                <!-- <li [routerLink]="'home'">
                     <button class="btn btn-fill pull-right btn-round btn-home btn-cor-white">Sign In</button>                           
-                </li>
+                </li> -->
             </ul>
         </div>
 

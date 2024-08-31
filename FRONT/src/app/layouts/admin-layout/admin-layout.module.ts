@@ -17,6 +17,9 @@ import { MapsComponent } from '../../maps/maps.component';
 import { NotificationsComponent } from '../../notifications/notifications.component';
 import { UpgradeComponent } from '../../upgrade/upgrade.component';
 import { HomeNovoComponent } from 'app/home/home.component';
+import { SobreComponent } from 'app/sobre/sobre.component';
+import { AlertaComponent } from 'app/alerta/alerta.component';
+import { ReportarComponent } from 'app/reportar/reportar.component';
 
 
 @NgModule({
@@ -28,6 +31,9 @@ import { HomeNovoComponent } from 'app/home/home.component';
     NguiMapModule.forRoot({apiUrl: 'https://maps.google.com/maps/api/js?key=YOUR_KEY_HERE'})
   ],
   declarations: [
+    ReportarComponent,
+    AlertaComponent,
+    SobreComponent,
     HomeNovoComponent,
     HomeComponent,
     UserComponent,

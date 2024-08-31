@@ -1,0 +1,56 @@
+
+h1{
+    font-weight: 600;
+}
+
+.conteudo{
+    padding: 0px 0px 0px 40px;
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+.img{
+    width: 100%;
+    margin: 25px 0px 12px 0px;
+}
+
+.img-barra{
+    width: 95%;
+    margin:25px 17px 12px;
+}
+
+.icon{
+    width: 25%;
+    margin: 12px 0px 12px 0px;
+}
+
+.btn-cor-gray{
+    background-color: #DDDDDD;
+    margin: 10px 10px 3px 0px;
+    color: rgb(137, 0, 0);
+    border-color: rgb(137, 0, 0);
+
+    &:hover{
+        background-color: #DDDDDD;
+        opacity: 65%;
+    }
+}
+
+
+a {
+    color: rgb(137, 0, 0);
+    text-decoration: underline;
+}
+
+.col-md-4 {
+    width: 35.333333%;
+}
+
+.img-chuva{
+    width: 88%;
+    border-radius: 10px;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
