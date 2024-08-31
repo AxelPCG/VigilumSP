@@ -1,0 +1,6 @@
+Tipo de Previsão
+Trânsito
+Enchetes
+Deslizamentos
+Queda de árvores 
+Queda de energia
