@@ -1,0 +1,50 @@
+.titulo{
+    font-weight: 800;
+}
+
+.icons{
+    width: 30%;
+}
+
+.icon-menores{
+    width: 150%;
+}
+
+.dia-previsao{
+    font-size: 16px;
+}
+
+.caixa{
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+
+.temperatura{
+    font-weight: bold;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+.caixa-temperatura-menor{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.temperatura-menor{
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.tipo-previsao{
+    opacity: 60%;
+}
+
+.localizacao{
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.export-btn{
+    opacity: 0%;
+}

@@ -12,4 +12,11 @@ export class SobreComponent implements OnInit {
   ngOnInit() {
   }
 
+  scrollToElement(): void {
+    const element = document.getElementById('destino');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+
 }

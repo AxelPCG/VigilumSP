@@ -12,11 +12,25 @@
         margin: 0px 8px 0px 8px;
 
         a {
+            &:hover{
+                opacity: 65%;
+            }
+
             color: rgb(137, 0, 0);
             font-weight: 600;
         }
 
         button{
+
+            &:hover{
+                background-color: rgb(137, 0, 0);
+                opacity: 65%;
+            }
+            &::after{
+                background-color: rgb(137, 0, 0);
+                opacity: 65%;
+            }
+
             min-height: 0px;
             min-width: 0px;
         }
@@ -26,6 +40,8 @@
 .btn-cor-vigilum{
     background-color: rgb(137, 0, 0);
     margin: 10px 3px;
+    color: white;
+    opacity: 1;
 }
 
 .btn-cor-white{
@@ -33,4 +49,8 @@
     margin: 10px 10px 3px 3px;
     color: rgb(137, 0, 0);
     border-color: rgb(137, 0, 0);;
+}
+
+.pagina-atual{
+    text-decoration: underline;
 }
