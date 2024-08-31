@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CAFD7C14-FB79-4D57-9616-401CA3D9E2BB" containerWithKeyObject="B492FBAB-5CDC-3900-08E2-289BF44C10B5" localFKIndex="3FF24966-54CA-E42D-CAA5-09AF81426A85" name="SYS_C002734389">
+<sourceConnName>FIAP</sourceConnName>
+<sourceObjSchema>RM557311</sourceObjSchema>
+<sourceObjName>SYS_C002734389</sourceObjName>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:33 UTC</createdTime>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<referredTableLongName>RM557311.TBL_TEMPERATURA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>0B683C7A-4D6E-EFEA-FC14-463DBB103A56</referredTableID>
+<keyObject>D25681FE-2B50-4431-16C5-393BCAD83AFA</keyObject>
+<referredKeyID>D25681FE-2B50-4431-16C5-393BCAD83AFA</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

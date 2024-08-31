@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="TBL_PRECIPITACAO" directorySegmentName="seg_0" id="048D932B-07B3-EB82-4AA2-1223A201E4C5">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:31 UTC</createdTime>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<schemaObject>216A8615-DB2D-B381-9AF7-6FD0025B3E62</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>11062B65-7E1D-5F99-A22D-2C129AAE9068</segment>
+<tableSpace>7F4F9207-B10B-BA11-4124-6C4113323012</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID" id="2D49E9BC-F919-79BE-BD98-4096B8E2650D">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:31 UTC</createdTime>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="DATA" id="39CDC0BE-F2F0-882D-FE86-E0FA8362C1A6">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:31 UTC</createdTime>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="HORA" id="49B995B4-76A6-F976-41B0-FE35F1F4681A">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:31 UTC</createdTime>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="VOLUME" id="D0B272BB-EBBB-DC99-D704-E8DDFDB446F1">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:31 UTC</createdTime>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="TBL_PRECIPITACAO_PK" id="336FDFE7-45DE-165F-1F5E-E0F52F82949C">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:32 UTC</createdTime>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<schemaObject>216A8615-DB2D-B381-9AF7-6FD0025B3E62</schemaObject>
+<segment>77DBF15D-2B24-8846-BD5F-6B99301A6D0B</segment>
+<tableSpace>7F4F9207-B10B-BA11-4124-6C4113323012</tableSpace>
+<indexSegment>77DBF15D-2B24-8846-BD5F-6B99301A6D0B</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

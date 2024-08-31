@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E0024B5E-40F4-0D71-EA9C-6E192273AF67" schemaObject="216A8615-DB2D-B381-9AF7-6FD0025B3E62" name="TBL_DISTRITO">
+<sourceConnName>FIAP</sourceConnName>
+<sourceObjSchema>RM557311</sourceObjSchema>
+<sourceObjName>TBL_DISTRITO</sourceObjName>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:31 UTC</createdTime>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CD_DIST" id="EA6A2BED-57F4-7D84-7CD7-D8C855F1D2D8">
+<sourceConnName>FIAP</sourceConnName>
+<sourceObjSchema>TBL_DISTRITO</sourceObjSchema>
+<sourceObjName>CD_DIST</sourceObjName>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o código do distrito e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>20</autoIncrementCache>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="NM_DIST" id="983C2037-9091-BDEA-FCA3-48920FEE973C">
+<sourceConnName>FIAP</sourceConnName>
+<sourceObjSchema>TBL_DISTRITO</sourceObjSchema>
+<sourceObjName>NM_DIST</sourceObjName>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o nome do distrito e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GEOMETRY" id="69339C09-255E-FD95-F2AE-0B2C13752338">
+<sourceConnName>FIAP</sourceConnName>
+<sourceObjSchema>TBL_DISTRITO</sourceObjSchema>
+<sourceObjName>GEOMETRY</sourceObjName>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o polígono de coordenadas do distrito.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<allowSubtypeSubstitution>false</allowSubtypeSubstitution>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CORD_CENTRAL" id="32B90B2D-7BCC-C4E4-AD60-A9CE189B8B4D">
+<sourceConnName>FIAP</sourceConnName>
+<sourceObjSchema>TBL_DISTRITO</sourceObjSchema>
+<sourceObjName>CORD_CENTRAL</sourceObjName>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a coordenada central do distrito.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<allowSubtypeSubstitution>false</allowSubtypeSubstitution>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MACRO_ID" id="FA67771C-25C8-F88E-5A93-450D9C36C857">
+<sourceConnName>FIAP</sourceConnName>
+<sourceObjSchema>TBL_DISTRITO</sourceObjSchema>
+<sourceObjName>MACRO_ID</sourceObjName>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o Id do município associado ao distrito.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0FA38F28-454A-1132-A2F9-05D026433593" referredColumn="C312199B-8148-FB11-EDEA-98FB6EA2AB20"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AF219730-5BD2-C10C-376A-69E451330E8A" schemaObject="216A8615-DB2D-B381-9AF7-6FD0025B3E62" name="TBL_DISTRITO_PK">
+<sourceConnName>FIAP</sourceConnName>
+<sourceObjSchema>RM557311</sourceObjSchema>
+<sourceObjName>SYS_C002734358</sourceObjName>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:32 UTC</createdTime>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EA6A2BED-57F4-7D84-7CD7-D8C855F1D2D8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="102F7D7C-A97C-7D98-1089-A3F7F28A3333" name="SYS_C002734359">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:33 UTC</createdTime>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FA67771C-25C8-F88E-5A93-450D9C36C857"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

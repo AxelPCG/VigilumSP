@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="06821B8B-F6BE-98EB-AB5F-20EDB937633F" schemaObject="216A8615-DB2D-B381-9AF7-6FD0025B3E62" name="TBL_VENTANIA">
+<sourceConnName>FIAP</sourceConnName>
+<sourceObjSchema>RM557311</sourceObjSchema>
+<sourceObjName>TBL_VENTANIA</sourceObjName>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:31 UTC</createdTime>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="C33C6784-C2F3-51B8-FF16-1BD93500A7D3">
+<sourceConnName>FIAP</sourceConnName>
+<sourceObjSchema>TBL_VENTANIA</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o Id da ventania registrada e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>20</autoIncrementCache>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="DATA" id="83486B44-7E6D-5E7A-EC3F-85B9BD7D7D97">
+<sourceConnName>FIAP</sourceConnName>
+<sourceObjSchema>TBL_VENTANIA</sourceObjSchema>
+<sourceObjName>DATA</sourceObjName>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a data da ventania registrada e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HORA" id="DD83737B-72A3-F268-2403-CB9615AD5C55">
+<sourceConnName>FIAP</sourceConnName>
+<sourceObjSchema>TBL_VENTANIA</sourceObjSchema>
+<sourceObjName>HORA</sourceObjName>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a hora da ventania registrada e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VELOCIDADE" id="CFC3897E-6C3D-BB08-1245-EA47F3D9B693">
+<sourceConnName>FIAP</sourceConnName>
+<sourceObjSchema>TBL_VENTANIA</sourceObjSchema>
+<sourceObjName>VELOCIDADE</sourceObjName>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a velocidade da ventania registrada.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6B6A580D-E1FD-2DB1-9E1E-7A52F9807611" schemaObject="216A8615-DB2D-B381-9AF7-6FD0025B3E62" name="TBL_VENTANIA_PK">
+<sourceConnName>FIAP</sourceConnName>
+<sourceObjSchema>RM557311</sourceObjSchema>
+<sourceObjName>SYS_C002734371</sourceObjName>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:32 UTC</createdTime>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C33C6784-C2F3-51B8-FF16-1BD93500A7D3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

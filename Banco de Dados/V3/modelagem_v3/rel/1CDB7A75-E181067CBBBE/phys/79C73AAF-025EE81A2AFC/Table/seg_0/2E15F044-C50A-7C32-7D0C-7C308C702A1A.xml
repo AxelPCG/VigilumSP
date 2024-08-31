@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="TBL_MUNICIPIO" directorySegmentName="seg_0" id="2E15F044-C50A-7C32-7D0C-7C308C702A1A">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:31 UTC</createdTime>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<schemaObject>216A8615-DB2D-B381-9AF7-6FD0025B3E62</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>11062B65-7E1D-5F99-A22D-2C129AAE9068</segment>
+<tableSpace>7F4F9207-B10B-BA11-4124-6C4113323012</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="NM_MUN" id="1F8350DF-5EDD-CF17-BE50-D92C497BD5E4">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:31 UTC</createdTime>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SG_ESTADO" id="20AD9439-AD04-D733-FF4A-94F6B3459243">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:31 UTC</createdTime>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CD_MUN" id="373B7650-9E1E-E25C-26BB-24FD3ED25854">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:31 UTC</createdTime>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="GEOMETRY" id="7BFB9101-E5ED-DAC8-BE03-BFB3E32D9089">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:31 UTC</createdTime>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CORD_CENTRAL" id="8260E203-877F-3723-4E94-D3B9A9EA2452">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:31 UTC</createdTime>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AREA_KM2" id="E0B8D8C8-476D-4EB3-89C7-53EEB6A9958B">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:31 UTC</createdTime>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="TBL_MUNICIPIO_PK" id="41581B2D-AC96-2E95-FE7A-4DEF04F7DDDD">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:32 UTC</createdTime>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<schemaObject>216A8615-DB2D-B381-9AF7-6FD0025B3E62</schemaObject>
+<segment>77DBF15D-2B24-8846-BD5F-6B99301A6D0B</segment>
+<tableSpace>7F4F9207-B10B-BA11-4124-6C4113323012</tableSpace>
+<indexSegment>77DBF15D-2B24-8846-BD5F-6B99301A6D0B</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

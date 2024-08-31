@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="TBL_NUVEM" directorySegmentName="seg_0" id="7CF1AA28-0B49-81D9-5BC1-B4A27E25FC2F">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:31 UTC</createdTime>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<schemaObject>216A8615-DB2D-B381-9AF7-6FD0025B3E62</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>11062B65-7E1D-5F99-A22D-2C129AAE9068</segment>
+<tableSpace>7F4F9207-B10B-BA11-4124-6C4113323012</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="DATA" id="22D25189-AB91-4BDC-EB54-7459D594A090">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:31 UTC</createdTime>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TIPO" id="74A84120-1100-7014-F425-1DAF62A3B69F">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:31 UTC</createdTime>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID" id="B74A87F7-4A4B-D112-041E-8E1B5F3635CB">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:31 UTC</createdTime>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="HORA" id="CEE653EA-334A-A32F-2C5C-4B4C5F8F6643">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:31 UTC</createdTime>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="TBL_NUVEM_PK" id="3F70EC6F-83D4-D7F1-DC9C-AE999FFA194B">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:32 UTC</createdTime>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<schemaObject>216A8615-DB2D-B381-9AF7-6FD0025B3E62</schemaObject>
+<segment>77DBF15D-2B24-8846-BD5F-6B99301A6D0B</segment>
+<tableSpace>7F4F9207-B10B-BA11-4124-6C4113323012</tableSpace>
+<indexSegment>77DBF15D-2B24-8846-BD5F-6B99301A6D0B</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

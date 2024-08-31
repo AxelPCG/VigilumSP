@@ -1,0 +1,126 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2E15F044-C50A-7C32-7D0C-7C308C702A1A" schemaObject="216A8615-DB2D-B381-9AF7-6FD0025B3E62" name="TBL_MUNICIPIO">
+<sourceConnName>FIAP</sourceConnName>
+<sourceObjSchema>RM557311</sourceObjSchema>
+<sourceObjName>TBL_MUNICIPIO</sourceObjName>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:31 UTC</createdTime>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CD_MUN" id="373B7650-9E1E-E25C-26BB-24FD3ED25854">
+<sourceConnName>FIAP</sourceConnName>
+<sourceObjSchema>TBL_MUNICIPIO</sourceObjSchema>
+<sourceObjName>CD_MUN</sourceObjName>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o código do município e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>20</autoIncrementCache>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="NM_MUN" id="1F8350DF-5EDD-CF17-BE50-D92C497BD5E4">
+<sourceConnName>FIAP</sourceConnName>
+<sourceObjSchema>TBL_MUNICIPIO</sourceObjSchema>
+<sourceObjName>NM_MUN</sourceObjName>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o nome do município e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SG_ESTADO" id="20AD9439-AD04-D733-FF4A-94F6B3459243">
+<sourceConnName>FIAP</sourceConnName>
+<sourceObjSchema>TBL_MUNICIPIO</sourceObjSchema>
+<sourceObjName>SG_ESTADO</sourceObjName>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a sigla do estado do município e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AREA_KM2" id="E0B8D8C8-476D-4EB3-89C7-53EEB6A9958B">
+<sourceConnName>FIAP</sourceConnName>
+<sourceObjSchema>TBL_MUNICIPIO</sourceObjSchema>
+<sourceObjName>AREA_KM2</sourceObjName>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a área do município em quilômetros quadrados.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GEOMETRY" id="7BFB9101-E5ED-DAC8-BE03-BFB3E32D9089">
+<sourceConnName>FIAP</sourceConnName>
+<sourceObjSchema>TBL_MUNICIPIO</sourceObjSchema>
+<sourceObjName>GEOMETRY</sourceObjName>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o polígono de coordenadas do município.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<allowSubtypeSubstitution>false</allowSubtypeSubstitution>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CORD_CENTRAL" id="8260E203-877F-3723-4E94-D3B9A9EA2452">
+<sourceConnName>FIAP</sourceConnName>
+<sourceObjSchema>TBL_MUNICIPIO</sourceObjSchema>
+<sourceObjName>CORD_CENTRAL</sourceObjName>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a coordenada central do município.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<allowSubtypeSubstitution>false</allowSubtypeSubstitution>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="41581B2D-AC96-2E95-FE7A-4DEF04F7DDDD" schemaObject="216A8615-DB2D-B381-9AF7-6FD0025B3E62" name="TBL_MUNICIPIO_PK">
+<sourceConnName>FIAP</sourceConnName>
+<sourceObjSchema>RM557311</sourceObjSchema>
+<sourceObjName>SYS_C002734349</sourceObjName>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:32 UTC</createdTime>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="373B7650-9E1E-E25C-26BB-24FD3ED25854"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

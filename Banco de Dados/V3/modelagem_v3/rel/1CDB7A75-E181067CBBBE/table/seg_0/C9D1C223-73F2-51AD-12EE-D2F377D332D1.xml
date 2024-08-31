@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C9D1C223-73F2-51AD-12EE-D2F377D332D1" schemaObject="216A8615-DB2D-B381-9AF7-6FD0025B3E62" name="TBL_UMIDADE">
+<sourceConnName>FIAP</sourceConnName>
+<sourceObjSchema>RM557311</sourceObjSchema>
+<sourceObjName>TBL_UMIDADE</sourceObjName>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:31 UTC</createdTime>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="23D169E6-A836-29B7-6A33-D94705CC18B1">
+<sourceConnName>FIAP</sourceConnName>
+<sourceObjSchema>TBL_UMIDADE</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o Id da umidade registrada e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>20</autoIncrementCache>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="DATA" id="16FCD061-A98D-7382-D73F-0CB86122B29B">
+<sourceConnName>FIAP</sourceConnName>
+<sourceObjSchema>TBL_UMIDADE</sourceObjSchema>
+<sourceObjName>DATA</sourceObjName>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a data da umidade registrada e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HORA" id="1F0CB766-FE61-1FA5-F0E1-9A90B0FD69B4">
+<sourceConnName>FIAP</sourceConnName>
+<sourceObjSchema>TBL_UMIDADE</sourceObjSchema>
+<sourceObjName>HORA</sourceObjName>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a hora da umidade registrada e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UMIDADE_MAX" id="55CC5E07-41EB-1C1A-5F8E-380F4DA62F51">
+<sourceConnName>FIAP</sourceConnName>
+<sourceObjSchema>TBL_UMIDADE</sourceObjSchema>
+<sourceObjName>UMIDADE_MAX</sourceObjName>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a umidade máxima registrada.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UMIDADE_MIN" id="0B1D85E6-6DEF-D527-EFD6-17EDDF070570">
+<sourceConnName>FIAP</sourceConnName>
+<sourceObjSchema>TBL_UMIDADE</sourceObjSchema>
+<sourceObjName>UMIDADE_MIN</sourceObjName>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a umidade mínima registrada.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="10926D87-A050-DDA7-8CE0-D4C480B5EBDB" schemaObject="216A8615-DB2D-B381-9AF7-6FD0025B3E62" name="TBL_UMIDADE_PK">
+<sourceConnName>FIAP</sourceConnName>
+<sourceObjSchema>RM557311</sourceObjSchema>
+<sourceObjName>SYS_C002734367</sourceObjName>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:32 UTC</createdTime>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="23D169E6-A836-29B7-6A33-D94705CC18B1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

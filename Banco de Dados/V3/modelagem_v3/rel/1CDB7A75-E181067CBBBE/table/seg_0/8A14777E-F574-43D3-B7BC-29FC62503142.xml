@@ -1,0 +1,242 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8A14777E-F574-43D3-B7BC-29FC62503142" schemaObject="216A8615-DB2D-B381-9AF7-6FD0025B3E62" name="TBL_PREVISAO_FUTURA">
+<sourceConnName>FIAP</sourceConnName>
+<sourceObjSchema>RM557311</sourceObjSchema>
+<sourceObjName>TBL_PREVISAO_FUTURA</sourceObjName>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:31 UTC</createdTime>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="39C4AD2B-0B95-0562-768A-B494810E8B10">
+<sourceConnName>FIAP</sourceConnName>
+<sourceObjSchema>TBL_PREVISAO_FUTURA</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o Id da previsão futura registrada e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>20</autoIncrementCache>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="REGIAO_ID" id="269FAC3C-5392-0A05-E405-ED27A85A8530">
+<sourceConnName>FIAP</sourceConnName>
+<sourceObjSchema>TBL_PREVISAO_FUTURA</sourceObjSchema>
+<sourceObjName>REGIAO_ID</sourceObjName>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o Id da região registrada e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4C265805-C109-FD98-53F0-254CB5FDDDD2" referredColumn="C312199B-8148-FB11-EDEA-98FB6EA2AB20"/>
+</associations>
+</Column>
+<Column name="DATA_REFERENCIA" id="A0F41FB9-2ABC-B46C-B552-B0204A6B36B8">
+<sourceConnName>FIAP</sourceConnName>
+<sourceObjSchema>TBL_PREVISAO_FUTURA</sourceObjSchema>
+<sourceObjName>DATA_REFERENCIA</sourceObjName>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a data de referência da previsão futura e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATA_FUTURA" id="82EF0C2E-E994-1D33-8BC4-09E55B0AEFCC">
+<sourceConnName>FIAP</sourceConnName>
+<sourceObjSchema>TBL_PREVISAO_FUTURA</sourceObjSchema>
+<sourceObjName>DATA_FUTURA</sourceObjName>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a data futura prevista e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HORA" id="975BCAFB-25D1-7178-0B8A-6D38E1920D02">
+<sourceConnName>FIAP</sourceConnName>
+<sourceObjSchema>TBL_PREVISAO_FUTURA</sourceObjSchema>
+<sourceObjName>HORA</sourceObjName>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a hora prevista e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TEMPERATURA_MAX" id="AF874D71-A56B-B649-2D56-21B3225DBEA2">
+<sourceConnName>FIAP</sourceConnName>
+<sourceObjSchema>TBL_PREVISAO_FUTURA</sourceObjSchema>
+<sourceObjName>TEMPERATURA_MAX</sourceObjName>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:31 UTC</createdTime>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TEMPERATURA_MIN" id="302A7E86-6D31-5587-5C30-4DD6B5A8AF8B">
+<sourceConnName>FIAP</sourceConnName>
+<sourceObjSchema>TBL_PREVISAO_FUTURA</sourceObjSchema>
+<sourceObjName>TEMPERATURA_MIN</sourceObjName>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:31 UTC</createdTime>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UMIDADE_MAX" id="503198B9-1169-84DE-BD25-5FB02BD6F0C8">
+<sourceConnName>FIAP</sourceConnName>
+<sourceObjSchema>TBL_PREVISAO_FUTURA</sourceObjSchema>
+<sourceObjName>UMIDADE_MAX</sourceObjName>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:31 UTC</createdTime>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UMIDADE_MIN" id="1558B3AC-197B-C5BB-A295-0646B3FDE019">
+<sourceConnName>FIAP</sourceConnName>
+<sourceObjSchema>TBL_PREVISAO_FUTURA</sourceObjSchema>
+<sourceObjName>UMIDADE_MIN</sourceObjName>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:31 UTC</createdTime>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VENTANIA" id="D140A51C-1E41-5EEE-DF21-8745CA083485">
+<sourceConnName>FIAP</sourceConnName>
+<sourceObjSchema>TBL_PREVISAO_FUTURA</sourceObjSchema>
+<sourceObjName>VENTANIA</sourceObjName>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:31 UTC</createdTime>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRECIPITACAO" id="691364D1-A2DB-C42E-9BA6-FAD91D2EE847">
+<sourceConnName>FIAP</sourceConnName>
+<sourceObjSchema>TBL_PREVISAO_FUTURA</sourceObjSchema>
+<sourceObjName>PRECIPITACAO</sourceObjName>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:31 UTC</createdTime>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUVEM" id="EAF2F888-6B16-16F7-9077-A14DCCE4171F">
+<sourceConnName>FIAP</sourceConnName>
+<sourceObjSchema>TBL_PREVISAO_FUTURA</sourceObjSchema>
+<sourceObjName>NUVEM</sourceObjName>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:31 UTC</createdTime>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRESSAO_ATM" id="EEBD9FE5-FE4D-F488-5091-D2A101477B42">
+<sourceConnName>FIAP</sourceConnName>
+<sourceObjSchema>TBL_PREVISAO_FUTURA</sourceObjSchema>
+<sourceObjName>PRESSAO_ATM</sourceObjName>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:31 UTC</createdTime>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="96A29E4C-ADD9-86DD-CB76-B3546F4E5490" schemaObject="216A8615-DB2D-B381-9AF7-6FD0025B3E62" name="TBL_PREVISAO_FUTURA_PK">
+<sourceConnName>FIAP</sourceConnName>
+<sourceObjSchema>RM557311</sourceObjSchema>
+<sourceObjName>SYS_C002734401</sourceObjName>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:32 UTC</createdTime>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="39C4AD2B-0B95-0562-768A-B494810E8B10"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C290302C-894A-A049-FC01-EB8C167DB053" name="SYS_C002734402">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:33 UTC</createdTime>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="269FAC3C-5392-0A05-E405-ED27A85A8530"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

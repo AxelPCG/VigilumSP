@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2C65FB9E-7C23-401F-3520-0B32824A1AA2" containerWithKeyObject="B492FBAB-5CDC-3900-08E2-289BF44C10B5" localFKIndex="FCFC7C12-AC84-97EE-7EC5-5C350DF99582" name="SYS_C002734393">
+<sourceConnName>FIAP</sourceConnName>
+<sourceObjSchema>RM557311</sourceObjSchema>
+<sourceObjName>SYS_C002734393</sourceObjName>
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-08-31 21:26:33 UTC</createdTime>
+<ownerDesignName>modelagem_v3</ownerDesignName>
+<referredTableLongName>RM557311.TBL_PRECIPITACAO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>048D932B-07B3-EB82-4AA2-1223A201E4C5</referredTableID>
+<keyObject>336FDFE7-45DE-165F-1F5E-E0F52F82949C</keyObject>
+<referredKeyID>336FDFE7-45DE-165F-1F5E-E0F52F82949C</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
