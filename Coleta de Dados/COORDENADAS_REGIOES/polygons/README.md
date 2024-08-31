@@ -1,5 +1,11 @@
 ## BASE DADOS OFICIAL SP - IBGE
 
+Os arquivos podem ser encontrados na pasta compartilhada abaixo:
+
+https://fiapcom-my.sharepoint.com/:f:/g/personal/rm557311_fiap_com_br/Eg2_ZskhmYJDoKN3XWG1NwMBUjvcCT2lpaH9iATqHx1TDQ?e=8EueRq
+
+## FONTES
+
 LINK: https://www.ibge.gov.br/geociencias/organizacao-do-territorio/malhas-territoriais.html
 
 - ARQUIVOS: 
