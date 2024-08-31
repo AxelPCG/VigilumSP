@@ -18,7 +18,7 @@ load_dotenv()
 
 # %%
 # DEFINIÇÕES DE DIRETÓRIOS
-BASE_DIR = os.getcwd()
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DIR_DADOS = os.path.join(BASE_DIR, "dados")
 DIR_COUNTRIES = os.path.join(DIR_DADOS, "ne_110m_admin_0_countries")
 countries_shp_path = os.path.join(DIR_COUNTRIES, "ne_110m_admin_0_countries.shp")
