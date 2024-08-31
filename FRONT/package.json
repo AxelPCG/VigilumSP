@@ -34,8 +34,10 @@
         "chartist": "0.11.4",
         "googleapis": "66.0.0",
         "jquery": "3.5.1",
+        "ngx-mask": "^14.3.3",
         "perfect-scrollbar": "1.5.0",
         "rxjs": "~7.5.0",
+        "sweetalert2": "^11.12.4",
         "tslib": "^2.3.0",
         "zone.js": "~0.11.4"
     },
