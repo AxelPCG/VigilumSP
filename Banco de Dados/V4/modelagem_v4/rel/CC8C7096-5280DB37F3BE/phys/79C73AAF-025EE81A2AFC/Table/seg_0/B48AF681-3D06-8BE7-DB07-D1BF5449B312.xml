@@ -1,0 +1,42 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="TBL_Nuvem" directorySegmentName="seg_0" id="B48AF681-3D06-8BE7-DB07-D1BF5449B312">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-02 05:09:45 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="Id" id="00BDA94E-EF83-130B-AE47-A7293E527877">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-02 05:09:45 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="Data" id="0F8A5E95-3916-068A-57FD-6019846BAA12">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-02 05:09:45 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Hora" id="60A92724-3E04-5E6B-496B-CF35581C4163">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-02 05:09:45 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Tipo" id="6EFED5EC-0155-AED3-AAA9-86F2F33C1818">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-02 05:09:45 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="TBL_Nuvem_PK" id="9006A5CC-663A-77F8-B113-ED52DA5D1653">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-02 05:09:45 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

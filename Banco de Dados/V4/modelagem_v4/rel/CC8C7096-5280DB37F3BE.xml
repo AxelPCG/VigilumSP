@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="CC8C7096-FA77-7DBD-AEB4-5280DB37F3BE" mainViewID="E4A0CAB4-7101-F6E2-305D-51AE8ED3ED57">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-02 05:06:29 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>79C73AAF-E1A7-E669-7DF0-025EE81A2AFC</selectedRDBMSSite>
+<importDDLFileStamps>
+<importDDLFileStamp class="oracle.dbtools.crest.imports.DDLFileStamp">
+<fileName>DDL.sql</fileName>
+<pathName>C:\Users\Lenovo\OneDrive\Área de Trabalho\Enterprise Challenge\VigilumSP\Banco de Dados\V4</pathName>
+<dbType>14</dbType>
+</importDDLFileStamp>
+</importDDLFileStamps>
+</relationalModel>

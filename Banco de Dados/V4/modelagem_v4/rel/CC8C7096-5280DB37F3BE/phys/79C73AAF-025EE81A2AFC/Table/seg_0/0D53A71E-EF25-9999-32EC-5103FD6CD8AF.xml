@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="TBL_Umidade" directorySegmentName="seg_0" id="0D53A71E-EF25-9999-32EC-5103FD6CD8AF">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-02 05:09:45 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="Umidade_Max" id="67D78527-A7E8-6B62-B0D4-3359CF041A9F">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-02 05:09:45 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Id" id="77FAE72B-294E-ACF7-1D76-DEFB3D3A6615">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-02 05:09:45 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="Umidade_Min" id="9D7C2DF2-89E3-4978-0B20-5E80A1562480">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-02 05:09:45 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Hora" id="CB78AE8D-9838-F788-8F38-AA683A7E9BAB">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-02 05:09:45 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Data" id="EF4B98D6-0C50-E24D-2706-D32D02937B72">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-02 05:09:45 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="TBL_Umidade_PK" id="5C6BD001-BA69-1BC5-2478-DA5050305649">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-02 05:09:45 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

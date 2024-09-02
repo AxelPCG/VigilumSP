@@ -1,0 +1,42 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="TBL_Pressao" directorySegmentName="seg_0" id="4B2A5E01-437C-DBF4-9833-F195F4FFCF53">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-02 05:09:45 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="Hora" id="00715CF0-E81B-DE99-FCE4-77F7CBC422D7">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-02 05:09:45 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Data" id="6B334A7E-535A-8DCD-3E75-BB10EFB7DB79">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-02 05:09:45 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Pressao_atm" id="9CA804F4-9455-5C19-13A1-14A3B8F62FFF">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-02 05:09:45 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Id" id="FCAD3271-6009-7111-800A-1151EB7E78D4">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-02 05:09:45 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="TBL_Pressao_PK" id="7EA8DE30-47FF-A9F0-CD5D-CC463B123AD8">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-02 05:09:45 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="modelagem_v4" id="2199E869-BE22-D7F0-CE14-9E77184AE49E" version="3.5">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-02 05:06:28 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>2199E869-BE22-D7F0-CE14-9E77184AE49E</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="3507CED8-D8C3-6F00-04C7-BBB5BFC562E4">
+<designStoragePath>C:\DDL</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>
