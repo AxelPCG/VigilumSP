@@ -64,8 +64,9 @@ COMMENT ON COLUMN TBL_Zona.CORD_CENTRAL IS
 
 -- TBL_Distrito
 CREATE TABLE TBL_Distrito (
-    CD_DIST      NUMBER(7, 0) PRIMARY KEY, -- CD_DIST é a chave primária com até 7 dígitos
+    CD_DIST      NUMBER(9, 0) PRIMARY KEY, -- CD_DIST é a chave primária com até 7 dígitos
     NM_DIST      VARCHAR2(100) NOT NULL,
+    geometry   SDO_GEOMETRY, -- Tipo para armazenar o polígono de coordenadas
     CORD_CENTRAL SDO_GEOMETRY, -- Tipo para armazenar o ponto central do distrito
     Zona_Id         NUMBER NOT NULL,
     FOREIGN KEY (Zona_Id) REFERENCES TBL_Zona(Id)
@@ -76,6 +77,9 @@ COMMENT ON COLUMN TBL_Distrito.CD_DIST IS
 
 COMMENT ON COLUMN TBL_Distrito.NM_DIST IS
     'Esta coluna irá receber o nome do distrito e seu conteúdo é obrigatório.';
+
+COMMENT ON COLUMN TBL_Distrito.geometry IS
+    'Esta coluna irá receber o polígono de coordenadas do distrito.';
 
 COMMENT ON COLUMN TBL_Distrito.CORD_CENTRAL IS
     'Esta coluna irá receber a coordenada central do distrito.';
