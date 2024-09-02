@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="TBL_Previsao" directorySegmentName="seg_0" id="77EF0181-D981-9873-716B-078B7DA7E647">
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="Volume_Precipitacao" id="06027F27-75C2-CEDF-020C-709B2F8E6999">
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Id" id="0AB4BE09-5083-DF8D-E99C-B4D2336B0889">
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="Pressao_Atm" id="1ADF646E-B953-538C-095B-D9263BBC190F">
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Temperatura_Min" id="1BE365DB-2155-9EC8-7B83-027D78AE49AB">
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Umidade_Min" id="4A237688-492F-CF4E-D599-61A77FA4F734">
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Umidade_Max" id="98C54172-A550-1B53-5BFB-CAA4DB5FCC37">
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Zona_Id" id="AC65294A-3616-D63F-5641-8C0D66EB3F63">
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Data" id="B4EC3222-48A3-5488-8489-5F6FE5697074">
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Tipo_Nuvem" id="D9FF9E6E-A382-0EAB-8711-6ACF582EDAC8">
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Temperatura_Max" id="DBCF2570-B335-0282-9FB1-EF972FDDDB67">
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Velocidade_Vento" id="E4101323-4A7C-395A-FDED-0C96710F3728">
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Hora" id="FA838883-3F95-A7CC-8DA7-2F5F0E68D4FE">
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="TBL_Previsao_TBL_Zona_FK" id="2176AF2D-B739-011B-759A-3E4E1CC47F64">
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="TBL_Previsao_PK" id="96017CEE-559D-618C-27AC-CEF4B22E4795">
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

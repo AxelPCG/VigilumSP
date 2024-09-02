@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AF12C1A9-1975-A80D-B4F1-F16C32AB99FC" name="TBL_Municipio">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<importedID>A40FF2B9-672E-1EB3-8424-F07F3FA7D008</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CD_MUN" id="D0C56458-750F-7E1B-2F22-476A97B42D1D">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o código do município e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<importedID>F0DD3CDD-CE24-BBBF-20CE-5BD8DE6806BF</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>AE2E2DEF-AE5B-DA83-6593-7A86A003359D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_MUN" id="644CB8CD-1B48-014D-FF86-604FEA55E669">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o nome do município e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<importedID>A437646C-72A4-2416-EA8F-2A2CB6ABFD54</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D3B1A3F3-6082-A9ED-324B-889CC779C343</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SG_Estado" id="640B0F30-3813-92A9-9995-654A8ACD207E">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a sigla do estado do município e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<importedID>EFDA76EC-B2BA-CE22-8007-056B7C1FB5C3</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>12628AAF-511D-3C03-23B3-8ABD59A937F3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AREA_KM2" id="C5074BE2-6CA5-0F97-D03A-6E92BC3DF4AE">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a área do município em quilômetros quadrados.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<importedID>A7A4D244-2D3E-DF92-6423-EB4E9BE4EEA4</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>CB853F17-987C-A767-39DA-8A3554F2110C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="geometry" id="171A5EDF-3566-0481-34EB-3EC541345287">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o polígono de coordenadas do município.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<importedID>266F840A-418D-1014-E04C-E3386ADDCC0B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CORD_CENTRAL" id="640BE0AB-240E-6436-9D59-60F69A3F72D7">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a coordenada central do município.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<importedID>C1337D83-A23C-C892-EDEB-0260862881E9</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E2D6627D-7117-10CF-01EE-5B2986AADBDC" name="TBL_Municipio_PK">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<importedID>6038E732-4A6E-CAAE-51EA-E83759DD1B14</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D0C56458-750F-7E1B-2F22-476A97B42D1D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

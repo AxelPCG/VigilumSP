@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0D33AC70-C492-53A0-C9DF-55560C19A7E9" name="TBL_Distrito">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<importedID>3121D868-7429-8CAA-2A8E-3DEFFF2233B9</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CD_DIST" id="A2020604-A0DE-1B52-C4A0-769CDB12DA90">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o código do distrito e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<importedID>D53DF431-9C43-736B-E4E7-DEE3AF4A4CB5</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>AE2E2DEF-AE5B-DA83-6593-7A86A003359D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_DIST" id="9F167B23-FFFE-E74F-FB8F-7BE45C0AAF84">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o nome do distrito e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<importedID>4B2F5849-965E-9BC8-E9D8-7AE56B735A16</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D3B1A3F3-6082-A9ED-324B-889CC779C343</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CORD_CENTRAL" id="7392F66B-EF8D-71EC-ADAC-EAA5809E6DC3">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a coordenada central do distrito.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<importedID>9A924CBD-7E38-35A4-9F6A-D2CBE4293649</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Zona_Id" id="2259DC22-9717-4D68-527C-3F3B493202EC">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o Nome da Zona associado ao distrito.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<importedID>98D8CEFC-DF29-1C5F-CEA9-84F07523777B</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>C8F22390-C1D4-DBC2-591D-CC1CB27C1D88</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="57AD11B8-5D27-5497-BB49-1DAD57EE9D57" referredColumn="59403081-6D23-9EAD-9831-F2F8887E5E99"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EE63FD8E-7AA5-92D0-626B-9258F4CB8F1D" name="TBL_Distrito_PK">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<importedID>B1E302A4-2EB1-8342-54C4-D573230ABABF</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A2020604-A0DE-1B52-C4A0-769CDB12DA90"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DE3379AE-E39D-ED54-8BF9-D29C30E4E36B" name="TBL_Distrito_TBL_Zona_FK">
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2259DC22-9717-4D68-527C-3F3B493202EC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

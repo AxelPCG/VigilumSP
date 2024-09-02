@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B71A6565-4A1A-03D7-DF35-A15793B01F4F" containerWithKeyObject="D2CB6C9A-0C24-5C6D-CED0-5FF85B2BC5A5" localFKIndex="7652EB2C-5663-A48D-F549-F455B7D7479A" name="TBL_Zona_TBL_Municipio_FK">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<importedID>CC90DEF5-5F99-C64E-D1F8-009B66DC5D73</importedID>
+<referredTableLongName>TBL_Municipio</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>AF12C1A9-1975-A80D-B4F1-F16C32AB99FC</referredTableID>
+<keyObject>E2D6627D-7117-10CF-01EE-5B2986AADBDC</keyObject>
+<referredKeyID>E2D6627D-7117-10CF-01EE-5B2986AADBDC</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CD_MUN</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

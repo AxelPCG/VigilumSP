@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="TBL_Municipio" directorySegmentName="seg_0" id="AF12C1A9-1975-A80D-B4F1-F16C32AB99FC">
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="geometry" id="171A5EDF-3566-0481-34EB-3EC541345287">
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SG_Estado" id="640B0F30-3813-92A9-9995-654A8ACD207E">
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CORD_CENTRAL" id="640BE0AB-240E-6436-9D59-60F69A3F72D7">
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NM_MUN" id="644CB8CD-1B48-014D-FF86-604FEA55E669">
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AREA_KM2" id="C5074BE2-6CA5-0F97-D03A-6E92BC3DF4AE">
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CD_MUN" id="D0C56458-750F-7E1B-2F22-476A97B42D1D">
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="TBL_Municipio_PK" id="E2D6627D-7117-10CF-01EE-5B2986AADBDC">
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

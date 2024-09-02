@@ -1,0 +1,208 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="77EF0181-D981-9873-716B-078B7DA7E647" name="TBL_Previsao">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<importedID>8D5A9EA7-5325-AD70-4F79-A93A9E7A88DF</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="0AB4BE09-5083-DF8D-E99C-B4D2336B0889">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o Id da previsão registrada e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<importedID>8052F751-A4B6-D02F-C98C-03CE972A818F</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>C8F22390-C1D4-DBC2-591D-CC1CB27C1D88</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="Zona_Id" id="AC65294A-3616-D63F-5641-8C0D66EB3F63">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o Id da zona correspondente e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<importedID>BAC00F88-0117-9141-D37E-999DE32E7944</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>C8F22390-C1D4-DBC2-591D-CC1CB27C1D88</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F8F57F83-CA4C-5C4F-96AA-2CCC9510D6B8" referredColumn="59403081-6D23-9EAD-9831-F2F8887E5E99"/>
+</associations>
+</Column>
+<Column name="Data" id="B4EC3222-48A3-5488-8489-5F6FE5697074">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a data da previsão registrada e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<importedID>AA88FD84-0CCD-A7AC-8EC7-788E7E46E410</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>60512B3A-DC29-FD5B-F531-AE8CD9D257A5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Hora" id="FA838883-3F95-A7CC-8DA7-2F5F0E68D4FE">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a hora da previsão registrada e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<importedID>245C3C7C-7888-AE7E-D1E8-232F3FD1E8A2</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>FCECEC9C-A09B-EC2E-257E-5E011FC33177</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Temperatura_Max" id="DBCF2570-B335-0282-9FB1-EF972FDDDB67">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a temperatura máxima registrada na previsão.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<importedID>B4739327-2135-7C75-49EE-76CB5C0B9FA7</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0DA8EE73-1AE7-A6D0-45E7-ED4F2E42DFD7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Temperatura_Min" id="1BE365DB-2155-9EC8-7B83-027D78AE49AB">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a temperatura mínima registrada na previsão.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<importedID>3EA0CE2C-44FA-34FC-4B77-EE556A138CCF</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0DA8EE73-1AE7-A6D0-45E7-ED4F2E42DFD7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Umidade_Max" id="98C54172-A550-1B53-5BFB-CAA4DB5FCC37">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a umidade máxima registrada na previsão.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<importedID>06FA6759-5BB5-4EE6-4BE0-7503B5F9B4B3</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0DA8EE73-1AE7-A6D0-45E7-ED4F2E42DFD7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Umidade_Min" id="4A237688-492F-CF4E-D599-61A77FA4F734">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a umidade mínima registrada na previsão.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<importedID>7E64DF32-9437-0DF6-AC3B-74989A2063F5</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0DA8EE73-1AE7-A6D0-45E7-ED4F2E42DFD7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Velocidade_Vento" id="E4101323-4A7C-395A-FDED-0C96710F3728">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a velocidade do vento registrada na previsão.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<importedID>112EB921-03C8-0B02-D4A6-87FB4B80D9FD</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0DA8EE73-1AE7-A6D0-45E7-ED4F2E42DFD7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Volume_Precipitacao" id="06027F27-75C2-CEDF-020C-709B2F8E6999">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o volume de precipitação registrado na previsão.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<importedID>4965CD6B-F2BA-1B7A-F843-70817B36A388</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0DA8EE73-1AE7-A6D0-45E7-ED4F2E42DFD7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tipo_Nuvem" id="D9FF9E6E-A382-0EAB-8711-6ACF582EDAC8">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o tipo de nuvem registrado na previsão.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<importedID>E55F2496-4CC0-59F6-0816-88D01A8FF1E4</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BD58F88D-486D-5234-1AEA-F251322AC3F5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Pressao_Atm" id="1ADF646E-B953-538C-095B-D9263BBC190F">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o valor da pressão atmosférica registrada na previsão.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<importedID>72FFC74E-F6D2-9199-97DA-143C8D24758B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0DA8EE73-1AE7-A6D0-45E7-ED4F2E42DFD7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="96017CEE-559D-618C-27AC-CEF4B22E4795" name="TBL_Previsao_PK">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<importedID>F67F3B41-5053-943C-8B3B-275CB22A4DD2</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0AB4BE09-5083-DF8D-E99C-B4D2336B0889"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2176AF2D-B739-011B-759A-3E4E1CC47F64" name="TBL_Previsao_TBL_Zona_FK">
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AC65294A-3616-D63F-5641-8C0D66EB3F63"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

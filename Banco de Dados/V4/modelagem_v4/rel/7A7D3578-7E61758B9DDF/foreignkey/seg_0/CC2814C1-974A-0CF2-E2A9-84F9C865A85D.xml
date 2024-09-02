@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CC2814C1-974A-0CF2-E2A9-84F9C865A85D" containerWithKeyObject="DD7B30F7-3727-C6F9-9C28-2F29DEA8D19C" localFKIndex="BB0D206A-4D20-19D6-476F-673D653CB3CE" name="TBL_Previsao_Futura_TBL_Zona_FK">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<importedID>8C37AB59-8D60-BD3B-16EE-526337F86C3B</importedID>
+<referredTableLongName>TBL_Zona</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D2CB6C9A-0C24-5C6D-CED0-5FF85B2BC5A5</referredTableID>
+<keyObject>1E3437BD-08FA-7AB1-A5C1-968DCC8C63B3</keyObject>
+<referredKeyID>1E3437BD-08FA-7AB1-A5C1-968DCC8C63B3</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

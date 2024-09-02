@@ -1,39 +1,20 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <DomainFile class="oracle.dbtools.crest.model.design.DomainFileWrapper" fileName="DDL_Domains">
 <domains>
-<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_0_0_0" id="5CA15193-F404-ED59-1042-C83BBB8E1891">
-<createdBy>Lenovo</createdBy>
-<createdTime>2024-09-02 05:09:45 UTC</createdTime>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_5_2_0" id="0DA8EE73-1AE7-A6D0-45E7-ED4F2E42DFD7">
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
 <ownerDesignName>modelagem_v4</ownerDesignName>
 <avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<dataTypeSize>0</dataTypeSize>
 <fileName>DDL_Domains</fileName>
 <logicalDatatype>LOGDT019</logicalDatatype>
 </Domain>
-<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_100" id="8A994F5C-D695-BD94-D24F-01886CACD80B">
-<createdBy>Lenovo</createdBy>
-<createdTime>2024-09-02 05:09:45 UTC</createdTime>
-<ownerDesignName>modelagem_v4</ownerDesignName>
-<avTSortOrder>0</avTSortOrder>
-<dataTypePrecision>0</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
-<dataTypeSize>100</dataTypeSize>
-<fileName>DDL_Domains</fileName>
-<logicalDatatype>LOGDT024</logicalDatatype>
-</Domain>
-<Domain class="oracle.dbtools.crest.model.design.Domain" name="FLOAT_3_0_0" id="8E8FED72-9F06-519F-C1C6-1488804590C7">
-<createdBy>Lenovo</createdBy>
-<createdTime>2024-09-02 05:09:45 UTC</createdTime>
-<ownerDesignName>modelagem_v4</ownerDesignName>
-<avTSortOrder>0</avTSortOrder>
-<dataTypePrecision>3</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
-<dataTypeSize>0</dataTypeSize>
-<fileName>DDL_Domains</fileName>
-<logicalDatatype>LOGDT021</logicalDatatype>
-</Domain>
-<Domain class="oracle.dbtools.crest.model.design.Domain" name="CHAR_0_0_2" id="A19B8994-427C-E330-4227-7C97E4164C4B">
-<createdBy>Lenovo</createdBy>
-<createdTime>2024-09-02 05:09:45 UTC</createdTime>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="CHAR_0_0_2" id="12628AAF-511D-3C03-23B3-8ABD59A937F3">
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
 <ownerDesignName>modelagem_v4</ownerDesignName>
 <avTSortOrder>0</avTSortOrder>
 <dataTypePrecision>0</dataTypePrecision>
@@ -42,39 +23,37 @@
 <fileName>DDL_Domains</fileName>
 <logicalDatatype>LOGDT025</logicalDatatype>
 </Domain>
-<Domain class="oracle.dbtools.crest.model.design.Domain" name="FLOAT_10_0_0" id="C7F69589-40FB-59C7-2AD6-098CF6EB0525">
-<createdBy>Lenovo</createdBy>
-<createdTime>2024-09-02 05:09:45 UTC</createdTime>
-<ownerDesignName>modelagem_v4</ownerDesignName>
-<avTSortOrder>0</avTSortOrder>
-<dataTypePrecision>10</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
-<dataTypeSize>0</dataTypeSize>
-<fileName>DDL_Domains</fileName>
-<logicalDatatype>LOGDT021</logicalDatatype>
-</Domain>
-<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_2_0_0" id="CB5E0C87-44E9-2221-1CAC-A283D42648DF">
-<createdBy>Lenovo</createdBy>
-<createdTime>2024-09-02 05:09:45 UTC</createdTime>
-<ownerDesignName>modelagem_v4</ownerDesignName>
-<avTSortOrder>0</avTSortOrder>
-<dataTypePrecision>2</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
-<dataTypeSize>0</dataTypeSize>
-<fileName>DDL_Domains</fileName>
-<logicalDatatype>LOGDT019</logicalDatatype>
-</Domain>
-<Domain class="oracle.dbtools.crest.model.design.Domain" name="Date_0_0_0" id="D68A2494-EB8E-2C4C-E377-509D6AF69DE9">
-<createdBy>Lenovo</createdBy>
-<createdTime>2024-09-02 05:09:45 UTC</createdTime>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Date_0_0_0" id="60512B3A-DC29-FD5B-F531-AE8CD9D257A5">
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
 <ownerDesignName>modelagem_v4</ownerDesignName>
 <avTSortOrder>0</avTSortOrder>
 <fileName>DDL_Domains</fileName>
 <logicalDatatype>LOGDT007</logicalDatatype>
 </Domain>
-<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_50" id="F5BD7EC5-632B-F6F5-2044-61FE808CA61A">
-<createdBy>Lenovo</createdBy>
-<createdTime>2024-09-02 05:09:45 UTC</createdTime>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Timestamp_6_0_0" id="7F2CF141-AE0D-1C4C-1FD0-12AD99BB6F36">
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>6</dataTypePrecision>
+<fileName>DDL_Domains</fileName>
+<logicalDatatype>LOGDT015</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_7_0_0" id="AE2E2DEF-AE5B-DA83-6593-7A86A003359D">
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>0</dataTypeSize>
+<fileName>DDL_Domains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_50" id="BD58F88D-486D-5234-1AEA-F251322AC3F5">
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
 <ownerDesignName>modelagem_v4</ownerDesignName>
 <avTSortOrder>0</avTSortOrder>
 <dataTypePrecision>0</dataTypePrecision>
@@ -82,6 +61,47 @@
 <dataTypeSize>50</dataTypeSize>
 <fileName>DDL_Domains</fileName>
 <logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_0_0_0" id="C8F22390-C1D4-DBC2-591D-CC1CB27C1D88">
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<fileName>DDL_Domains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_10_2_0" id="CB853F17-987C-A767-39DA-8A3554F2110C">
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<dataTypeSize>0</dataTypeSize>
+<fileName>DDL_Domains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_100" id="D3B1A3F3-6082-A9ED-324B-889CC779C343">
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>100</dataTypeSize>
+<fileName>DDL_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_2_0_0" id="FCECEC9C-A09B-EC2E-257E-5E011FC33177">
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>0</dataTypeSize>
+<fileName>DDL_Domains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
 </Domain>
 </domains>
 </DomainFile>

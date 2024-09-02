@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D2CB6C9A-0C24-5C6D-CED0-5FF85B2BC5A5" name="TBL_Zona">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<importedID>6B209A67-BA19-8AD0-46FC-618219472528</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="59403081-6D23-9EAD-9831-F2F8887E5E99">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o Id da zona e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<importedID>960166ED-66DF-6E44-78EB-C8F6A044AF07</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>C8F22390-C1D4-DBC2-591D-CC1CB27C1D88</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="Nome_Zona" id="CACC3959-5FF7-D490-C221-9C887D4F9C9B">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o nome da zona e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<importedID>2C90D20D-2C4A-F5E1-9020-CCF2C4A0881E</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BD58F88D-486D-5234-1AEA-F251322AC3F5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="geometry" id="D110F5F7-8C75-1B01-5F97-14404E1270F4">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o polígono de coordenadas da zona.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<importedID>AFD86736-3490-987F-1EFF-177C23A38B09</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CORD_CENTRAL" id="326D991E-71FB-A900-B82D-D63AB5C77DA3">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a coordenada central da zona.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<importedID>ADEE3758-9315-3FD1-2B75-A72165E7EACA</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Municipio_Id" id="AF96DDB3-F294-F831-EE02-FAE3C91F146D">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o id da cidade e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<importedID>4663327C-5D38-AE9A-F4AD-E59B0D569AE4</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>AE2E2DEF-AE5B-DA83-6593-7A86A003359D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B71A6565-4A1A-03D7-DF35-A15793B01F4F" referredColumn="D0C56458-750F-7E1B-2F22-476A97B42D1D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1E3437BD-08FA-7AB1-A5C1-968DCC8C63B3" name="TBL_Zona_PK">
+<sourceDDLFile>DDL.sql</sourceDDLFile>
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<importedID>9BA61FB6-51E6-3FD0-A477-853D809EA21A</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="59403081-6D23-9EAD-9831-F2F8887E5E99"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7652EB2C-5663-A48D-F549-F455B7D7479A" name="TBL_Zona_TBL_Municipio_FK">
+<createdBy>axel.chepanski</createdBy>
+<createdTime>2024-09-02 20:17:23 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AF96DDB3-F294-F831-EE02-FAE3C91F146D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
