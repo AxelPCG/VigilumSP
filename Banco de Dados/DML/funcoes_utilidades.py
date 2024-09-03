@@ -1,4 +1,3 @@
-import geopandas as gpd
 import pandas as pd
 from shapely.geometry import Point
 from math import radians, cos, sin, sqrt, atan2
