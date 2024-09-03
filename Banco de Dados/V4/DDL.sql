@@ -156,7 +156,7 @@ CREATE TABLE TBL_Previsao_Futura (
     Ventania        NUMBER(5, 2),
     Precipitacao    NUMBER(5, 2),
     Nuvem           VARCHAR2(50),
-    Pressao         NUMBER(5, 2),
+    Pressao         NUMBER(6, 2),
     FOREIGN KEY (Zona_Id) REFERENCES TBL_Zona(Id)
 );
 
@@ -164,7 +164,7 @@ COMMENT ON COLUMN TBL_Previsao_Futura.Id IS
     'Esta coluna irá receber o Id da previsão futura registrada e seu conteúdo é obrigatório.';
 
 COMMENT ON COLUMN TBL_Previsao_Futura.Zona_Id IS
-    'Esta coluna irá receber o Id da zona registrada e seu conteúdo é obrigatório.';
+    'Esta coluna irá receber a chave estrangeira o Id da zona registrada e seu conteúdo é obrigatório.';
 
 COMMENT ON COLUMN TBL_Previsao_Futura.Data_Referencia IS
     'Esta coluna irá receber a data de referência da previsão futura e seu conteúdo é obrigatório.';
@@ -173,25 +173,25 @@ COMMENT ON COLUMN TBL_Previsao_Futura.Data_Futura IS
     'Esta coluna irá receber a data futura prevista e seu conteúdo é obrigatório.';
 
 COMMENT ON COLUMN TBL_Previsao_Futura.Temperatura_Max IS
-    'Esta coluna irá receber a chave estrangeira para a temperatura máxima futura.';
+    'Esta coluna irá receber a temperatura máxima futura.';
     
 COMMENT ON COLUMN TBL_Previsao_Futura.Temperatura_Min IS
-    'Esta coluna irá receber a chave estrangeira para a temperatura minima futura.';
+    'Esta coluna irá receber a temperatura minima futura.';
 	
 COMMENT ON COLUMN TBL_Previsao_Futura.Umidade_Max IS
-    'Esta coluna irá receber a chave estrangeira para a umidade futura.';
+    'Esta coluna irá receber a umidade futura.';
     
 COMMENT ON COLUMN TBL_Previsao_Futura.Umidade_Min IS
-    'Esta coluna irá receber a chave estrangeira para a umidade futura.';
+    'Esta coluna irá receber a umidade futura.';
 
 COMMENT ON COLUMN TBL_Previsao_Futura.Ventania IS
-    'Esta coluna irá receber a chave estrangeira para a ventania futura.';
+    'Esta coluna irá receber a ventania futura.';
 
 COMMENT ON COLUMN TBL_Previsao_Futura.Precipitacao IS
-    'Esta coluna irá receber a chave estrangeira para a precipitação futura.';
+    'Esta coluna irá receber a precipitação futura.';
 
 COMMENT ON COLUMN TBL_Previsao_Futura.Nuvem IS
-    'Esta coluna irá receber a chave estrangeira para a nuvem futura.';
+    'Esta coluna irá receber a nuvem futura.';
 
 COMMENT ON COLUMN TBL_Previsao_Futura.Pressao IS
-    'Esta coluna irá receber a chave estrangeira para a pressão atmosférica futura.';
+    'Esta coluna irá receber a para a pressão atmosférica futura.';
