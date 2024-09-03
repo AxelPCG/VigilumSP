@@ -1,4 +1,6 @@
 ﻿using DAL.Models.Base;
+using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DAL.Models
@@ -6,30 +8,37 @@ namespace DAL.Models
     [Table("TBL_Previsao")]
     public class Previsao : Entity
     {
+        [Required]
+        [ForeignKey("Zona")]
+        public int Zona_Id { get; set; }
+        public virtual Zona Zona { get; set; }
 
-        [ForeignKey("Regiao")]
-        public int Regiao_Id { get; set; }
 
-        [ForeignKey("Temperatura")]
-        public int Temperatura_Id { get; set; }
+        [Required]
+        public DateTime Data { get; set; }
 
-        [ForeignKey("Umidade")]
-        public int Umidade_Id { get; set; }
+        [Precision(2)]
+        public double Temperatura_Max { get; set; }
 
-        [ForeignKey("Ventania")]
-        public int Ventania_Id { get; set; }
+        [Precision(5, 2)]
+        public double Temperatura_Min { get; set; }
 
-        [ForeignKey("Precipitacao")]
-        public int Precipitacao_Id { get; set; }
+        [Precision(5, 2)]
+        public double Umidade_Max { get; set; }
 
-        [ForeignKey("Nuvem")]
-        public int Nuvem_Id { get; set; }
+        [Precision(5, 2)]
+        public double Umidade_Min { get; set; }
 
-        public virtual Regiao Regiao { get; set; }
-        public virtual Temperatura Temperatura { get; set; }
-        public virtual Umidade Umidade { get; set; }
-        public virtual Ventania Ventania { get; set; }
-        public virtual Precipitacao Precipitacao { get; set; }
-        public virtual Nuvem Nuvem { get; set; }
+        [Precision(5, 2)]
+        public double Velocidade_Vento { get; set; }
+
+        [Precision(5, 2)]
+        public double Volume_Precipitacao { get; set; }
+
+        [StringLength(50)]
+        public string Tipo_Nuvem { get; set; }
+
+        [Precision(5, 2)]
+        public double Pressao_Atm { get; set; }
     }
 }

@@ -21,6 +21,7 @@ import { SobreComponent } from 'app/sobre/sobre.component';
 import { AlertaComponent } from 'app/alerta/alerta.component';
 import { ReportarComponent } from 'app/reportar/reportar.component';
 import { NgxMaskModule } from 'ngx-mask';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import { NgxMaskModule } from 'ngx-mask';
     RouterModule.forChild(AdminLayoutRoutes),
     FormsModule,
     LbdModule,
+    HttpClientModule,
     NguiMapModule.forRoot({apiUrl: 'https://maps.google.com/maps/api/js?key=YOUR_KEY_HERE'})
   ],
   declarations: [

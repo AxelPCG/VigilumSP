@@ -9,16 +9,12 @@ namespace DAL
     {
         public BancoAPIContext(DbContextOptions<BancoAPIContext> options) : base(options) {}
 
-        public DbSet<Cidade> TBL_Cidade { get; set; }
-        public DbSet<Regiao> TBL_Regiao { get; set; }
-        public DbSet<SubPrefeitura> TBL_SubPrefeitura { get; set; }
-        public DbSet<Aviso> TBL_Aviso { get; set; }
-        public DbSet<Previsao> TBL_Previsao {  get; set; }
-        public DbSet<Umidade> TBL_Umidade { get; set; }
-        public DbSet<Temperatura> TBL_Temperatura { get; set; }
-        public DbSet<Nuvem> TBL_Nuvem { get; set; }
-        public DbSet<Precipitacao> TBL_Precipitacao { get; set; }
-        public DbSet<Ventania> TBL_Ventania { get; set; }
+        public DbSet<Distrito> Distritos { get; set; }
+        public DbSet<Municipio> Municipios { get; set; }
+        public DbSet<Previsao> Previsoes { get; set; }  
+        public DbSet<PrevisaoFutura> PrevisoesFuturas { get; set; }
+        public DbSet<Zona> Zonas { get; set; }
+        public DbSet<Ocorrencia> Ocorrencias { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

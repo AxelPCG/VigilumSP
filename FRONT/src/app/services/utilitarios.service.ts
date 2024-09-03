@@ -25,6 +25,8 @@ export class UtilitariosService {
       allowOutsideClick: false,
       showConfirmButton: false
     });
+
+    Swal.showLoading();
   }
 
   public hideLoading(){

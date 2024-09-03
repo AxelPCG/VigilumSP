@@ -25,7 +25,7 @@ namespace DAL.Migrations
 
             OracleModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("DAL.Models.Aviso", b =>
+            modelBuilder.Entity("DAL.Models.Distrito", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -33,33 +33,30 @@ namespace DAL.Migrations
 
                     OraclePropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<DateTime>("Data")
-                        .HasColumnType("TIMESTAMP(7)");
-
-                    b.Property<string>("Descricao")
-                        .IsRequired()
-                        .HasMaxLength(256)
-                        .HasColumnType("NVARCHAR2(256)");
-
-                    b.Property<int>("Nivel")
+                    b.Property<int>("Cd_Dist")
+                        .HasMaxLength(7)
                         .HasColumnType("NUMBER(10)");
 
-                    b.Property<int>("SubPrefeitura_Id")
-                        .HasColumnType("NUMBER(10)");
-
-                    b.Property<string>("Tipo")
+                    b.Property<string>("Cord_Central")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("NVARCHAR2(50)");
+                        .HasColumnType("SDO_GEOMETRY");
+
+                    b.Property<string>("Nm_Dist")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("NVARCHAR2(100)");
+
+                    b.Property<int>("Zona_Id")
+                        .HasColumnType("NUMBER(10)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("SubPrefeitura_Id");
+                    b.HasIndex("Zona_Id");
 
-                    b.ToTable("TBL_Aviso");
+                    b.ToTable("TBL_Distrito");
                 });
 
-            modelBuilder.Entity("DAL.Models.Cidade", b =>
+            modelBuilder.Entity("DAL.Models.Municipio", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -67,88 +64,85 @@ namespace DAL.Migrations
 
                     OraclePropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Nome")
+                    b.Property<double>("Area_Km2")
+                        .HasPrecision(10, 2)
+                        .HasColumnType("BINARY_DOUBLE");
+
+                    b.Property<int>("Cod_Mun")
+                        .HasMaxLength(7)
+                        .HasColumnType("NUMBER(10)");
+
+                    b.Property<string>("Cord_Central")
+                        .IsRequired()
+                        .HasColumnType("SDO_GEOMETRY");
+
+                    b.Property<string>("Geometry")
+                        .IsRequired()
+                        .HasColumnType("SDO_GEOMETRY");
+
+                    b.Property<string>("Nm_Mun")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("NVARCHAR2(100)");
+
+                    b.Property<string>("Sg_Estado")
+                        .IsRequired()
+                        .HasMaxLength(2)
+                        .HasColumnType("NVARCHAR2(2)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("TBL_Municipio");
+                });
+
+            modelBuilder.Entity("DAL.Models.Ocorrencia", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("NUMBER(10)");
+
+                    OraclePropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("Assunto")
+                        .HasColumnType("NUMBER(10)");
+
+                    b.Property<string>("Concordo_Termos_Condicoes")
+                        .IsRequired()
+                        .HasColumnType("NVARCHAR2(1)");
+
+                    b.Property<string>("Descricao")
                         .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("NVARCHAR2(255)");
 
-                    b.HasKey("Id");
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("NVARCHAR2(255)");
 
-                    b.ToTable("TBL_Cidade");
-                });
+                    b.Property<string>("Mensagem")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("NVARCHAR2(500)");
 
-            modelBuilder.Entity("DAL.Models.Nuvem", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("NUMBER(10)");
+                    b.Property<string>("Primeiro_Nome")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("NVARCHAR2(50)");
 
-                    OraclePropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    b.Property<string>("Sobrenome")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("NVARCHAR2(50)");
 
-                    b.Property<DateTime>("Data")
-                        .HasColumnType("TIMESTAMP(7)");
-
-                    b.Property<float>("Dia_1")
-                        .HasColumnType("BINARY_FLOAT");
-
-                    b.Property<float>("Dia_2")
-                        .HasColumnType("BINARY_FLOAT");
-
-                    b.Property<float>("Dia_3")
-                        .HasColumnType("BINARY_FLOAT");
-
-                    b.Property<float>("Dia_4")
-                        .HasColumnType("BINARY_FLOAT");
-
-                    b.Property<float>("Dia_5")
-                        .HasColumnType("BINARY_FLOAT");
-
-                    b.Property<float>("Dia_6")
-                        .HasColumnType("BINARY_FLOAT");
-
-                    b.Property<float>("Dia_7")
-                        .HasColumnType("BINARY_FLOAT");
+                    b.Property<string>("Telefone")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("NVARCHAR2(50)");
 
                     b.HasKey("Id");
 
-                    b.ToTable("TBL_Nuvem");
-                });
-
-            modelBuilder.Entity("DAL.Models.Precipitacao", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("NUMBER(10)");
-
-                    OraclePropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTime>("Data")
-                        .HasColumnType("TIMESTAMP(7)");
-
-                    b.Property<float>("Dia_1")
-                        .HasColumnType("BINARY_FLOAT");
-
-                    b.Property<float>("Dia_2")
-                        .HasColumnType("BINARY_FLOAT");
-
-                    b.Property<float>("Dia_3")
-                        .HasColumnType("BINARY_FLOAT");
-
-                    b.Property<float>("Dia_4")
-                        .HasColumnType("BINARY_FLOAT");
-
-                    b.Property<float>("Dia_5")
-                        .HasColumnType("BINARY_FLOAT");
-
-                    b.Property<float>("Dia_6")
-                        .HasColumnType("BINARY_FLOAT");
-
-                    b.Property<float>("Dia_7")
-                        .HasColumnType("BINARY_FLOAT");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("TBL_Precipitacao");
+                    b.ToTable("TBL_Ocorrencia");
                 });
 
             modelBuilder.Entity("DAL.Models.Previsao", b =>
@@ -159,42 +153,53 @@ namespace DAL.Migrations
 
                     OraclePropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("Nuvem_Id")
-                        .HasColumnType("NUMBER(10)");
+                    b.Property<DateTime>("Data")
+                        .HasColumnType("TIMESTAMP(7)");
 
-                    b.Property<int>("Precipitacao_Id")
-                        .HasColumnType("NUMBER(10)");
+                    b.Property<double>("Pressao_Atm")
+                        .HasPrecision(5, 2)
+                        .HasColumnType("BINARY_DOUBLE");
 
-                    b.Property<int>("Regiao_Id")
-                        .HasColumnType("NUMBER(10)");
+                    b.Property<double>("Temperatura_Max")
+                        .HasPrecision(2)
+                        .HasColumnType("BINARY_DOUBLE");
 
-                    b.Property<int>("Temperatura_Id")
-                        .HasColumnType("NUMBER(10)");
+                    b.Property<double>("Temperatura_Min")
+                        .HasPrecision(5, 2)
+                        .HasColumnType("BINARY_DOUBLE");
 
-                    b.Property<int>("Umidade_Id")
-                        .HasColumnType("NUMBER(10)");
+                    b.Property<string>("Tipo_Nuvem")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("NVARCHAR2(50)");
 
-                    b.Property<int>("Ventania_Id")
+                    b.Property<double>("Umidade_Max")
+                        .HasPrecision(5, 2)
+                        .HasColumnType("BINARY_DOUBLE");
+
+                    b.Property<double>("Umidade_Min")
+                        .HasPrecision(5, 2)
+                        .HasColumnType("BINARY_DOUBLE");
+
+                    b.Property<double>("Velocidade_Vento")
+                        .HasPrecision(5, 2)
+                        .HasColumnType("BINARY_DOUBLE");
+
+                    b.Property<double>("Volume_Precipitacao")
+                        .HasPrecision(5, 2)
+                        .HasColumnType("BINARY_DOUBLE");
+
+                    b.Property<int>("Zona_Id")
                         .HasColumnType("NUMBER(10)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("Nuvem_Id");
-
-                    b.HasIndex("Precipitacao_Id");
-
-                    b.HasIndex("Regiao_Id");
-
-                    b.HasIndex("Temperatura_Id");
-
-                    b.HasIndex("Umidade_Id");
-
-                    b.HasIndex("Ventania_Id");
+                    b.HasIndex("Zona_Id");
 
                     b.ToTable("TBL_Previsao");
                 });
 
-            modelBuilder.Entity("DAL.Models.Regiao", b =>
+            modelBuilder.Entity("DAL.Models.PrevisaoFutura", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -202,262 +207,137 @@ namespace DAL.Migrations
 
                     OraclePropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("Cidade_Id")
+                    b.Property<DateTime>("Data_Futura")
+                        .HasColumnType("TIMESTAMP(7)");
+
+                    b.Property<DateTime>("Data_Referencia")
+                        .HasColumnType("TIMESTAMP(7)");
+
+                    b.Property<int>("Hora")
+                        .HasMaxLength(2)
                         .HasColumnType("NUMBER(10)");
 
-                    b.Property<string>("Nome")
+                    b.Property<double>("Pressao_Atm")
+                        .HasPrecision(5, 2)
+                        .HasColumnType("BINARY_DOUBLE");
+
+                    b.Property<double>("Temperatura_Max")
+                        .HasPrecision(2)
+                        .HasColumnType("BINARY_DOUBLE");
+
+                    b.Property<double>("Temperatura_Min")
+                        .HasPrecision(5, 2)
+                        .HasColumnType("BINARY_DOUBLE");
+
+                    b.Property<string>("Tipo_Nuvem")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("NVARCHAR2(50)");
+
+                    b.Property<double>("Umidade_Max")
+                        .HasPrecision(5, 2)
+                        .HasColumnType("BINARY_DOUBLE");
+
+                    b.Property<double>("Umidade_Min")
+                        .HasPrecision(5, 2)
+                        .HasColumnType("BINARY_DOUBLE");
+
+                    b.Property<double>("Velocidade_Vento")
+                        .HasPrecision(5, 2)
+                        .HasColumnType("BINARY_DOUBLE");
+
+                    b.Property<double>("Volume_Precipitacao")
+                        .HasPrecision(5, 2)
+                        .HasColumnType("BINARY_DOUBLE");
+
+                    b.Property<int>("Zona_Id")
+                        .HasColumnType("NUMBER(10)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Zona_Id");
+
+                    b.ToTable("TBL_Previsao_Futura");
+                });
+
+            modelBuilder.Entity("DAL.Models.Zona", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("NUMBER(10)");
+
+                    OraclePropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Cord_Central")
+                        .IsRequired()
+                        .HasColumnType("NVARCHAR2(2000)");
+
+                    b.Property<string>("Geometry")
+                        .IsRequired()
+                        .HasColumnType("NVARCHAR2(2000)");
+
+                    b.Property<int>("Municipio_Id")
+                        .HasColumnType("NUMBER(10)");
+
+                    b.Property<string>("Nome_Zona")
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("NVARCHAR2(50)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("Cidade_Id");
+                    b.HasIndex("Municipio_Id");
 
-                    b.ToTable("TBL_Regiao");
+                    b.ToTable("TBL_Zona");
                 });
 
-            modelBuilder.Entity("DAL.Models.SubPrefeitura", b =>
+            modelBuilder.Entity("DAL.Models.Distrito", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("NUMBER(10)");
-
-                    OraclePropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Nome")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("NVARCHAR2(50)");
-
-                    b.Property<int>("Regiao_Id")
-                        .HasColumnType("NUMBER(10)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("Regiao_Id");
-
-                    b.ToTable("TBL_SubPrefeitura");
-                });
-
-            modelBuilder.Entity("DAL.Models.Temperatura", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("NUMBER(10)");
-
-                    OraclePropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTime>("Data")
-                        .HasColumnType("TIMESTAMP(7)");
-
-                    b.Property<float>("Dia_1")
-                        .HasColumnType("BINARY_FLOAT");
-
-                    b.Property<float>("Dia_2")
-                        .HasColumnType("BINARY_FLOAT");
-
-                    b.Property<float>("Dia_3")
-                        .HasColumnType("BINARY_FLOAT");
-
-                    b.Property<float>("Dia_4")
-                        .HasColumnType("BINARY_FLOAT");
-
-                    b.Property<float>("Dia_5")
-                        .HasColumnType("BINARY_FLOAT");
-
-                    b.Property<float>("Dia_6")
-                        .HasColumnType("BINARY_FLOAT");
-
-                    b.Property<float>("Dia_7")
-                        .HasColumnType("BINARY_FLOAT");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("TBL_Temperatura");
-                });
-
-            modelBuilder.Entity("DAL.Models.Umidade", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("NUMBER(10)");
-
-                    OraclePropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTime>("Data")
-                        .HasColumnType("TIMESTAMP(7)");
-
-                    b.Property<float>("Dia_1")
-                        .HasColumnType("BINARY_FLOAT");
-
-                    b.Property<float>("Dia_2")
-                        .HasColumnType("BINARY_FLOAT");
-
-                    b.Property<float>("Dia_3")
-                        .HasColumnType("BINARY_FLOAT");
-
-                    b.Property<float>("Dia_4")
-                        .HasColumnType("BINARY_FLOAT");
-
-                    b.Property<float>("Dia_5")
-                        .HasColumnType("BINARY_FLOAT");
-
-                    b.Property<float>("Dia_6")
-                        .HasColumnType("BINARY_FLOAT");
-
-                    b.Property<float>("Dia_7")
-                        .HasColumnType("BINARY_FLOAT");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("TBL_Umidade");
-                });
-
-            modelBuilder.Entity("DAL.Models.Ventania", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("NUMBER(10)");
-
-                    OraclePropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTime>("Data")
-                        .HasColumnType("TIMESTAMP(7)");
-
-                    b.Property<float>("Dia_1")
-                        .HasColumnType("BINARY_FLOAT");
-
-                    b.Property<float>("Dia_2")
-                        .HasColumnType("BINARY_FLOAT");
-
-                    b.Property<float>("Dia_3")
-                        .HasColumnType("BINARY_FLOAT");
-
-                    b.Property<float>("Dia_4")
-                        .HasColumnType("BINARY_FLOAT");
-
-                    b.Property<float>("Dia_5")
-                        .HasColumnType("BINARY_FLOAT");
-
-                    b.Property<float>("Dia_6")
-                        .HasColumnType("BINARY_FLOAT");
-
-                    b.Property<float>("Dia_7")
-                        .HasColumnType("BINARY_FLOAT");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("TBL_Ventania");
-                });
-
-            modelBuilder.Entity("DAL.Models.Aviso", b =>
-                {
-                    b.HasOne("DAL.Models.SubPrefeitura", "SubPrefeitura")
-                        .WithMany()
-                        .HasForeignKey("SubPrefeitura_Id")
+                    b.HasOne("DAL.Models.Zona", "Zona")
+                        .WithMany("Distrios")
+                        .HasForeignKey("Zona_Id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("SubPrefeitura");
+                    b.Navigation("Zona");
                 });
 
             modelBuilder.Entity("DAL.Models.Previsao", b =>
                 {
-                    b.HasOne("DAL.Models.Nuvem", "Nuvem")
-                        .WithMany("Previsoes")
-                        .HasForeignKey("Nuvem_Id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("DAL.Models.Precipitacao", "Precipitacao")
-                        .WithMany("Previsoes")
-                        .HasForeignKey("Precipitacao_Id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("DAL.Models.Regiao", "Regiao")
+                    b.HasOne("DAL.Models.Zona", "Zona")
                         .WithMany()
-                        .HasForeignKey("Regiao_Id")
+                        .HasForeignKey("Zona_Id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("DAL.Models.Temperatura", "Temperatura")
-                        .WithMany("Previsoes")
-                        .HasForeignKey("Temperatura_Id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("DAL.Models.Umidade", "Umidade")
-                        .WithMany("Previsoes")
-                        .HasForeignKey("Umidade_Id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("DAL.Models.Ventania", "Ventania")
-                        .WithMany("Previsoes")
-                        .HasForeignKey("Ventania_Id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Nuvem");
-
-                    b.Navigation("Precipitacao");
-
-                    b.Navigation("Regiao");
-
-                    b.Navigation("Temperatura");
-
-                    b.Navigation("Umidade");
-
-                    b.Navigation("Ventania");
+                    b.Navigation("Zona");
                 });
 
-            modelBuilder.Entity("DAL.Models.Regiao", b =>
+            modelBuilder.Entity("DAL.Models.PrevisaoFutura", b =>
                 {
-                    b.HasOne("DAL.Models.Cidade", "Cidade")
+                    b.HasOne("DAL.Models.Zona", "Zona")
                         .WithMany()
-                        .HasForeignKey("Cidade_Id")
+                        .HasForeignKey("Zona_Id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Cidade");
+                    b.Navigation("Zona");
                 });
 
-            modelBuilder.Entity("DAL.Models.SubPrefeitura", b =>
+            modelBuilder.Entity("DAL.Models.Zona", b =>
                 {
-                    b.HasOne("DAL.Models.Regiao", "Regiao")
+                    b.HasOne("DAL.Models.Municipio", "Municipio")
                         .WithMany()
-                        .HasForeignKey("Regiao_Id")
+                        .HasForeignKey("Municipio_Id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Regiao");
+                    b.Navigation("Municipio");
                 });
 
-            modelBuilder.Entity("DAL.Models.Nuvem", b =>
+            modelBuilder.Entity("DAL.Models.Zona", b =>
                 {
-                    b.Navigation("Previsoes");
-                });
-
-            modelBuilder.Entity("DAL.Models.Precipitacao", b =>
-                {
-                    b.Navigation("Previsoes");
-                });
-
-            modelBuilder.Entity("DAL.Models.Temperatura", b =>
-                {
-                    b.Navigation("Previsoes");
-                });
-
-            modelBuilder.Entity("DAL.Models.Umidade", b =>
-                {
-                    b.Navigation("Previsoes");
-                });
-
-            modelBuilder.Entity("DAL.Models.Ventania", b =>
-                {
-                    b.Navigation("Previsoes");
+                    b.Navigation("Distrios");
                 });
 #pragma warning restore 612, 618
         }

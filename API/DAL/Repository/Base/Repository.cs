@@ -24,10 +24,10 @@ namespace DAL.Repository.Base
             return await Db.SaveChangesAsync();
         }
 
-        public async Task<IEnumerable<TEntity>> GetAll()
-        {
-            return await DbSet.AsNoTracking().ToListAsync();
-        }
+        //public async Task<IEnumerable<TEntity>> GetAll()
+        //{
+        //    return await DbSet.AsNoTracking().ToListAsync();
+        //}
 
         public void Dispose()
         {

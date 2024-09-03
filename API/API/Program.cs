@@ -13,9 +13,27 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var stringConexao = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<BancoAPIContext>(options => options.UseLazyLoadingProxies().UseOracle(stringConexao));
+
+builder.Services.AddDbContext<BancoAPIContext>(options =>
+    options.UseLazyLoadingProxies() // Habilitar lazy loading
+           .UseOracle(stringConexao));
 
 builder.Services.ResolveDependencies();
+
+// Adiciona o AutoMapper
+builder.Services.AddAutoMapper(typeof(AutoMapperConfig));
+
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAllOrigins",
+        builder =>
+        {
+            builder.AllowAnyOrigin()
+                   .AllowAnyMethod()
+                   .AllowAnyHeader();
+        });
+});
 
 var app = builder.Build();
 
@@ -25,6 +43,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors("AllowAllOrigins");
 
 app.UseHttpsRedirection();
 

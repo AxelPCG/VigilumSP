@@ -88,3 +88,26 @@ h1 .subtitle{
     color: $danger-color !important;
 }
 
+.swal2-popup {
+    font-size: 1.2rem; /* Ajuste o tamanho da fonte do popup */
+  }
+  
+  .swal2-title {
+    font-size: 1.5rem; /* Ajuste o tamanho da fonte do título */
+  }
+  
+  .swal2-html-container {
+    font-size: 1.2rem; /* Ajuste o tamanho da fonte do texto */
+  }
+  
+  .swal2-confirm {
+    font-size: 1rem; /* Ajuste o tamanho da fonte do botão de confirmação */
+  }
+  
+  .swal2-cancel {
+    font-size: 1rem; /* Ajuste o tamanho da fonte do botão de cancelamento */
+  }
+  
+  .swal2-popup {
+    width: 500px; /* Ajuste a largura do popup */
+  }

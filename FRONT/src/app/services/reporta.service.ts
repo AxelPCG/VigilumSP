@@ -10,8 +10,13 @@ export class ReportaService {
   
   constructor(private htpp: HttpClient) { }
 
+  private url = "Ocorrencia";
+
   public salvar(form): Observable<any>{
-    return this.htpp.post(`${environment.apiUrl}Reporta`, form);
+    console.log("FOrm a enviar: ", form)
+    return this.htpp.post<any>(`${environment.apiUrl}Ocorrencia`, form, {
+      headers: null
+    });
   }
 
 }

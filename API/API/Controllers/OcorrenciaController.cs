@@ -1,18 +1,17 @@
 ﻿using Business.Services.Interfaces;
-using DAL.Models;
+using DAL.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
 {
     [Route("api/[controller]")]
-    [ApiController]
-    public class CidadeController : ControllerBase
+    public class OcorrenciaController : ControllerBase
     {
-        private readonly ICidadeService _cidadeService;
+        private readonly IOcorrenciaService _correnciaService;
 
-        public CidadeController(ICidadeService cidadeService) 
+        public OcorrenciaController(IOcorrenciaService correnciaService)
         {
-            _cidadeService = cidadeService;
+            _correnciaService = correnciaService;
         }
 
         [HttpGet]
@@ -20,20 +19,21 @@ namespace API.Controllers
         {
             try
             {
-                return Ok(await _cidadeService.GetAll());
+                return Ok(await _correnciaService.GetAll());
             }
-            catch (Exception ex) 
+            catch(Exception ex) 
             {
                 throw ex;
             }
         }
 
         [HttpPost]
-        public async Task<ActionResult> Cadastrar(Cidade cidade)
+        public async Task<ActionResult> Salvar([FromBody]OcorrenciaViewModel model)
         {
             try
             {
-                await _cidadeService.Cadastrar(cidade);
+                await _correnciaService.Salvar(model);
+
                 return Ok();
             }
             catch (Exception ex) 
@@ -41,6 +41,5 @@ namespace API.Controllers
                 throw ex;
             }
         }
-
     }
 }

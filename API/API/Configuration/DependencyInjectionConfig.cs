@@ -11,10 +11,8 @@ namespace API.Configuration
         public static IServiceCollection ResolveDependencies(this IServiceCollection services)
         {
             services.AddScoped<BancoAPIContext>();
-
-            services.AddScoped<ICidadeRepository, CidadeRepository>();
-
-            services.AddScoped<ICidadeService, CidadeService>();
+            services.AddScoped<IOcorrenciaRepository, OcorrenciaRepository>();
+            services.AddScoped<IOcorrenciaService, OcorrenciaService>();
 
             return services;
         }

@@ -4,6 +4,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { UtilitariosService } from 'app/services/utilitarios.service';
 import { catchError } from 'rxjs';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-reportar',
@@ -26,7 +27,7 @@ export class ReportarComponent implements OnInit {
 
   private createForm(){
     this.form = this.fb.group({
-      primeiroNome: [{ value: null, disabled: false}, [Validators.required]],
+      Primeiro_Nome: [{ value: null, disabled: false}, [Validators.required]],
       sobrenome: [{ value: null, disabled: false}, [Validators.required]],
       email: [{ value: null, disabled: false}, [Validators.required, Validators.email]],
       telefone: [{ value: null, disabled: false}, [Validators.required]],
@@ -47,8 +48,8 @@ export class ReportarComponent implements OnInit {
         catchError(err => { throw err })
       ).subscribe(response => {
         this.form.reset();
-        this.utilitariosService.exibeAlerta('SUCESSO', 'A sua ocorrência foi registrada com sucesso! Muito obrigado por reportar.');
         this.utilitariosService.hideLoading();
+        this.utilitariosService.exibeAlerta('SUCESSO', 'A sua ocorrência foi registrada com sucesso! Muito obrigado por reportar.');
       })
   }
 

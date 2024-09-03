@@ -21,7 +21,7 @@
                       type="text"
                       id="primeiroNome"
                       class="form-control"
-                      formControlName="primeiroNome"
+                      formControlName="Primeiro_Nome"
                     />
                   </div>
                   <div class="col-md-6 form-group">
@@ -64,8 +64,8 @@
                       formControlName="assunto"
                     >
                       <option value=null disabled selected>Selecione...</option>
-                      <option value="Previsao">Previsão</option>
-                      <option value="Alerta">Alerta</option>
+                      <option [ngValue]="0">Previsão</option>
+                      <option [ngValue]="1">Alerta</option>
                     </select>
                   </div>
                 </div>

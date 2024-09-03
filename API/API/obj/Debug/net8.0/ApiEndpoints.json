@@ -1,8 +1,8 @@
 [
   {
-    "ContainingType": "API.Controllers.CidadeController",
+    "ContainingType": "API.Controllers.OcorrenciaController",
     "Method": "GetAll",
-    "RelativePath": "api/Cidade",
+    "RelativePath": "api/Ocorrencia",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -10,16 +10,16 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "API.Controllers.CidadeController",
-    "Method": "Cadastrar",
-    "RelativePath": "api/Cidade",
+    "ContainingType": "API.Controllers.OcorrenciaController",
+    "Method": "Salvar",
+    "RelativePath": "api/Ocorrencia",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "cidade",
-        "Type": "DAL.Models.Cidade",
+        "Name": "model",
+        "Type": "DAL.ViewModels.OcorrenciaViewModel",
         "IsRequired": true
       }
     ],
