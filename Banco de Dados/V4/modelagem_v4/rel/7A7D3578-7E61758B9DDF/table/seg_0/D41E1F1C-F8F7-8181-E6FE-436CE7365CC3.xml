@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D41E1F1C-F8F7-8181-E6FE-436CE7365CC3" name="TBL_Ocorrencia">
+<createdBy>lucas</createdBy>
+<createdTime>2024-09-03 23:11:13 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Primeiro_Nome" id="742E4AC3-3A7F-7244-AA0A-9627D24F301A">
+<createdBy>lucas</createdBy>
+<createdTime>2024-09-03 23:14:37 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Sobrenome" id="B079F29E-ECB7-0ACB-E849-0F3D620312CA">
+<createdBy>lucas</createdBy>
+<createdTime>2024-09-03 23:14:52 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Email" id="11EB47D3-53A9-7372-48D7-8E31B276530F">
+<createdBy>lucas</createdBy>
+<createdTime>2024-09-03 23:15:27 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Telefone" id="C4A1C1AB-2DD4-4645-86E9-E6BE70EE1387">
+<createdBy>lucas</createdBy>
+<createdTime>2024-09-03 23:15:45 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Assunto" id="59DF7E7E-FCA0-8911-8A4B-BD5CF488E4F4">
+<createdBy>lucas</createdBy>
+<createdTime>2024-09-03 23:17:09 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Descricao" id="051FFC8F-4E83-DD31-E703-2A3553E5E6B9">
+<createdBy>lucas</createdBy>
+<createdTime>2024-09-03 23:17:28 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Mensagem" id="98BF8A5E-858C-1FC8-76D3-A1B8E2ECE9F3">
+<createdBy>lucas</createdBy>
+<createdTime>2024-09-03 23:17:53 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Concordo_Termos_Condicoes" id="B738B65C-AA5F-5A33-6EB8-66170FEC2080">
+<createdBy>lucas</createdBy>
+<createdTime>2024-09-03 23:18:54 UTC</createdTime>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+</Table>

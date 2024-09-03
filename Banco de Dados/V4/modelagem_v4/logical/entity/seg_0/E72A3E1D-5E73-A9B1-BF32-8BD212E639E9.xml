@@ -1,0 +1,133 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E72A3E1D-5E73-A9B1-BF32-8BD212E639E9" name="TBL Ocorrencia">
+<createdBy>lucas</createdBy>
+<createdTime>2024-09-03 23:19:48 UTC</createdTime>
+<generatorID>D41E1F1C-F8F7-8181-E6FE-436CE7365CC3</generatorID>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<engineerTo>
+<item key="7A7D3578-62A1-5DD2-B89D-7E61758B9DDF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Primeiro Nome" id="11468E4D-23F5-1AE8-AE93-0C1D636BE801">
+<createdBy>lucas</createdBy>
+<createdTime>2024-09-03 23:19:48 UTC</createdTime>
+<generatorID>742E4AC3-3A7F-7244-AA0A-9627D24F301A</generatorID>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<engineerTo>
+<item key="7A7D3578-62A1-5DD2-B89D-7E61758B9DDF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Sobrenome" id="DE53BF30-FC73-4829-C7D8-22469CB2F65D">
+<createdBy>lucas</createdBy>
+<createdTime>2024-09-03 23:19:48 UTC</createdTime>
+<generatorID>B079F29E-ECB7-0ACB-E849-0F3D620312CA</generatorID>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<engineerTo>
+<item key="7A7D3578-62A1-5DD2-B89D-7E61758B9DDF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Email" id="2D43CA41-9D2B-A144-30D0-0F9D79E88C5F">
+<createdBy>lucas</createdBy>
+<createdTime>2024-09-03 23:19:48 UTC</createdTime>
+<generatorID>11EB47D3-53A9-7372-48D7-8E31B276530F</generatorID>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<engineerTo>
+<item key="7A7D3578-62A1-5DD2-B89D-7E61758B9DDF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Telefone" id="5B0C0D36-90B5-B6D6-2CFC-9967C19ADC8D">
+<createdBy>lucas</createdBy>
+<createdTime>2024-09-03 23:19:48 UTC</createdTime>
+<generatorID>C4A1C1AB-2DD4-4645-86E9-E6BE70EE1387</generatorID>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<engineerTo>
+<item key="7A7D3578-62A1-5DD2-B89D-7E61758B9DDF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Assunto" id="DFD3D03E-100E-A743-11EA-62E61729FF12">
+<createdBy>lucas</createdBy>
+<createdTime>2024-09-03 23:19:48 UTC</createdTime>
+<generatorID>59DF7E7E-FCA0-8911-8A4B-BD5CF488E4F4</generatorID>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<engineerTo>
+<item key="7A7D3578-62A1-5DD2-B89D-7E61758B9DDF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Descricao" id="35DFD7EB-FB93-9F55-AC6F-69384C0552F8">
+<createdBy>lucas</createdBy>
+<createdTime>2024-09-03 23:19:48 UTC</createdTime>
+<generatorID>051FFC8F-4E83-DD31-E703-2A3553E5E6B9</generatorID>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<engineerTo>
+<item key="7A7D3578-62A1-5DD2-B89D-7E61758B9DDF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Mensagem" id="AE670B44-BA6A-DDA4-7DF0-3D86385E11FD">
+<createdBy>lucas</createdBy>
+<createdTime>2024-09-03 23:19:48 UTC</createdTime>
+<generatorID>98BF8A5E-858C-1FC8-76D3-A1B8E2ECE9F3</generatorID>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<engineerTo>
+<item key="7A7D3578-62A1-5DD2-B89D-7E61758B9DDF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Concordo Termos Condicoes" id="A662A288-A6C5-9E1A-CC61-18BFB9C062D6">
+<createdBy>lucas</createdBy>
+<createdTime>2024-09-03 23:19:48 UTC</createdTime>
+<generatorID>B738B65C-AA5F-5A33-6EB8-66170FEC2080</generatorID>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<engineerTo>
+<item key="7A7D3578-62A1-5DD2-B89D-7E61758B9DDF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>
