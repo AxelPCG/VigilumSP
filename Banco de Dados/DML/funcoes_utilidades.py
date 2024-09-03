@@ -150,49 +150,34 @@ def convert_numpy_types(value):
         return value
 
 
-def convert_time_to_number(time_series):
+def convert_time_to_number(time_str):
     """
-    Converte uma série de valores de hora no formato 'HH:MM:SS' para um número inteiro que representa a hora,
-    corrigindo valores duplicados e sequências incorretas de hora.
+    Converte um valor de hora no formato 'HH:MM:SS' para um número inteiro que representa a hora.
     
     Args:
-    time_series (pd.Series): Série de horas no formato 'HH:MM:SS'.
+    time_str (str): Hora no formato 'HH:MM:SS'.
     
     Returns:
-    pd.Series: Série de horas convertidas para um número inteiro (apenas a hora, ignorando minutos e segundos).
+    int: Hora convertida para um número inteiro (apenas a hora, ignorando minutos e segundos).
     """
-    # Extrai a parte da hora e converte para inteiro
-    hour_series = time_series.apply(lambda x: int(x.split(':')[0]) if isinstance(x, str) else x)
-    
-    # Corrige sequências onde as horas voltam para 00 antes do tempo esperado
-    corrected_hours = []
-    expected_hour = hour_series.iloc[0]  # Hora esperada para começar
-    for i in range(len(hour_series)):
-        if hour_series.iloc[i] == expected_hour:
-            corrected_hours.append(hour_series.iloc[i])
-        elif hour_series.iloc[i] < expected_hour:  # Se a hora atual for menor que a esperada (possível reset)
-            corrected_hours.append(expected_hour)
-        else:
-            corrected_hours.append(expected_hour)
-        
-        expected_hour += 1
-        if expected_hour == 24:
-            expected_hour = 0  # Reseta para 00 após atingir 23
-
-    return pd.Series(corrected_hours)
+    if isinstance(time_str, str):
+        hour = int(time_str.split(':')[0])  # Extrai apenas a parte da hora e converte para inteiro
+        return hour
+    else:
+        return time_str  # Se já estiver em formato numérico, retorne como está
 
 
 def handle_special_values(value):
     """
-    Substitui valores especiais como -9999.0 por None para representar valores nulos.
+    Substitui valores especiais como -9999.0 e NaN por None para representar valores nulos.
     
     Args:
     value (float): O valor a ser tratado.
     
     Returns:
-    float/None: Retorna None se o valor for -9999.0, caso contrário, retorna o valor original.
+    float/None: Retorna None se o valor for -9999.0 ou NaN, caso contrário, retorna o valor original.
     """
-    if value == -9999.0:
+    if pd.isna(value) or value == -9999.0:
         return None
     return value
 
@@ -207,11 +192,11 @@ def truncate_value(value, max_digits, decimal_places):
     decimal_places (int): Número máximo de casas decimais permitidas.
     
     Returns:
-    float: O valor truncado ou None se o valor for NaN ou inválido.
+    float: O valor truncado ou None se o valor for None.
     """
-    if pd.isna(value):
-        return None  # Se o valor for NaN, retorna None
-
+    if value is None:
+        return None
+    
     # Limita a quantidade de casas decimais
     format_str = "{:." + str(decimal_places) + "f}"
     truncated_value = float(format_str.format(value))
@@ -221,7 +206,6 @@ def truncate_value(value, max_digits, decimal_places):
         raise ValueError(f"Valor {truncated_value} excede o limite de dígitos permitidos.")
     
     return truncated_value
-
 
 
 def insert_data_to_tbl_previsao(connection, mapped_data, zona_id):
@@ -238,9 +222,6 @@ def insert_data_to_tbl_previsao(connection, mapped_data, zona_id):
     """
     cursor = connection.cursor()
 
-    # Converte a série de horas antes de fazer a inserção
-    corrected_hours = convert_time_to_number(mapped_data['Hora'])
-
     # Preparar o comando SQL para inserção
     insert_sql = """
     INSERT INTO TBL_Previsao (Zona_Id, Data, Hora, Temperatura_Max, Temperatura_Min, 
@@ -252,9 +233,9 @@ def insert_data_to_tbl_previsao(connection, mapped_data, zona_id):
     data_to_insert = []
     for i in range(len(mapped_data['Data'])):
         record = (
-            int(zona_id),  # Garantir que Zona_Id seja um int
+            zona_id,
             mapped_data['Data'].iloc[i],
-            convert_numpy_types(corrected_hours.iloc[i]),  # Converter hora para int
+            convert_time_to_number(mapped_data['Hora'].iloc[i]),
             truncate_value(handle_special_values(convert_numpy_types(mapped_data['Temperatura_Max'].iloc[i])), 5, 2),
             truncate_value(handle_special_values(convert_numpy_types(mapped_data['Temperatura_Min'].iloc[i])), 5, 2),
             truncate_value(handle_special_values(convert_numpy_types(mapped_data['Umidade_Max'].iloc[i])), 5, 2),
@@ -275,9 +256,7 @@ def insert_data_to_tbl_previsao(connection, mapped_data, zona_id):
     cursor.close()
     
     print(f"{len(data_to_insert)} registros inseridos com sucesso na tabela TBL_Previsao.")
-
-
-
+    
     
 def process_all_excel_files(directory, df_zona, connection):
     """
