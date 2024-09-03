@@ -52,11 +52,12 @@ def consulta_para_dataframe(cursor, query):
         print(f"Erro ao executar a consulta: {error.message}")
         return None
 
-def truncate_tabelas(connection):
+def truncate_tabelas(connection, tabelas=None):
     cursor = connection.cursor()
     
     try:
-        tabelas = [
+        # Lista padrão de tabelas, caso nenhuma seja especificada
+        tabelas_padrao = [
             'TBL_Previsao',
             'TBL_Previsao_Futura',
             'TBL_Distrito',
@@ -64,7 +65,10 @@ def truncate_tabelas(connection):
             'TBL_Municipio'
         ]
         
-        for tabela in tabelas:
+        # Usa a lista de tabelas fornecida ou a lista padrão
+        tabelas_a_truncar = tabelas if tabelas else tabelas_padrao
+        
+        for tabela in tabelas_a_truncar:
             print(f"Truncando a tabela {tabela}...")
             cursor.execute(f"TRUNCATE TABLE {tabela} CASCADE")
         

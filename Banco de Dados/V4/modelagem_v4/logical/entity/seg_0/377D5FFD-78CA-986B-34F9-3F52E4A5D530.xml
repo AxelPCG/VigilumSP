@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="377D5FFD-78CA-986B-34F9-3F52E4A5D530" name="TBL Distrito">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-03 22:50:06 UTC</createdTime>
+<generatorID>0D33AC70-C492-53A0-C9DF-55560C19A7E9</generatorID>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<engineerTo>
+<item key="7A7D3578-62A1-5DD2-B89D-7E61758B9DDF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CD DIST" id="9F5C3D73-A143-1174-5458-83ADCBD3C92A">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-03 22:50:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o código do distrito e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<generatorID>A2020604-A0DE-1B52-C4A0-769CDB12DA90</generatorID>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<engineerTo>
+<item key="7A7D3578-62A1-5DD2-B89D-7E61758B9DDF" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>AE2E2DEF-AE5B-DA83-6593-7A86A003359D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM DIST" id="36ED53AA-1F22-A6A8-48C3-0F1D6ABFAE85">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-03 22:50:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o nome do distrito e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<generatorID>9F167B23-FFFE-E74F-FB8F-7BE45C0AAF84</generatorID>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<engineerTo>
+<item key="7A7D3578-62A1-5DD2-B89D-7E61758B9DDF" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D3B1A3F3-6082-A9ED-324B-889CC779C343</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CORD CENTRAL" id="769D9536-6D77-73DA-2877-56FC4FA10014">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-03 22:50:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a coordenada central do distrito.]]></commentInRDBMS>
+<generatorID>7392F66B-EF8D-71EC-ADAC-EAA5809E6DC3</generatorID>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<engineerTo>
+<item key="7A7D3578-62A1-5DD2-B89D-7E61758B9DDF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Zona Id" id="E76A8BDA-FE0F-9695-12F4-E94EE2D4BCCF">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-03 22:50:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o Nome da Zona associado ao distrito.]]></commentInRDBMS>
+<generatorID>6F762F1C-39BD-7207-BD3A-375F21ACB10D</generatorID>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<engineerTo>
+<item key="7A7D3578-62A1-5DD2-B89D-7E61758B9DDF" value="true"/>
+</engineerTo>
+<referedAttribute>F68B2F6E-9D51-9E7A-4C67-2EBB9CA6FF99</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>C8F22390-C1D4-DBC2-591D-CC1CB27C1D88</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="320E51DB-E4D1-1FFB-6018-19B01CF55D34" name="TBL Distrito PK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-03 22:50:06 UTC</createdTime>
+<generatorID>EE63FD8E-7AA5-92D0-626B-9258F4CB8F1D</generatorID>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<engineerTo>
+<item key="7A7D3578-62A1-5DD2-B89D-7E61758B9DDF" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9F5C3D73-A143-1174-5458-83ADCBD3C92A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

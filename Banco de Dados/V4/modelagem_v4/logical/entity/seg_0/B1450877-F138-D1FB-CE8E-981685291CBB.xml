@@ -1,0 +1,212 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B1450877-F138-D1FB-CE8E-981685291CBB" name="TBL Previsao">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-03 22:50:06 UTC</createdTime>
+<generatorID>77EF0181-D981-9873-716B-078B7DA7E647</generatorID>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<engineerTo>
+<item key="7A7D3578-62A1-5DD2-B89D-7E61758B9DDF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id" id="60C7EAC1-C79F-4E2B-AC8E-C023557E332E">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-03 22:50:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o Id da previsão registrada e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<generatorID>0AB4BE09-5083-DF8D-E99C-B4D2336B0889</generatorID>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<engineerTo>
+<item key="7A7D3578-62A1-5DD2-B89D-7E61758B9DDF" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>C8F22390-C1D4-DBC2-591D-CC1CB27C1D88</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Zona Id" id="57419624-2770-53B8-8797-5CA52D5A2980">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-03 22:50:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o Id da zona correspondente e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<generatorID>92DA28F6-F34E-3A9C-90DE-A07C63F0D877</generatorID>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<engineerTo>
+<item key="7A7D3578-62A1-5DD2-B89D-7E61758B9DDF" value="true"/>
+</engineerTo>
+<referedAttribute>F68B2F6E-9D51-9E7A-4C67-2EBB9CA6FF99</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>C8F22390-C1D4-DBC2-591D-CC1CB27C1D88</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Data" id="9E36B699-7116-5CF8-1F79-401ED692453D">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-03 22:50:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a data da previsão registrada e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<generatorID>B4EC3222-48A3-5488-8489-5F6FE5697074</generatorID>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<engineerTo>
+<item key="7A7D3578-62A1-5DD2-B89D-7E61758B9DDF" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>60512B3A-DC29-FD5B-F531-AE8CD9D257A5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Hora" id="C32A7135-13A8-76EB-BF33-9613A6CDF6FA">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-03 22:50:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a hora da previsão registrada e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<generatorID>FA838883-3F95-A7CC-8DA7-2F5F0E68D4FE</generatorID>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<engineerTo>
+<item key="7A7D3578-62A1-5DD2-B89D-7E61758B9DDF" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>FCECEC9C-A09B-EC2E-257E-5E011FC33177</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Temperatura Max" id="EE677C9F-47C7-7921-D665-C7D41967B3C7">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-03 22:50:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a temperatura máxima registrada na previsão.]]></commentInRDBMS>
+<generatorID>DBCF2570-B335-0282-9FB1-EF972FDDDB67</generatorID>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<engineerTo>
+<item key="7A7D3578-62A1-5DD2-B89D-7E61758B9DDF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0DA8EE73-1AE7-A6D0-45E7-ED4F2E42DFD7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Temperatura Min" id="37BC38B1-1AC5-CF78-3074-2CCADAAD70F7">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-03 22:50:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a temperatura mínima registrada na previsão.]]></commentInRDBMS>
+<generatorID>1BE365DB-2155-9EC8-7B83-027D78AE49AB</generatorID>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<engineerTo>
+<item key="7A7D3578-62A1-5DD2-B89D-7E61758B9DDF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0DA8EE73-1AE7-A6D0-45E7-ED4F2E42DFD7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Umidade Max" id="6DDD75A0-A95F-1343-FB8F-3FBDEAE7439B">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-03 22:50:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a umidade máxima registrada na previsão.]]></commentInRDBMS>
+<generatorID>98C54172-A550-1B53-5BFB-CAA4DB5FCC37</generatorID>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<engineerTo>
+<item key="7A7D3578-62A1-5DD2-B89D-7E61758B9DDF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0DA8EE73-1AE7-A6D0-45E7-ED4F2E42DFD7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Umidade Min" id="FFDD617D-F4E5-167E-8F2D-EE873ACBD957">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-03 22:50:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a umidade mínima registrada na previsão.]]></commentInRDBMS>
+<generatorID>4A237688-492F-CF4E-D599-61A77FA4F734</generatorID>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<engineerTo>
+<item key="7A7D3578-62A1-5DD2-B89D-7E61758B9DDF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0DA8EE73-1AE7-A6D0-45E7-ED4F2E42DFD7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Velocidade Vento" id="FCF8D249-E884-2705-F445-D54C38556DF8">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-03 22:50:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a velocidade do vento registrada na previsão.]]></commentInRDBMS>
+<generatorID>E4101323-4A7C-395A-FDED-0C96710F3728</generatorID>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<engineerTo>
+<item key="7A7D3578-62A1-5DD2-B89D-7E61758B9DDF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0DA8EE73-1AE7-A6D0-45E7-ED4F2E42DFD7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Volume Precipitacao" id="F2CC9BBE-2FC8-9102-6800-063A83860E74">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-03 22:50:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o volume de precipitação registrado na previsão.]]></commentInRDBMS>
+<generatorID>06027F27-75C2-CEDF-020C-709B2F8E6999</generatorID>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<engineerTo>
+<item key="7A7D3578-62A1-5DD2-B89D-7E61758B9DDF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0DA8EE73-1AE7-A6D0-45E7-ED4F2E42DFD7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Tipo Nuvem" id="B392B304-4D15-E5A0-651F-62D4B8D35318">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-03 22:50:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o tipo de nuvem registrado na previsão.]]></commentInRDBMS>
+<generatorID>D9FF9E6E-A382-0EAB-8711-6ACF582EDAC8</generatorID>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<engineerTo>
+<item key="7A7D3578-62A1-5DD2-B89D-7E61758B9DDF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BD58F88D-486D-5234-1AEA-F251322AC3F5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Pressao Atm" id="FD31B6E8-8A45-70AB-8FA5-E05D205E2772">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-03 22:50:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o valor da pressão atmosférica registrada na previsão.]]></commentInRDBMS>
+<generatorID>1ADF646E-B953-538C-095B-D9263BBC190F</generatorID>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<engineerTo>
+<item key="7A7D3578-62A1-5DD2-B89D-7E61758B9DDF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0DA8EE73-1AE7-A6D0-45E7-ED4F2E42DFD7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8F49E694-62B2-8961-293E-20C75E4D85B7" name="TBL Previsao PK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-03 22:50:06 UTC</createdTime>
+<generatorID>96017CEE-559D-618C-27AC-CEF4B22E4795</generatorID>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<engineerTo>
+<item key="7A7D3578-62A1-5DD2-B89D-7E61758B9DDF" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>60C7EAC1-C79F-4E2B-AC8E-C023557E332E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

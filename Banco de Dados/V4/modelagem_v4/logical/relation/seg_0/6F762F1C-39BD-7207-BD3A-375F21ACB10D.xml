@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="TBL_Distrito_TBL_Zona_FK" directorySegmentName="seg_0" id="6F762F1C-39BD-7207-BD3A-375F21ACB10D">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-03 22:50:06 UTC</createdTime>
+<generatorID>57AD11B8-5D27-5497-BB49-1DAD57EE9D57</generatorID>
+<ownerDesignName>modelagem_v4</ownerDesignName>
+<engineerTo>
+<item key="7A7D3578-62A1-5DD2-B89D-7E61758B9DDF" value="true"/>
+</engineerTo>
+<sourcePk>FBD72A8D-AE03-A37F-90FA-A7B35ED59D0F</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>060A147F-2AA1-AD72-44EB-7DCF28ED908D</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>377D5FFD-78CA-986B-34F9-3F52E4A5D530</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
