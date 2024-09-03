@@ -1,21 +1,23 @@
 ﻿using DAL.Models.Base;
+using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DAL.Models
 {
-    [Table("TBL_Distrito")]
+    [Table("TBL_DISTRITO")]
     public class Distrito : Entity
     {
         [Required]
-        [MaxLength(7)]
-        public int Cd_Dist {  get; set; }
+        [Precision(9)]
+        public int CD_DIST {  get; set; }
 
         [Required]
         [StringLength(100)]
-        public string Nm_Dist { get; set; }
+        public string NM_DIST { get; set; }
 
-        public double[] Cord_Central { get; set; }
+        public double[] GEOMETRY { get; set; }
+        public double[] CORD_CENTRAL { get; set; }
 
         [Required]
         [ForeignKey("Zona")]

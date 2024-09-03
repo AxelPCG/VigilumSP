@@ -5,17 +5,17 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DAL.Models
 {
-    [Table("TBL_Previsao")]
+    [Table("TBL_PREVISAO")]
     public class Previsao : Entity
     {
         [Required]
         [ForeignKey("Zona")]
-        public int Zona_Id { get; set; }
+        public int ZONA_ID { get; set; }
         public virtual Zona Zona { get; set; }
 
 
         [Required]
-        public DateTime Data { get; set; }
+        public DateTime DATA { get; set; }
 
         [Precision(2)]
         public double Temperatura_Max { get; set; }

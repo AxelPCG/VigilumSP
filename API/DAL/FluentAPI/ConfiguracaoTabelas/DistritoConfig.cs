@@ -9,7 +9,7 @@ namespace DAL.FluentAPI.ConfiguracaoTabelas
         {
             modelBuilder.Entity<Distrito>(distrito =>
             {
-                distrito.Property(x => x.Cord_Central).HasColumnType("SDO_GEOMETRY");
+                distrito.Property(x => x.CORD_CENTRAL).HasColumnType("SDO_GEOMETRY");
             }); 
         }
     }

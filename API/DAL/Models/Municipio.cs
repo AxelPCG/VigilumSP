@@ -5,24 +5,24 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DAL.Models
 {
-    [Table("TBL_Municipio")]
+    [Table("TBL_MUNICIPIO")]
     public class Municipio : Entity
     {
         [Required]
-        [MaxLength(7)]
-        public int Cod_Mun { get; set; }
+        [Precision(7)]
+        public int COD_MUN { get; set; }
 
         [Required]
         [StringLength(100)]
-        public string Nm_Mun { get; set; }
+        public string NM_MUN { get; set; }
 
         [Required]
         [StringLength(2)]
-        public string Sg_Estado { get; set; }
+        public string SG_ESTADO { get; set; }
 
         [Required]
         [Precision(10, 2)]
-        public double Area_Km2 {  get; set; }
+        public double AREA_KM2 {  get; set; }
 
         public double[] Geometry { get; set; }
         public double[] Cord_Central { get; set; }
