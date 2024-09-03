@@ -1,4 +1,6 @@
 import pandas as pd
+import numpy as np
+import os
 from shapely.geometry import Point
 from math import radians, cos, sin, sqrt, atan2
 
@@ -80,6 +82,7 @@ def haversine_distance(lat1, lon1, lat2, lon2):
     r = 6371  # Raio da Terra em quilômetros
     return c * r
 
+
 def find_nearest_zone(lat, lon, df_zona):
     """
     Encontra a zona mais próxima baseada nas coordenadas fornecidas.
@@ -106,6 +109,7 @@ def find_nearest_zone(lat, lon, df_zona):
     
     return nearest_zone_id
 
+
 def extract_and_convert_coordinates(lat_str, lon_str):
     """
     Converte as coordenadas de string para float, se necessário.
@@ -124,3 +128,187 @@ def extract_and_convert_coordinates(lat_str, lon_str):
         lon_str = float(lon_str.replace(",", ".").strip())
     
     return lat_str, lon_str
+
+
+def convert_numpy_types(value):
+    """
+    Converte valores de tipos NumPy para tipos de dados nativos do Python.
+    
+    Args:
+    value: O valor a ser convertido.
+    
+    Returns:
+    O valor convertido para um tipo nativo do Python.
+    """
+    if isinstance(value, (np.int64, np.int32)):
+        return int(value)
+    elif isinstance(value, (np.float64, np.float32)):
+        return float(value)
+    elif pd.isna(value):  # Para valores nulos
+        return None
+    else:
+        return value
+
+
+def convert_time_to_number(time_series):
+    """
+    Converte uma série de valores de hora no formato 'HH:MM:SS' para um número inteiro que representa a hora,
+    corrigindo valores duplicados e sequências incorretas de hora.
+    
+    Args:
+    time_series (pd.Series): Série de horas no formato 'HH:MM:SS'.
+    
+    Returns:
+    pd.Series: Série de horas convertidas para um número inteiro (apenas a hora, ignorando minutos e segundos).
+    """
+    # Extrai a parte da hora e converte para inteiro
+    hour_series = time_series.apply(lambda x: int(x.split(':')[0]) if isinstance(x, str) else x)
+    
+    # Corrige sequências onde as horas voltam para 00 antes do tempo esperado
+    corrected_hours = []
+    expected_hour = hour_series.iloc[0]  # Hora esperada para começar
+    for i in range(len(hour_series)):
+        if hour_series.iloc[i] == expected_hour:
+            corrected_hours.append(hour_series.iloc[i])
+        elif hour_series.iloc[i] < expected_hour:  # Se a hora atual for menor que a esperada (possível reset)
+            corrected_hours.append(expected_hour)
+        else:
+            corrected_hours.append(expected_hour)
+        
+        expected_hour += 1
+        if expected_hour == 24:
+            expected_hour = 0  # Reseta para 00 após atingir 23
+
+    return pd.Series(corrected_hours)
+
+
+def handle_special_values(value):
+    """
+    Substitui valores especiais como -9999.0 por None para representar valores nulos.
+    
+    Args:
+    value (float): O valor a ser tratado.
+    
+    Returns:
+    float/None: Retorna None se o valor for -9999.0, caso contrário, retorna o valor original.
+    """
+    if value == -9999.0:
+        return None
+    return value
+
+
+def truncate_value(value, max_digits, decimal_places):
+    """
+    Trunca um valor para garantir que ele não exceda a precisão permitida.
+    
+    Args:
+    value (float): O valor a ser truncado.
+    max_digits (int): Número máximo de dígitos permitidos.
+    decimal_places (int): Número máximo de casas decimais permitidas.
+    
+    Returns:
+    float: O valor truncado ou None se o valor for NaN ou inválido.
+    """
+    if pd.isna(value):
+        return None  # Se o valor for NaN, retorna None
+
+    # Limita a quantidade de casas decimais
+    format_str = "{:." + str(decimal_places) + "f}"
+    truncated_value = float(format_str.format(value))
+    
+    # Verifica se o número de dígitos totais excede max_digits
+    if len(str(int(truncated_value)).replace('-', '')) > max_digits - decimal_places:
+        raise ValueError(f"Valor {truncated_value} excede o limite de dígitos permitidos.")
+    
+    return truncated_value
+
+
+
+def insert_data_to_tbl_previsao(connection, mapped_data, zona_id):
+    """
+    Insere os dados mapeados na tabela TBL_Previsao do banco de dados Oracle.
+    
+    Args:
+    connection (cx_Oracle.Connection): Conexão ativa com o banco de dados Oracle.
+    mapped_data (dict): Dados mapeados da folha "Data" do Excel.
+    zona_id (int): ID da zona correspondente encontrada.
+    
+    Returns:
+    None
+    """
+    cursor = connection.cursor()
+
+    # Converte a série de horas antes de fazer a inserção
+    corrected_hours = convert_time_to_number(mapped_data['Hora'])
+
+    # Preparar o comando SQL para inserção
+    insert_sql = """
+    INSERT INTO TBL_Previsao (Zona_Id, Data, Hora, Temperatura_Max, Temperatura_Min, 
+                              Umidade_Max, Umidade_Min, Velocidade_Vento, Volume_Precipitacao, Pressao_Atm)
+    VALUES (:1, TO_DATE(:2, 'YYYY-MM-DD'), :3, :4, :5, :6, :7, :8, :9, :10)
+    """
+    
+    # Preparar os dados para inserção em batch
+    data_to_insert = []
+    for i in range(len(mapped_data['Data'])):
+        record = (
+            int(zona_id),  # Garantir que Zona_Id seja um int
+            mapped_data['Data'].iloc[i],
+            convert_numpy_types(corrected_hours.iloc[i]),  # Converter hora para int
+            truncate_value(handle_special_values(convert_numpy_types(mapped_data['Temperatura_Max'].iloc[i])), 5, 2),
+            truncate_value(handle_special_values(convert_numpy_types(mapped_data['Temperatura_Min'].iloc[i])), 5, 2),
+            truncate_value(handle_special_values(convert_numpy_types(mapped_data['Umidade_Max'].iloc[i])), 5, 2),
+            truncate_value(handle_special_values(convert_numpy_types(mapped_data['Umidade_Min'].iloc[i])), 5, 2),
+            truncate_value(handle_special_values(convert_numpy_types(mapped_data['Velocidade_Vento'].iloc[i])), 5, 2),
+            truncate_value(handle_special_values(convert_numpy_types(mapped_data['Volume_Precipitacao'].iloc[i])), 5, 2),
+            truncate_value(handle_special_values(convert_numpy_types(mapped_data['Pressao_Atm'].iloc[i])), 5, 2)
+        )
+        data_to_insert.append(record)
+    
+    # Executar a inserção em batch
+    cursor.executemany(insert_sql, data_to_insert)
+    
+    # Confirmar as alterações no banco de dados
+    connection.commit()
+    
+    # Fechar o cursor
+    cursor.close()
+    
+    print(f"{len(data_to_insert)} registros inseridos com sucesso na tabela TBL_Previsao.")
+
+
+
+    
+def process_all_excel_files(directory, df_zona, connection):
+    """
+    Processa todos os arquivos Excel em um diretório, extraindo e mapeando os dados para a tabela TBL_Previsao.
+    
+    Args:
+    directory (str): O caminho do diretório contendo os arquivos Excel.
+    df_zona (DataFrame): DataFrame contendo as zonas e suas coordenadas centrais.
+    connection (cx_Oracle.Connection): Conexão ativa com o banco de dados Oracle.
+    
+    Returns:
+    None
+    """
+    for filename in os.listdir(directory):
+        if filename.endswith(".xlsx"):
+            file_path = os.path.join(directory, filename)
+            print(f"Processando arquivo: {file_path}")
+            
+            # Extrair e mapear os dados do Excel
+            mapped_data, latitude, longitude = extract_and_map_excel_data(file_path)
+            
+            if mapped_data is None:
+                continue  # Pula arquivos que não puderam ser processados
+            
+            # Converter as coordenadas extraídas do Excel
+            latitude_float, longitude_float = extract_and_convert_coordinates(latitude, longitude)
+            
+            # Encontrar a zona mais próxima
+            nearest_zone_id = find_nearest_zone(latitude_float, longitude_float, df_zona)
+            
+            # Inserir os dados no banco de dados
+            insert_data_to_tbl_previsao(connection, mapped_data, nearest_zone_id)
+
+    print("Processamento concluído para todos os arquivos.")
