@@ -5,6 +5,7 @@
 import os
 import pandas as pd
 import datetime as dt
+import shutil
 
 # %% [markdown]
 # ### Diretórios
@@ -13,6 +14,7 @@ import datetime as dt
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DIR_ARQUIVOS = os.path.join(BASE_DIR, "DADOS_METEREOLOGICOS_ESTADO_SP")
 DIR_TRATADOS = os.path.join(BASE_DIR, "DADOS_TRATADOS")
+DIR_TRATADOS_CIDADE_SP = os.path.join(BASE_DIR, 'DADOS_TRATADOS_CIDADE_SP')
 
 # %% [markdown]
 # ### Filtro de dados
@@ -176,3 +178,26 @@ def process_all_files():
 # %%
 # Executar a automação
 process_all_files()
+
+# %%
+def separa_cidade_sp(DIR_TRATADOS, DIR_TRATADOS_CIDADE_SP):
+    
+    #Cria pasta DIR_TRATADOS_CIDADE_SP se não existir
+    ensure_directory(DIR_TRATADOS_CIDADE_SP)
+    
+    # Percorrer todas as pastas e subpastas
+    for subdir, _, files in os.walk(DIR_TRATADOS):
+        for file in files:
+            # Verificar se "SAO PAULO" está no nome do arquivo
+            if "SAO PAULO" in file:
+                # Caminho completo do arquivo
+                caminho_arquivo = os.path.join(subdir, file)
+                # Copiar o arquivo para a pasta de destino
+                shutil.copy(caminho_arquivo, DIR_TRATADOS_CIDADE_SP)
+
+    print("Arquivos copiados com sucesso!")
+
+# %%
+separa_cidade_sp(DIR_TRATADOS, DIR_TRATADOS_CIDADE_SP)
+
+
