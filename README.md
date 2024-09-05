@@ -1,5 +1,9 @@
 # VigilumSP
 
+## Este é um repositório de testes, o repositório oficial final pode ser encontrado em:
+
+https://github.com/Esparta-Solucoes/VigilumSP
+
 ## ⚙️ Configuração do Ambiente - Coleta de Dados
 
 ### Criando e Ativando o Ambiente Virtual
