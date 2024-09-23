@@ -39,8 +39,6 @@ export class ReportarComponent implements OnInit {
   }
 
   public salvar(){
-    console.log("Formulario: ", this.form.value)
-
     this.utilitariosService.showLoading();
 
     this.reportaService.salvar(this.form.value)

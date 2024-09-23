@@ -178,6 +178,7 @@ pyrightconfig.json
 API/.vs/
 # Ignorar diretórios bin e obj da API
 /API/bin/
+API/API/bin
 /API/obj/
 
 # Ignorar diretórios bin e obj da Business
